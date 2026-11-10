@@ -1,0 +1,29 @@
+# Files in the publisher's client folder that never ship (rsync --exclude-from syntax, also
+# read by hufflabs-ro-publish): the WARP patcher and its folders, WARPGATE state,
+# the unpatched exe, docs, backups, personal settings, the old theme GRF.
+# Player-owned folders (savedata, Replay, memo, …) are also skipped by the publish
+# command itself.
+/win32/
+/Scripts/
+/Patches/
+/Inputs/
+/Outputs/
+/Languages/
+/Styles/
+/Tables/
+/profiles/
+/examples/
+/Images/
+/Fonts/
+/.github/
+/.gitignore
+/*.yml
+/*.md
+/LICENSE
+/ICON_attribution
+/.warpgate*
+/2025-07-16_Ragexe_*.exe
+*.orig
+*.bak
+/savedata/
+/hufflabs.grf

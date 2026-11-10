@@ -1,0 +1,25 @@
+[Unit]
+Description=HuffLabs RO sign-up portal
+After=network-online.target mariadb.service
+Wants=network-online.target
+
+[Service]
+User=portal
+Group=portal
+EnvironmentFile=/etc/hufflabs-portal/portal.env
+ExecStart=/usr/local/bin/hufflabs-portal
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadOnlyPaths=/srv/hufflabs-portal
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+LockPersonality=yes
+
+[Install]
+WantedBy=multi-user.target

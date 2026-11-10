@@ -1,0 +1,19 @@
+{{define "title"}}Invite · HuffLabs RO{{end}}
+{{template "head" .}}
+<main class="stage wide">
+  <section class="glass">
+    <h1>Invite for {{.Friend.Name}}</h1>
+    {{if .Fresh}}
+    <p class="hint">Copy this and send it to {{.Friend.Name}}. The code is shown only once.</p>
+<pre class="message">You're invited to HuffLabs RO!
+1. Install Tailscale: https://tailscale.com/download
+2. Accept access to the game server: {{.Friend.ShareURL}}
+3. Open the site (needs Tailscale connected): {{.SiteURL}}
+Your invite code: {{.Code}} (works once)</pre>
+    {{else}}
+    <p class="warn">Code already shown. Only a scrambled copy is stored, so it can't be shown again. If it was lost, revoke this invite and create a new one.</p>
+    {{end}}
+    <p><a href="/admin">← Back to friends</a></p>
+  </section>
+</main>
+{{template "foot" .}}

@@ -1,0 +1,31 @@
+{{template "head" .}}
+<main class="stage">
+  <img class="crest" src="/static/crest.png" alt="HuffLabs RO">
+  <section class="glass">
+    <h1 class="sr-only">HuffLabs RO</h1>
+
+    <div class="step">
+      <div class="label">1 · Get the game</div>
+      <a class="btn-main" href="/download/HuffLabsRO-Setup.exe">⬇ Download for Windows</a>
+      <p class="hint">Windows may say “Windows protected your PC”. Click <b>More info</b>, then <b>Run anyway</b>.</p>
+      <a class="btn-ghost" href="/download/hufflabs-ro-install.sh">⬇ Download for Linux</a>
+      <p class="hint">Then run it in a terminal: <code>bash ~/Downloads/hufflabs-ro-install.sh</code></p>
+      {{if .Version}}<p class="hint">Client version {{.Version}}</p>{{end}}
+    </div>
+
+    <div class="divider"></div>
+
+    <form class="step" method="post" action="/signup" autocomplete="off">
+      <div class="label">2 · Create your account</div>
+      {{if .Error}}<p class="error" role="alert">{{.Error}}</p>{{end}}
+      <label>Invite code <input name="code" value="{{.Code}}" required maxlength="20" placeholder="From your invite message"></label>
+      <label>Username <input name="username" value="{{.Username}}" required minlength="4" maxlength="23" pattern="[A-Za-z0-9_]+" autocomplete="username"></label>
+      <label>Password <input name="password" type="password" required minlength="8" maxlength="23" autocomplete="new-password"></label>
+      <label>Confirm password <input name="confirm" type="password" required minlength="8" maxlength="23" autocomplete="new-password"></label>
+      <button class="btn-ghost" type="submit">Create account</button>
+    </form>
+
+    <p class="hint center">3 · Open <b>HuffLabs RO</b> from your desktop and log in.</p>
+  </section>
+</main>
+{{template "foot" .}}

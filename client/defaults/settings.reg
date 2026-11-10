@@ -1,0 +1,28 @@
+Windows Registry Editor Version 5.00
+
+; HuffLabs RO default game settings (from a working OpenSetup run). The 32-bit client
+; reads HKLM\SOFTWARE\WOW6432Node on 64-bit Windows. Without RenewSetup the client
+; waits forever at startup. __INSTALLDIR__ is replaced by the installer (backslashes doubled).
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Gravity Soft\Ragnarok]
+"BITWISE"=dword:00000001
+"CHECKSAVE"=dword:00000000
+"DEVICENAME"="\\\\.\\DISPLAY1"
+"DIGITALBITSTYPE"=dword:00000000
+"DIGITALRATETYPE"=dword:00000000
+"GUIDDEVICE"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+"GUIDDRIVER"=hex:00,00,00,00,65,00,00,00,00,00,00,00,00,00,00,00
+"NUMACCOUNT"=dword:00000000
+"NUMSERVER"=dword:00000000
+"PROVIDERNAME"="No Provider"
+"SHOWTIPSATSTARTUP"=dword:00000001
+"SOUNDMODE"=dword:00000001
+"SPEAKERTYPE"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Gravity Soft\RenewSetup]
+
+[HKEY_CURRENT_USER\Software\Gravity\RagnarokOnline]
+@="__INSTALLDIR__\\"
+"RagPath"="__INSTALLDIR__\\"
+"SakrayPath"="__INSTALLDIR__\\"
+

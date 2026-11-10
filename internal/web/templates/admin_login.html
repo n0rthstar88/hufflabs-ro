@@ -1,0 +1,14 @@
+{{define "title"}}Admin · HuffLabs RO{{end}}
+{{template "head" .}}
+<main class="stage">
+  <section class="glass narrow">
+    <h1>Admin</h1>
+    {{if .Error}}<p class="error" role="alert">{{.Error}}</p>{{end}}
+    <form method="post" action="/admin/login">
+      <label>Game username <input name="username" required autocomplete="username"></label>
+      <label>Password <input name="password" type="password" required autocomplete="current-password"></label>
+      <button class="btn-main" type="submit">Log in</button>
+    </form>
+  </section>
+</main>
+{{template "foot" .}}

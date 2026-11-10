@@ -1,0 +1,9 @@
+// Tailscale policy grant for HuffLabs RO (goes in the "grants" section).
+// Friends get a share of the game server's machine (tagged tag:Game). People you
+// shared it with can only reach the sign-up site (443) and the game's three ports;
+// sharing already limits them to that one machine.
+{
+	"src": ["autogroup:shared"],
+	"dst": ["tag:Game"],
+	"ip":  ["tcp:443", "tcp:6900", "tcp:6121", "tcp:5121"],
+},

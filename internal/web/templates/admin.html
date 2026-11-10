@@ -1,0 +1,44 @@
+{{define "title"}}Friends · HuffLabs RO{{end}}
+{{template "head" .}}
+<main class="stage wide">
+  <section class="glass">
+    <div class="bar">
+      <h1>Friends</h1>
+      <form method="post" action="/admin/logout"><input type="hidden" name="csrf" value="{{.CSRF}}"><button class="btn-ghost small" type="submit">Log out {{.User}}</button></form>
+    </div>
+    {{if .Warning}}<p class="warn">{{.Warning}}</p>{{end}}
+
+    <form class="add" method="post" action="/admin/friends">
+      <input type="hidden" name="csrf" value="{{.CSRF}}">
+      <div class="label">Invite a friend</div>
+      <ol class="hint">
+        <li>In the Tailscale admin console, open <b>Machines → ragnarok → Share</b> and copy a new share link.</li>
+        <li>Paste it here with your friend's name. You'll get their invite message to send.</li>
+      </ol>
+      {{if .Error}}<p class="error" role="alert">{{.Error}}</p>{{end}}
+      <label>Friend's name <input name="name" value="{{.Name}}" required maxlength="64"></label>
+      <label>Tailscale share link <input name="share_url" value="{{.ShareURL}}" required placeholder="https://login.tailscale.com/admin/invite/…"></label>
+      <button class="btn-main" type="submit">Create invite</button>
+    </form>
+
+    <table>
+      <thead><tr><th>Friend</th><th>Status</th><th>Invited</th><th></th></tr></thead>
+      <tbody>
+      {{range .Friends}}
+        <tr>
+          <td>{{.Name}}</td>
+          <td>{{.Status}}</td>
+          <td>{{.CreatedAt.Format "Jan 2, 2006"}}</td>
+          <td>{{if and (not .UsedAt.Valid) (not .Revoked)}}
+            <form method="post" action="/admin/friends/{{.ID}}/revoke"><input type="hidden" name="csrf" value="{{$.CSRF}}"><button class="btn-ghost small" type="submit">Revoke</button></form>
+          {{end}}</td>
+        </tr>
+      {{else}}
+        <tr><td colspan="4" class="hint">No friends invited yet.</td></tr>
+      {{end}}
+      </tbody>
+    </table>
+    <p class="hint">Revoke cancels an unused invite code and its share link. If a friend already accepted the share, remove them under Machines → ragnarok → Share in Tailscale too.</p>
+  </section>
+</main>
+{{template "foot" .}}
