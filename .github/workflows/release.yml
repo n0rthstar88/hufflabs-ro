@@ -1,0 +1,51 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    uses: ./.github/workflows/ci.yml
+
+  release:
+    name: Build and publish
+    needs: tests
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Build tools
+        run: |
+          set -euo pipefail
+          tag=${GITHUB_REF_NAME}
+          mkdir -p dist
+          build() { # os arch package name
+            local ext=""; [ "$1" = windows ] && ext=.exe
+            GOOS=$1 GOARCH=$2 CGO_ENABLED=0 go build -trimpath -ldflags "-s -w" -o "dist/$4-$tag-$1-$2$ext" "./cmd/$3"
+          }
+          build linux amd64 hufflabs-portal hufflabs-portal
+          for os in linux windows; do
+            build $os amd64 hufflabs-ro-publish hufflabs-ro-publish
+            build $os amd64 themetool themetool
+            build $os amd64 grftool grftool
+          done
+          cp installer/linux/hufflabs-ro-install.sh "dist/hufflabs-ro-install-template-$tag.sh"
+          (cd dist && sha256sum * > SHA256SUMS)
+          ls -la dist
+      - name: Release notes from CHANGELOG.md
+        run: |
+          awk -v v="## ${GITHUB_REF_NAME}" '$0 ~ "^## " {p = (index($0, v) == 1)} p' CHANGELOG.md | tail -n +2 > notes.md
+          test -s notes.md
+          cat notes.md
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" dist/* --title "HuffLabs RO $GITHUB_REF_NAME" --notes-file notes.md --verify-tag

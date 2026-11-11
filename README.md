@@ -1,5 +1,8 @@
 # HuffLabs RO
 
+[![Tests](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml/badge.svg)](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/n0rthstar88/hufflabs-ro)](https://github.com/n0rthstar88/hufflabs-ro/releases)
+
 Tooling for a small, private Ragnarok Online server run for a group of friends: an
 invite-only sign-up site, Windows and Linux installers, a themed client, and a
 launcher that keeps every friend's game up to date by itself.
@@ -65,6 +68,9 @@ bash client/test-swap-release.sh           # release switch-over on the server
 ```
 
 The store tests need throwaway `ptest_*` databases; see `deploy/test-store-remote.sh`.
+On GitHub every push runs all of these on fresh Linux and Windows machines
+(`.github/workflows/ci.yml`), with a throwaway MariaDB for the store tests. What
+changed in each version: [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 

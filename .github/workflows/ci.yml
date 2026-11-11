@@ -1,0 +1,89 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+env:
+  # The leveling patch and tables are built against this rAthena commit.
+  RATHENA_COMMIT: d4b8e7b
+
+jobs:
+  linux:
+    name: Linux (Go, database, installer, scripts)
+    runs-on: ubuntu-24.04
+    services:
+      mariadb:
+        image: mariadb:11.4
+        env:
+          MARIADB_ROOT_PASSWORD: ci-only
+        ports: ["3306:3306"]
+        options: >-
+          --health-cmd "healthcheck.sh --connect --innodb_initialized"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      PORTAL_TEST_DSN: root:ci-only@tcp(127.0.0.1:3306)/ptest_portal?parseTime=true
+      GAME_TEST_DSN: root:ci-only@tcp(127.0.0.1:3306)/ptest_game?parseTime=true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Throwaway databases (rAthena login table)
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/rathena/rathena/$RATHENA_COMMIT/sql-files/main.sql" -o main.sql
+          awk '/^CREATE TABLE IF NOT EXISTS `login`/{p=1} p{print} p&&/;[[:space:]]*$/{exit}' main.sql > login.sql
+          grep -q 'CREATE TABLE IF NOT EXISTS `login`' login.sql
+          mysql() { docker exec -i "${{ job.services.mariadb.id }}" mariadb -uroot -pci-only "$@"; }
+          mysql -e 'CREATE DATABASE ptest_portal; CREATE DATABASE ptest_game;'
+          mysql ptest_game < login.sql
+      - name: Go tests
+        run: go test -count=1 ./...
+      - name: Go vet
+        run: go vet ./...
+      - name: Linux installer
+        run: bash installer/linux/test-install.sh
+      - name: Release switch-over
+        run: bash client/test-swap-release.sh
+      - name: Leveling tables
+        if: hashFiles('content/leveling/tests/*.py') != ''
+        run: |
+          mkdir -p content/leveling/upstream
+          for f in job_exp statpoint mob_db; do
+            curl -fsSL "https://raw.githubusercontent.com/rathena/rathena/$RATHENA_COMMIT/db/re/$f.yml" -o "content/leveling/upstream/$f.yml"
+          done
+          python3 -I -m unittest discover -v -s content/leveling/tests
+
+  windows:
+    name: Windows (installer logic, launcher)
+    runs-on: windows-2025
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Launcher and updater Go tests
+        run: go test -count=1 ./cmd/hufflabs-ro-launcher/... ./internal/update/... ./internal/manifest/...
+      - name: Installer folder and registry logic
+        shell: pwsh
+        run: |
+          if (-not (Get-Command makensis -ErrorAction SilentlyContinue)) {
+            $nsis = "${env:ProgramFiles(x86)}\NSIS"
+            if (-not (Test-Path "$nsis\makensis.exe")) { choco install nsis -y --no-progress | Out-Null }
+            $env:PATH = "$nsis;$env:PATH"
+          }
+          $out = Join-Path $env:RUNNER_TEMP 'nsis-test'
+          New-Item -ItemType Directory -Force $out | Out-Null
+          Push-Location installer/windows
+          makensis -V2 "-DOUT=$out\test-nsis.exe" test-nsis.nsi
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+          Pop-Location
+          Start-Process -FilePath "$out\test-nsis.exe" -Wait
+          $results = Get-Content "$out\results.txt"
+          $results
+          if (-not ($results -match '^ALL PASS')) { exit 1 }
