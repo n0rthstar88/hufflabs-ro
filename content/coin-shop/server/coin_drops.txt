@@ -3,14 +3,14 @@
 //===== Description: =======================================
 //= Normal monsters: a chance from 0.2% (level 1) up to 3% (level 150+).
 //= Bosses that aren't MVPs: 3 coins every time.
-//= MVPs: 30 coins to the killer and to every party member on the same map.
+//= MVPs: 30 / 60 / 100 coins by MVP level (<100 / 100-149 / 150+) to the killer
+//= and to every party member on the same map (same tiers as content/leveling/gen_mvp.py).
 //= Monsters that give no base EXP (plants, summons) never drop coins.
 //==========================================================
 
 -	script	HuffLabsCoinDrops	-1,{
 OnInit:
 	.coin = 2600000;
-	.mvp_coins = 30;
 	.boss_coins = 3;
 	end;
 
@@ -20,10 +20,12 @@ OnNPCKillEvent:
 		end;
 
 	if (.@mode & MD_MVP) {
+		.@lv = getmonsterinfo(killedrid, MOB_LV);
+		.@coins = (.@lv < 100) ? 30 : ((.@lv < 150) ? 60 : 100);
 		.@party = getcharid(1);
 		if (!.@party) {
-			getitem .coin, .mvp_coins;
-			dispbottom "You found " + .mvp_coins + " HuffLabs Coins!";
+			getitem .coin, .@coins;
+			dispbottom "You found " + .@coins + " HuffLabs Coins!";
 			end;
 		}
 		.@map$ = strcharinfo(3);
@@ -37,8 +39,8 @@ OnNPCKillEvent:
 				continue;
 			if (strcharinfo(3, .@cid[.@i]) != .@map$)
 				continue;
-			getitem .coin, .mvp_coins, .@aid[.@i];
-			message rid2name(.@aid[.@i]), "Your party's MVP kill earned you " + .mvp_coins + " HuffLabs Coins!";
+			getitem .coin, .@coins, .@aid[.@i];
+			message rid2name(.@aid[.@i]), "Your party's MVP kill earned you " + .@coins + " HuffLabs Coins!";
 		}
 		end;
 	}

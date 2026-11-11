@@ -49,6 +49,7 @@ of the server's machine, an invite code, and nothing else.
 | `deploy/` | Container setup and deployment of the site. |
 | `tailscale/policy-snippet.hujson` | The policy grant that limits friends to the game server. |
 | `content/coin-shop/` | HuffLabs Coin: a coin that drops from monsters (more from bosses) and two Prontera merchants that sell costumes and gear for it. Server scripts, item entries, the client item descriptions and a deploy script. |
+| `content/leveling/` | Leveling: each character picks normal or 15x XP at first login, max level 500/250 for final classes, stats up to 1,000 and tougher bosses. A small rAthena source patch, generated XP and stat tables, and the client XP-bar patch profile. See its README. |
 
 ## Running your own
 
@@ -66,6 +67,7 @@ go test ./...                              # site, launcher, updater, publish to
 bash installer/linux/test-install.sh       # Linux installer against a local fake site
 bash installer/windows/test-nsis.sh        # installer folder/registry logic, under Wine
 bash client/test-swap-release.sh           # release switch-over on the server
+python3 -I -m unittest discover -s content/leveling/tests   # needs rAthena's db/re tables in content/leveling/upstream/
 ```
 
 The store tests need throwaway `ptest_*` databases; see `deploy/test-store-remote.sh`.

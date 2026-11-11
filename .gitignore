@@ -3,3 +3,5 @@
 *.zip
 installer/windows/redist/*.exe
 cmd/hufflabs-ro-launcher/rsrc_windows_*.syso
+content/leveling/upstream/
+__pycache__/

@@ -1,0 +1,102 @@
+from: "2025-07-16_Ragexe_175220998_clientinfo.exe"
+to: "Outputs/patched.exe"
+inputs:
+    $dataINI:
+        data: '444154412e494e4900'
+        display: "DATA.INI"
+        type: 10
+    
+    $newQuestQuali:
+        data: '53797374656d454e2f5175657374436c617373696669636174696f6e496e666f2e6c756200'
+        display: "SystemEN/QuestClassificationInfo.lub"
+        type: 10
+    
+    $newOngQInfoList:
+        data: '53797374656d454e2f4f6e676f696e6751756573747300'
+        display: "SystemEN/OngoingQuests"
+        type: 10
+    
+    $translationFile:
+        data: ''
+        display: "Inputs/Translations_EN.yml"
+        type: 10
+    
+    $newTipBox:
+        data: '53797374656d454e2f746970626f782e6c756200'
+        display: "SystemEN/tipbox.lub"
+        type: 10
+    
+    $newAchieveList:
+        data: '53797374656d454e2f616368696576656d656e74732e6c756200'
+        display: "SystemEN/achievements.lub"
+        type: 10
+    
+    $newspopup:
+        data: '53797374656d454e2f73706f7075702e6c756200'
+        display: "SystemEN/spopup.lub"
+        type: 10
+    
+    $newMapInfo:
+        data: '53797374656d454e2f6d6170496e666f2e6c756200'
+        display: "SystemEN/mapInfo.lub"
+        type: 10
+    
+    $newTownInfo:
+        data: '53797374656d454e2f546f776e696e666f2e6c756200'
+        display: "SystemEN/Towninfo.lub"
+        type: 10
+    
+    $newRcmdQInfoList:
+        data: '53797374656d454e2f5265636f6d6d656e64656451756573747300'
+        display: "SystemEN/RecommendedQuests"
+        type: 10
+    
+    $newItemInfo:
+        data: '53797374656d454e2f6974656d696e666f2e6c756100'
+        display: "SystemEN/iteminfo.lua"
+        type: 10
+    
+    $expBarSpec:
+        data: '496e707574732f457870537065632e796d6c00'
+        display: "Inputs/ExpSpec.yml"
+        type: 10
+    
+patches:
+    - EnableWho
+    - EnableShowName
+    - MediumCamAngle
+    - UseOldLogin
+    - AlwaysAscii
+    - CallKoreaClientInfo
+    - DataFolderFirst
+    - PlainTextDesc
+    - LoadKrExtSettings
+    - HideBuildInfo
+    - FixArrowsCharset
+    - TranslateClient
+    - NoGGuard
+    - CustomItemInfoLub
+    - CustomAchieveLub
+    - CustomTownInfoLub
+    - CustomTipboxLub
+    - CustomMapInfoLub
+    - CustomOngQuestInfoLub
+    - CustomRcmdQuestInfoLub
+    - CustomspopupLub
+    - CustomQuestQualiLub
+    - GRFsFromIni
+    - EnableSysMenu
+    - No1and1Arg
+    - RestoreIcon
+    - NoNagle
+    - NoPassEncr
+    - OpenToServiceSelect
+    - GuildBrackets
+    - FixChatAt
+    - NoHourly
+    - NoHelpMsg
+    - FixSkillbarReset
+    - NoGravityAds
+    - NoGravityLogo
+    - FixLatestNCWin
+    - CustomBarLimits

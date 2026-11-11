@@ -4,6 +4,28 @@ Each version is tagged and has a [release](https://github.com/n0rthstar88/huffla
 with built tools. Every version passes the [tests](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml)
 on fresh Linux and Windows machines first.
 
+## v1.2.0
+
+**Leveling** (`content/leveling/`): a longer game for players who want one, without
+forcing it on anyone.
+
+- **Pick your pace**: at first login each character chooses normal or 15x XP in a popup.
+  The choice is locked once made; `@pace` shows it.
+- **Max level 500 / job 250** for the final class of each line, with no level penalty
+  above base level 275. New XP curves follow the official ones through level 209 (job
+  29), then rise so 275 → 500 takes about 40 hours at 15x.
+- **Stats up to 1,000**, with a flat cost of 40 points per stat from 130 up. Checked in
+  game: the 2025-07-16 client shows values above 255 correctly.
+- **Tougher MVPs** by tier (more HP and XP), and MVP coin drops of 30 / 60 / 100 by tier.
+- **Client XP bars** to 500/250 through the WARP `CustomBarLimits` patch (profile and
+  `ExpSpec.yml` included).
+- Ships as a small rAthena source patch (against rAthena `d4b8e7b`), generated import
+  tables, NPC scripts and a deploy script. Tests check the generated tables against
+  rAthena's official ones, downloaded fresh on each run.
+
+The server side is live. Some balance checks are still open (exact 15x XP rates, mixed
+parties, rebirth), so numbers may change in a later version.
+
 ## v1.1.0
 
 **HuffLabs Coin and the coin shop** (`content/coin-shop/`).

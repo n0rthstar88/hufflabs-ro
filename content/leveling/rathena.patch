@@ -1,0 +1,52 @@
+diff --git i/src/map/map.hpp w/src/map/map.hpp
+index d32f752..1ecd74a 100644
+--- i/src/map/map.hpp
++++ w/src/map/map.hpp
+@@ -75,7 +75,7 @@ void map_msg_reload(void);
+ #define NATURAL_HEAL_INTERVAL 500
+ #define MIN_FLOORITEM 2
+ #define MAX_FLOORITEM START_ACCOUNT_NUM
+-#define MAX_LEVEL 275
++#define MAX_LEVEL 500 // HuffLabs: was 275
+ #define MAX_DROP_PER_MAP 48
+ #define MAX_IGNORE_LIST 20 	// official is 14
+ #define MAX_VENDING 12
+diff --git i/src/map/pc.cpp w/src/map/pc.cpp
+index eceefa9..dfab7ef 100644
+--- i/src/map/pc.cpp
++++ w/src/map/pc.cpp
+@@ -8476,6 +8476,12 @@ void pc_gainexp(map_session_data *sd, block_list *src, t_exp base_exp, t_exp job
+ 	if (!(exp_flag&2))
+ 		pc_calcexp(sd, &base_exp, &job_exp, src);
+ 
++	// HuffLabs: characters on the Fast pace (HLRO_PACE == 15) get 15x base and job XP from every source
++	if (pc_readglobalreg(sd, add_str("HLRO_PACE")) == 15) {
++		base_exp = (base_exp > MAX_EXP / 15) ? MAX_EXP : base_exp * 15;
++		job_exp = (job_exp > MAX_EXP / 15) ? MAX_EXP : job_exp * 15;
++	}
++
+ 	nextb = pc_nextbaseexp(sd);
+ 	nextj = pc_nextjobexp(sd);
+ 
+@@ -8797,7 +8803,8 @@ uint32 PlayerStatPointDatabase::pc_gets_trait_point(uint16 level) const{
+ 
+ #ifdef RENEWAL_STAT
+ /// Renewal status point cost formula
+-#define PC_STATUS_POINT_COST(low) (((low) < 100) ? (2 + ((low) - 1) / 10) : (16 + 4 * (((low) - 100) / 5)))
++/// HuffLabs: from 130 on, every point costs the same as at 130 (40)
++#define PC_STATUS_POINT_COST(low) (((low) < 100) ? (2 + ((low) - 1) / 10) : (16 + 4 * ((std::min((low), 130) - 100) / 5)))
+ #else
+ /// Pre-Renewal status point cost formula
+ #define PC_STATUS_POINT_COST(low) (( 1 + ((low) + 9) / 10 ))
+@@ -13328,6 +13335,11 @@ uint16 pc_level_penalty_mod( map_session_data* sd, e_penalty_type type, std::sha
+ 		return 100;
+ 	}
+ 
++	// HuffLabs: no level penalty above base level 275
++	if( sd->status.base_level > 275 ){
++		return 100;
++	}
++
+ 	if ((type == PENALTY_DROP && map_getmapflag(sd->m, MF_NORENEWALDROPPENALTY)) || (type == PENALTY_EXP && map_getmapflag(sd->m, MF_NORENEWALEXPPENALTY))) {
+ 		return 100;
+ 	}

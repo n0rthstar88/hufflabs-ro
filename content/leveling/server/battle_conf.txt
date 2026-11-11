@@ -1,0 +1,11 @@
+// HuffLabs leveling (2026-11-10): normal stats cap at 1000 for every class.
+// Trait stats (max_trait_parameter) stay official.
+max_parameter: 1000
+max_trans_parameter: 1000
+max_third_parameter: 1000
+max_third_trans_parameter: 1000
+max_baby_parameter: 1000
+max_baby_third_parameter: 1000
+max_extended_parameter: 1000
+max_summoner_parameter: 1000
+max_fourth_parameter: 1000

@@ -1,0 +1,45 @@
+//===== HuffLabs RO =========================================
+//= Pace choice: Standard (1x) or Fast (15x), asked once per character and locked for good.
+//= HLRO_PACE (permanent char variable): 0 = not chosen yet (plays as 1x), 1 = Standard, 15 = Fast.
+//= The 15x itself is applied in the map server (content/leveling/rathena.patch, pc_gainexp).
+//= @pace shows the character's pace.
+//==========================================================
+
+-	script	HuffLabsPace	-1,{
+OnInit:
+	bindatcmd "pace", strnpcinfo(3) + "::OnPace", 0, 99;
+	end;
+
+OnPCLoginEvent:
+	if (HLRO_PACE != 0)
+		end;
+	while (1) {
+		mes "[Pace]";
+		mes "Choose your pace for this character. ^FF0000This can never be changed.^000000";
+		switch (select("Standard (normal XP)", "Fast (15x XP)", "Decide later")) {
+		case 1: .@pace = 1;  .@name$ = "Standard"; break;
+		case 2: .@pace = 15; .@name$ = "Fast";     break;
+		default:
+			mes "No problem. You'll be asked again at your next login; until then you get standard XP.";
+			close;
+		}
+		next;
+		mes "[Pace]";
+		mes "You chose " + .@name$ + ". It is permanent for this character. Are you sure?";
+		if (select("Yes, lock it in", "No, go back") == 1)
+			break;
+		next;
+	}
+	HLRO_PACE = .@pace;
+	dispbottom "Pace locked: " + .@name$ + ". Type @pace to check it anytime.";
+	close;
+
+OnPace:
+	if (HLRO_PACE == 15)
+		dispbottom "Your pace: Fast (15x).";
+	else if (HLRO_PACE == 1)
+		dispbottom "Your pace: Standard (1x).";
+	else
+		dispbottom "You haven't chosen a pace yet. You'll be asked at your next login; until then you get standard XP.";
+	end;
+}
