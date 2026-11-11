@@ -4,6 +4,20 @@ Each version is tagged and has a [release](https://github.com/n0rthstar88/huffla
 with built tools. Every version passes the [tests](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml)
 on fresh Linux and Windows machines first.
 
+## v1.1.0
+
+**HuffLabs Coin and the coin shop** (`content/coin-shop/`).
+
+- A new item, HuffLabs Coin, drops from monsters: a 0.2% chance at level 1 rising to 3%
+  at level 150 and up. Bosses always drop several, MVPs the most, shared with the party
+  on the same map. Monsters that give no base EXP never drop coins.
+- Two merchants in Prontera sell for coins: a **Costume Merchant** (45 official costume
+  headgears that weren't obtainable on the server) and a **Gear Merchant** (new stat
+  gear on official art).
+- Coins can be traded, so friends can pool them.
+- Ships as rAthena import files (`item_db.yml`, NPC scripts), the client item
+  descriptions, and a deploy script that is safe to run again.
+
 ## v1.0.0
 
 The first public version: everything a small group of friends needs to sign up, install

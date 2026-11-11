@@ -1,0 +1,60 @@
+//===== HuffLabs RO =========================================
+//= HuffLabs Coin drops
+//===== Description: =======================================
+//= Normal monsters: a chance from 0.2% (level 1) up to 3% (level 150+).
+//= Bosses that aren't MVPs: 3 coins every time.
+//= MVPs: 30 coins to the killer and to every party member on the same map.
+//= Monsters that give no base EXP (plants, summons) never drop coins.
+//==========================================================
+
+-	script	HuffLabsCoinDrops	-1,{
+OnInit:
+	.coin = 2600000;
+	.mvp_coins = 30;
+	.boss_coins = 3;
+	end;
+
+OnNPCKillEvent:
+	.@mode = getmonsterinfo(killedrid, MOB_MODE);
+	if (.@mode < 0 || getmonsterinfo(killedrid, MOB_BASEEXP) <= 0)
+		end;
+
+	if (.@mode & MD_MVP) {
+		.@party = getcharid(1);
+		if (!.@party) {
+			getitem .coin, .mvp_coins;
+			dispbottom "You found " + .mvp_coins + " HuffLabs Coins!";
+			end;
+		}
+		.@map$ = strcharinfo(3);
+		getpartymember .@party, 1;
+		getpartymember .@party, 2;
+		.@n = $@partymembercount;
+		copyarray .@cid[0], $@partymembercid[0], .@n;
+		copyarray .@aid[0], $@partymemberaid[0], .@n;
+		for (.@i = 0; .@i < .@n; .@i++) {
+			if (!isloggedin(.@aid[.@i], .@cid[.@i]))
+				continue;
+			if (strcharinfo(3, .@cid[.@i]) != .@map$)
+				continue;
+			getitem .coin, .mvp_coins, .@aid[.@i];
+			message rid2name(.@aid[.@i]), "Your party's MVP kill earned you " + .mvp_coins + " HuffLabs Coins!";
+		}
+		end;
+	}
+
+	if (.@mode & MD_STATUSIMMUNE) {
+		getitem .coin, .boss_coins;
+		dispbottom "You found " + .boss_coins + " HuffLabs Coins.";
+		end;
+	}
+
+	// Chance in 1/1000: level/5, between 2 (0.2%) and 30 (3%).
+	.@lv = getmonsterinfo(killedrid, MOB_LV);
+	.@permille = cap_value(.@lv / 5, 2, 30);
+	if (rand(1000) < .@permille) {
+		getitem .coin, 1;
+		dispbottom "You found a HuffLabs Coin.";
+	}
+	end;
+}

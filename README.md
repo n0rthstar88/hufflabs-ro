@@ -48,6 +48,7 @@ of the server's machine, an invite code, and nothing else.
 | `client/` | Release scripts: the first-install archive, publishing the installers, switching versions without a gap. |
 | `deploy/` | Container setup and deployment of the site. |
 | `tailscale/policy-snippet.hujson` | The policy grant that limits friends to the game server. |
+| `content/coin-shop/` | HuffLabs Coin: a coin that drops from monsters (more from bosses) and two Prontera merchants that sell costumes and gear for it. Server scripts, item entries, the client item descriptions and a deploy script. |
 
 ## Running your own
 
