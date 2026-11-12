@@ -3,7 +3,10 @@ package main
 import (
 	"image"
 	"image/color"
+	"strings"
 	"testing"
+
+	"golang.org/x/image/font"
 )
 
 func TestButtonsFollowView(t *testing.T) {
@@ -57,3 +60,22 @@ func TestRenderAllPhases(t *testing.T) {
 }
 
 func purple(c color.RGBA) bool { return c.B > 120 && c.R > 60 && c.G < c.R && c.G < c.B }
+
+func TestWrapFitsAndCaps(t *testing.T) {
+	long := strings.Repeat("antivirus blocked the game file again ", 20)
+	lines := wrap(bodyFace, long, barRect.Dx(), 3)
+	if len(lines) != 3 || !strings.HasSuffix(lines[2], "…") {
+		t.Fatalf("lines %q", lines)
+	}
+	for _, l := range lines {
+		if w := font.MeasureString(bodyFace, l).Round(); w > barRect.Dx() {
+			t.Errorf("line %q is %d px, max %d", l, w, barRect.Dx())
+		}
+	}
+	if got := wrap(bodyFace, "Press Retry.", barRect.Dx(), 3); len(got) != 1 || got[0] != "Press Retry." {
+		t.Errorf("short text %q", got)
+	}
+	if got := wrap(bodyFace, "", barRect.Dx(), 3); len(got) != 0 {
+		t.Errorf("empty text %q", got)
+	}
+}

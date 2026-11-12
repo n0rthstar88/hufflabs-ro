@@ -57,7 +57,9 @@ if [ "$SIZE" -ge $((4 * 1024 * 1024 * 1024 - 64 * 1024 * 1024)) ]; then
 	echo "note: $ZIP is $SIZE bytes, at or past the 4 GiB zip limit, so it uses Zip64"
 fi
 unzip -tq "$ZIP"
-if command -v bsdtar >/dev/null; then bsdtar -tf "$ZIP" >/dev/null; else echo "warning: bsdtar not installed, Windows tar not simulated" >&2; fi
+# Not a Windows check: Windows tar.exe fails on the Korean names (non-UTF-8 code page), so
+# the Windows installer unpacks with .NET ZipFile instead. This only checks bsdtar can read it.
+if command -v bsdtar >/dev/null; then bsdtar -tf "$ZIP" >/dev/null; fi
 [ -f build/launcher/HuffLabsRO-Launcher.exe ] || { echo "run launcher/build.sh first" >&2; exit 1; }
 cp build/launcher/HuffLabsRO-Launcher.exe dist/
 (cd dist && sha256sum "$(basename "$ZIP")" HuffLabsRO-Launcher.exe > SHA256SUMS && printf '%s\n' "$VERSION" > VERSION)

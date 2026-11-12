@@ -1,7 +1,7 @@
 ; HuffLabs RO installer for Windows 10/11.
 ; Build: makensis -DSITE_URL=https://<your site> -DVERSION=<YYYY.MM.DD> installer/windows/hufflabs-ro.nsi
 ; Carries only the Microsoft runtimes; downloads the ~4 GB game from the HuffLabs
-; site during install (needs Tailscale connected), using Windows' own curl.exe/tar.exe.
+; site during install (needs Tailscale connected), using Windows' own curl.exe and PowerShell (.NET ZipFile) to unpack.
 
 Unicode true
 RequestExecutionLevel admin
@@ -49,7 +49,7 @@ ShowInstDetails show
 !insertmacro MUI_UNPAGE_INSTFILES
 !insertmacro MUI_LANGUAGE "English"
 
-Var Tools   ; folder holding Windows' 64-bit curl.exe/tar.exe (Sysnative from a 32-bit installer)
+Var Tools   ; folder holding Windows' 64-bit curl.exe/powershell (Sysnative from a 32-bit installer)
 Var Ver
 Var Want
 Var Zip
@@ -188,14 +188,19 @@ Section "HuffLabs RO" SecMain
     Abort "The download was damaged."
   ${EndIf}
 
-  DetailPrint "Unpacking..."
+  DetailPrint "Unpacking (a few minutes)..."
   Push "$INSTDIR\.unpack"
   Call HlroRmTree
   CreateDirectory "$INSTDIR\.unpack"
-  nsExec::ExecToLog '"$Tools\tar.exe" -xf "$Zip" -C "$INSTDIR\.unpack"'
+  ; Not Windows' tar.exe: it converts each name to the PC's ANSI code page, so on any
+  ; non-Korean Windows the ~1,000 Korean file names come out "unreadable" and it exits 1.
+  ; .NET's ZipFile reads the zip's UTF-8 names and Zip64 as they are. Paths go through
+  ; environment variables like the checksum step above.
+  System::Call 'Kernel32::SetEnvironmentVariable(t "HLRO_UNPACK", t "$INSTDIR\.unpack")i'
+  nsExec::ExecToLog '"$Tools\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -NonInteractive -Command "try { Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::ExtractToDirectory($$env:HLRO_ZIP, $$env:HLRO_UNPACK); exit 0 } catch { Write-Output $$_.Exception.Message; exit 1 }"'
   Pop $0
   ${If} $0 != 0
-    MessageBox MB_ICONSTOP "Unpacking failed (tar exit code $0). Run the installer again." /SD IDOK
+    MessageBox MB_ICONSTOP "Unpacking failed (code $0). Run the installer again." /SD IDOK
     Abort
   ${EndIf}
   ; Move the HuffLabsRO\ folder's contents into the install folder; savedata\ isn't in
