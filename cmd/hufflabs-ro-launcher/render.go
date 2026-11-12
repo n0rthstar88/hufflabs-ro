@@ -9,6 +9,7 @@ import (
 	_ "image/jpeg"
 	_ "image/png"
 	"math"
+	"strings"
 
 	"golang.org/x/image/font"
 	"golang.org/x/image/font/gofont/gobold"
@@ -136,7 +137,11 @@ func render(dst *image.RGBA, v View, ui uiState) {
 	roundRect(dst, panelRect.Inset(1), 9, glass)
 
 	text(dst, titleFace, ink, image.Pt(64, 222), v.Title)
-	text(dst, bodyFace, muted, image.Pt(64, 246), v.Detail)
+	// Up to 3 lines fit above the buttons (failure screens draw no bar).
+	lh := (bodyFace.Metrics().Height + bodyFace.Metrics().Height/4).Round()
+	for i, line := range wrap(bodyFace, v.Detail, barRect.Dx(), 3) {
+		text(dst, bodyFace, muted, image.Pt(64, 246+i*lh), line)
+	}
 
 	if !(v.CanRetry || v.CanPlay) || v.Fraction >= 0 {
 		roundRect(dst, barRect, 6, color.NRGBA{fieldEdg.R, fieldEdg.G, fieldEdg.B, 255})
@@ -233,6 +238,37 @@ func gradient(dst *image.RGBA, r image.Rectangle, top, bot color.RGBA) {
 func text(dst *image.RGBA, f font.Face, c color.Color, at image.Point, s string) {
 	d := font.Drawer{Dst: dst, Src: image.NewUniform(c), Face: f, Dot: fixed.P(at.X, at.Y)}
 	d.DrawString(s)
+}
+
+// wrap breaks s into lines no wider than maxW, at most maxLines; the last one
+// is cut with "…" if the text doesn't fit.
+func wrap(f font.Face, s string, maxW, maxLines int) []string {
+	words := strings.Fields(s)
+	var lines []string
+	cur := ""
+	for _, w := range words {
+		try := w
+		if cur != "" {
+			try = cur + " " + w
+		}
+		if cur == "" || font.MeasureString(f, try).Round() <= maxW {
+			cur = try
+			continue
+		}
+		lines = append(lines, cur)
+		cur = w
+	}
+	if cur != "" {
+		lines = append(lines, cur)
+	}
+	if len(lines) > maxLines {
+		last := lines[maxLines-1]
+		for last != "" && font.MeasureString(f, last+"…").Round() > maxW {
+			last = strings.TrimRightFunc(last[:len(last)-1], func(r rune) bool { return r == ' ' })
+		}
+		lines = append(lines[:maxLines-1], last+"…")
+	}
+	return lines
 }
 
 func centered(dst *image.RGBA, f font.Face, c color.Color, r image.Rectangle, s string) {
