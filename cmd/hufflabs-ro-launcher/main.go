@@ -90,7 +90,10 @@ func main() {
 		},
 	}
 	var game gameProcess
+	stopRelay := func() {}
 	deps.StartGame = func() error {
+		stopRelay()
+		stopRelay = relayWeb(dir)
 		cmd, err := startGame(dir)
 		game = cmd
 		return err
@@ -116,6 +119,25 @@ func main() {
 			release()
 		}
 	}
+	stopRelay()
+}
+
+// relayWeb forwards 127.0.0.1:8888 to the server's web service while the game
+// runs (see relay.go). Failing is not fatal: the game still runs, the client
+// just can't load its account settings.
+func relayWeb(dir string) (stop func()) {
+	target, err := webTarget(dir)
+	if err != nil {
+		slog.Warn("web relay", "err", err)
+		return func() {}
+	}
+	stop, _, err = startRelay(webListen, target)
+	if err != nil {
+		slog.Warn("web relay listen", "err", err)
+		return func() {}
+	}
+	slog.Info("web relay", "listen", webListen, "target", target)
+	return stop
 }
 
 // applyWithWatchdog cancels the update if no bytes move for stallTimeout, so a

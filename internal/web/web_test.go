@@ -311,7 +311,7 @@ func TestMessageContainsCodeOnce(t *testing.T) {
 	_, body, _ := e.get(t, "/admin/friends/1/message")
 	for _, want := range []string{"You're invited to HuffLabs RO!", "1. Install Tailscale: https://tailscale.com/download",
 		"2. Accept access to the game server: " + shareURL, "3. Open the site (needs Tailscale connected): https://ro.example.ts.net",
-		"(works once)"} {
+		"Setup guide: https://ro.example.ts.net/setup", "(works once)"} {
 		if !strings.Contains(body, want) {
 			t.Errorf("message missing %q", want)
 		}
@@ -414,6 +414,28 @@ func TestAddFriendDuplicateLinkFromStore(t *testing.T) {
 	_, body := e.post(t, "/admin/friends", url.Values{"csrf": {tok}, "name": {"Bob"}, "share_url": {shareURL}}, "")
 	if !strings.Contains(body, "That share link is already used") {
 		t.Errorf("body %q", body)
+	}
+}
+
+func TestSetupPage(t *testing.T) {
+	e := newEnv(t)
+	code, body, _ := e.get(t, "/setup")
+	if code != 200 {
+		t.Fatalf("status %d", code)
+	}
+	for _, want := range []string{"Setup guide", "https://tailscale.com/download", "/download/HuffLabsRO-Setup.exe",
+		"/download/hufflabs-ro-install.sh", "More info", "Run anyway", "@menu", "data account settings", `href="/"`} {
+		if !strings.Contains(body, want) {
+			t.Errorf("setup page missing %q", want)
+		}
+	}
+}
+
+func TestLandingLinksSetup(t *testing.T) {
+	e := newEnv(t)
+	_, body, _ := e.get(t, "/")
+	if !strings.Contains(body, `href="/setup"`) {
+		t.Error("landing page has no link to the setup guide")
 	}
 }
 

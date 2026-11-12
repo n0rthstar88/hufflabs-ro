@@ -61,6 +61,11 @@ inputs:
         display: "Inputs/ExpSpec.yml"
         type: 10
     
+    $customButtons:
+        data: '686c6d656e75203d2053686f7000'
+        display: "hlmenu = Shop"
+        type: 10
+    
 patches:
     - EnableWho
     - EnableShowName
@@ -100,3 +105,4 @@ patches:
     - NoGravityLogo
     - FixLatestNCWin
     - CustomBarLimits
+    - CustomButtons

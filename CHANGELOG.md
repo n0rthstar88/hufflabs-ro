@@ -4,6 +4,31 @@ Each version is tagged and has a [release](https://github.com/n0rthstar88/huffla
 with built tools. Every version passes the [tests](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml)
 on fresh Linux and Windows machines first.
 
+## v1.2.2
+
+**Account settings and a command menu.**
+
+- **The launcher relays the game's web service.** The client loads account settings
+  (hotkeys, window layout) and guild emblems from `127.0.0.1:8888` on the player's own
+  PC, so with only the game ports open it showed "There was an error when loading the
+  data account settings". While the game runs, the launcher now forwards that port to
+  rAthena's `web-server` next to the game server (the address comes from the client's own
+  `data/sclientinfo.xml`) and stops when the game closes. A busy port or a missing
+  address is logged and the game starts anyway. Friends need `tcp:8888` to the game
+  server in the Tailscale policy (`tailscale/policy-snippet.hujson`).
+- **`@menu`** (`content/leveling/server/npc/menu.txt`): every command a normal player can
+  use, explained; server commands can be run from the menu (`@go` asks for a town, `@warp`
+  for a map). The client's Cash Shop button and a new HUD button (WARP `CustomButtons`)
+  open it, through a small hook in `rathena.patch`, since the server has no cash shop.
+- **Healers in every town**: rAthena's stock healer plus one for Lasagna.
+- **Setup guide page** at `/setup` on the sign-up site, linked from the sign-up page and
+  from the invite message.
+- **Leveling:** a formula check at 1,000 stats (`content/leveling/stats-1000.md`):
+  nothing overflows; attack speed, cast time and max HP/SP stop at their caps. The
+  deploy script gives every patched source file back to the `rathena` user.
+
+Launcher version 1.0.4.
+
 ## v1.2.1
 
 **Windows fixes**, found on the first real Windows installs.

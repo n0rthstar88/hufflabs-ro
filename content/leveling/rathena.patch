@@ -1,3 +1,20 @@
+diff --git i/src/map/clif.cpp w/src/map/clif.cpp
+index 8306054..24a2a8c 100644
+--- i/src/map/clif.cpp
++++ w/src/map/clif.cpp
+@@ -17268,6 +17268,12 @@ void clif_parse_cashshop_open_request( int32 fd, map_session_data* sd ){
+ #if PACKETVER_MAIN_NUM >= 20101123 || PACKETVER_RE_NUM >= 20120328 || defined(PACKETVER_ZERO)
+ 	nullpo_retv( sd );
+ 
++	// HuffLabs: there is no cash shop here, so its button (and the HUD Menu button that
++	// borrows it) opens the @menu command menu instead. Skipped while another NPC is talking.
++	if( sd->npc_id == 0 )
++		npc_event( sd, "HuffLabsMenu::OnMenu", 0 );
++	return;
++
+ 	int32 tab = 0;
+ 
+ #if PACKETVER >= 20191224
 diff --git i/src/map/map.hpp w/src/map/map.hpp
 index d32f752..1ecd74a 100644
 --- i/src/map/map.hpp

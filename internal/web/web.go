@@ -81,12 +81,13 @@ type server struct {
 func New(cfg Config, st Store, inv Invites, lim *limit.Limiter) http.Handler {
 	s := &server{cfg: cfg, st: st, inv: inv, lim: lim, pending: map[int64]string{}, tmpl: map[string]*template.Template{}}
 	// Each page is parsed with the shared layout on its own, so per-page blocks don't collide.
-	for _, page := range []string{"landing.html", "signup_ok.html", "admin_login.html", "admin.html", "message.html"} {
+	for _, page := range []string{"landing.html", "signup_ok.html", "admin_login.html", "admin.html", "message.html", "setup.html"} {
 		s.tmpl[page] = template.Must(template.ParseFS(templateFS, "templates/layout.html", "templates/"+page))
 	}
 	static, _ := fs.Sub(staticFS, "static")
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /{$}", s.landing)
+	mux.HandleFunc("GET /setup", s.setup)
 	mux.HandleFunc("POST /signup", s.signup)
 	mux.HandleFunc("GET /admin/login", s.adminLoginPage)
 	mux.HandleFunc("POST /admin/login", s.adminLogin)
@@ -147,6 +148,10 @@ func md5hex(s string) string { h := md5.Sum([]byte(s)); return hex.EncodeToStrin
 
 func (s *server) landing(w http.ResponseWriter, r *http.Request) {
 	s.render(w, http.StatusOK, "landing.html", nil)
+}
+
+func (s *server) setup(w http.ResponseWriter, r *http.Request) {
+	s.render(w, http.StatusOK, "setup.html", nil)
 }
 
 func (s *server) signup(w http.ResponseWriter, r *http.Request) {

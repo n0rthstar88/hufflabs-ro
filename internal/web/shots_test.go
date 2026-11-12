@@ -39,6 +39,8 @@ func TestWriteScreenshotPages(t *testing.T) {
 	}
 	_, landing, _ := e.get(t, "/")
 	save("signup.html", landing)
+	_, setup, _ := e.get(t, "/setup")
+	save("setup.html", setup)
 	tok := e.login(t)
 	_, admin, _ := e.get(t, "/admin")
 	save("admin.html", admin)
