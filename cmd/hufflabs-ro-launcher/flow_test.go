@@ -4,6 +4,9 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"io/fs"
+	"os"
+	"strings"
 	"sync"
 	"testing"
 	"time"
@@ -22,6 +25,8 @@ type fake struct {
 	applyErrs []error
 	lockErr   error
 	started   int
+	startErrs []error // consumed one per StartGame
+	plans     int
 	applied   []update.Plan
 	progress  []update.Progress
 }
@@ -53,6 +58,9 @@ func (f *fake) deps() Deps {
 		LoadState: func() (update.State, error) { return f.st, nil },
 		MakePlan: func(st update.State, m manifest.Manifest, progress func(int, int)) (update.Plan, update.State, error) {
 			progress(1, 1)
+			f.mu.Lock()
+			f.plans++
+			f.mu.Unlock()
 			return f.plan, st, nil
 		},
 		Apply: func(ctx context.Context, p update.Plan, st update.State, m manifest.Manifest, report func(update.Progress)) (update.State, error) {
@@ -70,7 +78,17 @@ func (f *fake) deps() Deps {
 			st.Serial = m.Serial
 			return st, err
 		},
-		StartGame: func() error { f.mu.Lock(); f.started++; f.mu.Unlock(); return nil },
+		StartGame: func() error {
+			f.mu.Lock()
+			defer f.mu.Unlock()
+			if len(f.startErrs) > 0 {
+				err := f.startErrs[0]
+				f.startErrs = f.startErrs[1:]
+				return err
+			}
+			f.started++
+			return nil
+		},
 	}
 }
 
@@ -266,5 +284,35 @@ func TestFlowRefusesOutsideInstallFolder(t *testing.T) {
 	ch <- Quit
 	if r := <-done; r.Started || fetched || locked {
 		t.Errorf("result %+v fetched %v locked %v", r, fetched, locked)
+	}
+}
+
+// A failed start shows why, and Retry checks the files again (so an exe that
+// antivirus deleted gets downloaded again) before starting.
+func TestFlowStartFailureRetryRechecksFiles(t *testing.T) {
+	missing := &os.PathError{Op: "stat", Path: gameExe, Err: fs.ErrNotExist}
+	f := &fake{m: manifest.Manifest{Serial: 3}, st: update.State{Serial: 3}, startErrs: []error{missing}}
+	r := f.run(t, Retry)
+	if !r.Started || f.started != 1 {
+		t.Errorf("result %+v, started %d", r, f.started)
+	}
+	if f.plans != 2 {
+		t.Errorf("files checked %d times, want 2", f.plans)
+	}
+	var failed View
+	for _, v := range f.views {
+		if v.Phase == Failed {
+			failed = v
+		}
+	}
+	if failed.Title != "Couldn't start the game" || !strings.Contains(failed.Detail, "is missing") || !failed.CanRetry {
+		t.Errorf("failure view %+v", failed)
+	}
+}
+
+func TestFlowStartFailureQuit(t *testing.T) {
+	f := &fake{m: manifest.Manifest{Serial: 3}, st: update.State{Serial: 3}, startErrs: []error{errors.New("boom")}}
+	if r := f.run(t, Quit); r.Started || f.plans != 1 {
+		t.Errorf("result %+v, plans %d", r, f.plans)
 	}
 }

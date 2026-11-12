@@ -88,32 +88,38 @@ func Run(ctx context.Context, d Deps, show func(View), choices <-chan Choice) Re
 			return Quit
 		}
 	}
-	start := func() Result {
-		for {
-			show(View{Phase: Starting, Title: "Starting HuffLabs RO…", Fraction: 1})
-			err := d.StartGame()
-			if err == nil {
-				return Result{Started: true}
-			}
-			slog.Error("start game", "err", err)
-			if wait(View{Phase: Failed, Title: "Couldn't start the game", Detail: "Press Retry to try again.", Fraction: -1, CanRetry: true}) != Retry {
-				return Result{}
-			}
+	// start returns true when the player pressed Retry after a failed start:
+	// the caller then checks the files again, so a game exe that antivirus
+	// removed is downloaded again instead of failing the same way forever.
+	start := func() (Result, bool) {
+		show(View{Phase: Starting, Title: "Starting HuffLabs RO…", Fraction: 1})
+		err := d.StartGame()
+		if err == nil {
+			return Result{Started: true}, false
 		}
+		slog.Error("start game", "err", err)
+		if wait(View{Phase: Failed, Title: "Couldn't start the game", Detail: startDetail(err), Fraction: -1, CanRetry: true}) != Retry {
+			return Result{}, false
+		}
+		return Result{}, true
 	}
 	decide := func(v View) (Result, bool) { // true: go round again
 		switch wait(v) {
 		case Retry:
 			return Result{}, true
 		case PlayAnyway:
-			return start(), false
+			return start()
 		}
 		return Result{}, false
 	}
 
 	if !d.Configured {
-		r, _ := decide(View{Phase: Failed, Title: "This launcher was built without a server address.", Detail: "You can still play, but it can't update.", Fraction: -1, CanPlay: true})
-		return r
+		for {
+			r, again := decide(View{Phase: Failed, Title: "This launcher was built without a server address.", Detail: "You can still play, but it can't update.", Fraction: -1, CanPlay: true})
+			if !again {
+				return r
+			}
+		}
 	}
 	for {
 		show(View{Phase: Checking, Title: "Checking for updates…", Fraction: -1})
@@ -150,7 +156,10 @@ func Run(ctx context.Context, d Deps, show func(View), choices <-chan Choice) Re
 			continue
 		}
 		if len(p.Download) == 0 && len(p.Delete) == 0 && st.Serial == m.Serial {
-			return start()
+			if r, again := start(); !again {
+				return r
+			}
+			continue
 		}
 		for _, e := range p.Download {
 			if d.SelfRel != "" && strings.EqualFold(e.Path, d.SelfRel) {
@@ -182,7 +191,9 @@ func Run(ctx context.Context, d Deps, show func(View), choices <-chan Choice) Re
 		if p.Self != "" {
 			return Result{Reexec: true}
 		}
-		return start()
+		if r, again := start(); !again {
+			return r
+		}
 	}
 }
 
