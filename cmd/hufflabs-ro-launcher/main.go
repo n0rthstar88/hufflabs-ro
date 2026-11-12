@@ -89,7 +89,7 @@ func main() {
 			return applyWithWatchdog(ctx, client, site, dir, p, st, m, report)
 		},
 	}
-	var game *exec.Cmd
+	var game gameProcess
 	deps.StartGame = func() error {
 		cmd, err := startGame(dir)
 		game = cmd

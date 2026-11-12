@@ -16,6 +16,8 @@ func TestStartDetailWindowsCodes(t *testing.T) {
 		1260: "Smart App Control",
 		4551: "Smart App Control",
 		5:    "wouldn't let " + gameExe + " run",
+		1223: "answered No. Press Retry and choose Yes",
+		740:  "needs admin rights to run. Press Retry",
 	} {
 		err := &os.SyscallError{Syscall: "CreateProcess", Err: code}
 		if got := startDetail(err); !strings.Contains(got, want) {
