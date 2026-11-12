@@ -36,6 +36,14 @@ of the server's machine, an invite code, and nothing else.
 |---|---|
 | ![Admin page](docs/screenshots/admin.png) | ![Invite message](docs/screenshots/invite-message.png) |
 
+## In game
+
+![The themed login screen](docs/screenshots/game-login.jpg)
+
+| Fast pace: 15x XP from a Poring (Base 2,250 / Job 600) | Level 500 Dragon Knight with every stat at 1,000 |
+|---|---|
+| ![A Novice on the Fast pace after killing a Poring](docs/screenshots/game-fast-pace.jpg) | ![Status window with stats at 1,000, ASPD 193](docs/screenshots/game-stats-1000.jpg) |
+
 ## What's in here
 
 | Path | What it is |
@@ -74,6 +82,17 @@ The store tests need throwaway `ptest_*` databases; see `deploy/test-store-remot
 On GitHub every push runs all of these on fresh Linux and Windows machines
 (`.github/workflows/ci.yml`), with a throwaway MariaDB for the store tests. What
 changed in each version: [CHANGELOG.md](CHANGELOG.md).
+
+## Credits
+
+- **[rAthena](https://github.com/rathena/rathena)** is the game server this is all built
+  around: the login, char, map and web servers, the database it creates accounts in, and
+  the stock scripts some of this reuses (the town healers). Thanks to the rAthena team
+  and contributors. rAthena is GPL-3.0; `content/leveling/rathena.patch` is a patch to
+  its source and is offered under the same licence.
+- **[WARP](https://github.com/Neo-Mind/WARP)** patches the game client (XP bars past
+  level 275, the HUD menu button and more); the profiles are in `content/leveling/client/`.
+- **[Tailscale](https://tailscale.com)** keeps the server off the public internet.
 
 ## License
 
