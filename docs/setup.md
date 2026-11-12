@@ -101,6 +101,12 @@ on its next start.
 
 - The client spins with no window under Wine/Proton until the `Gravity Soft\RenewSetup`
   registry key exists; the installers write it.
+- The 2025-07-16 client's `libcurl.dll` needs `MSVCR110.dll` (Visual C++ 2012, 32-bit).
+  Wine/Proton supply it by themselves, but a fresh Windows doesn't have it, and the client
+  then crashes at startup in Gravity's error box (`0xc0000005`). Put Microsoft's 32-bit
+  `msvcr110.dll` in your client folder (it's in `vcredist_x86.exe` for Visual C++ 2012)
+  and publish; the launcher delivers it to everyone. Setup's bundled runtimes cover the
+  rest (Visual C++ 2015-2022 and DirectX 9).
 - Theme files go loose under `data/texture/À¯ÀúÀÎÅÍÆäÀÌ½º/` (the Korean folder name as
   the English-locale client asks for it). TGAs must be stored bottom-up.
 - `rathena.target` doesn't stop or start the login and char servers; restart the three

@@ -4,6 +4,27 @@ Each version is tagged and has a [release](https://github.com/n0rthstar88/huffla
 with built tools. Every version passes the [tests](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml)
 on fresh Linux and Windows machines first.
 
+## v1.2.1
+
+**Windows fixes**, found on the first real Windows installs.
+
+- **Setup unpacks with .NET's ZipFile instead of `tar.exe`.** Windows' `tar.exe` reads
+  file names in the local code page, so on non-Korean Windows the client's Korean file
+  names came back unreadable and setup stopped.
+- **The launcher can start the game on Windows.** The client's manifest asks for admin
+  rights, and the launcher used to start it in a way that can't show the Windows admin
+  prompt, so every start failed with "requires elevation". It now goes through
+  `ShellExecuteEx`, which shows the prompt (Wine/Proton never enforced this, so it only
+  showed up on Windows).
+- **Start failures say why**: game file missing, blocked by antivirus, blocked by Smart
+  App Control or a policy, the admin prompt answered No, or Windows' own message. Retry
+  now checks the files again first, so a game file that antivirus removed is downloaded
+  again. Longer messages wrap onto up to three lines.
+- **Docs**: the client's `libcurl.dll` needs `MSVCR110.dll` (Visual C++ 2012), which a
+  fresh Windows doesn't have and Wine supplies by itself; see the setup guide's gotchas.
+
+Launcher version 1.0.3.
+
 ## v1.2.0
 
 **Leveling** (`content/leveling/`): a longer game for players who want one, without
