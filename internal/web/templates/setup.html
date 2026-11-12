@@ -1,0 +1,74 @@
+{{define "title"}}Setup guide · HuffLabs RO{{end}}
+{{template "head" .}}
+<main class="stage wide">
+  <section class="glass guide">
+    <h1>Setup guide</h1>
+    <p class="hint">Everything you need to go from your invite to playing. You'll need the invite message you were sent: it has your Tailscale share link and your invite code.</p>
+
+    <div class="divider"></div>
+
+    <h2>1 · Connect to the server</h2>
+    <p>The game server is private. You reach it through Tailscale, a free app that stays in the background.</p>
+    <ol>
+      <li>Install Tailscale from <a href="https://tailscale.com/download">tailscale.com/download</a> and sign in with any account (Google, Microsoft, GitHub…).</li>
+      <li>Open the <b>share link</b> from your invite message and accept it.</li>
+      <li>Keep Tailscale <b>connected</b> whenever you play. On Windows it's the icon near the clock.</li>
+    </ol>
+    <p class="hint">If this page opened, you're already connected.</p>
+
+    <div class="divider"></div>
+
+    <h2>2 · Install the game</h2>
+    <h3>Windows</h3>
+    <ol>
+      <li><a href="/download/HuffLabsRO-Setup.exe">Download HuffLabsRO-Setup.exe</a> and run it.</li>
+      <li>If Windows says “Windows protected your PC”, click <b>More info</b>, then <b>Run anyway</b>. Click <b>Yes</b> when it asks for permission.</li>
+      <li>Keep the suggested folder (<code>C:\Games\HuffLabsRO</code>). The game downloads once, about 4 GB. If it stops, run the setup again and it carries on where it left off.</li>
+      <li>When it finishes there's a <b>HuffLabs RO</b> shortcut on your desktop and in the Start menu.</li>
+    </ol>
+    <h3>Linux</h3>
+    <ol>
+      <li>Install <code>umu-launcher</code> from your distro's packages.</li>
+      <li><a href="/download/hufflabs-ro-install.sh">Download hufflabs-ro-install.sh</a>, then run <code>bash ~/Downloads/hufflabs-ro-install.sh</code> in a terminal.</li>
+      <li>Start <b>HuffLabs RO</b> from your app launcher.</li>
+    </ol>
+
+    <div class="divider"></div>
+
+    <h2>3 · Create your account</h2>
+    <p>On the <a href="/">main page</a>, fill in <b>Create your account</b> with the invite code from your message. The code works once.</p>
+    <ul>
+      <li>Username: 4–23 letters, numbers or <code>_</code>.</li>
+      <li>Password: 8–23 characters.</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h2>4 · Play</h2>
+    <ol>
+      <li>Open <b>HuffLabs RO</b>. The launcher checks for updates, then starts the game. The very first start takes about a minute.</li>
+      <li>Log in with the username and password you just made.</li>
+      <li>Your first character asks you to pick a pace: <b>Standard</b> or <b>Fast (15x XP)</b>. It's permanent for that character, so pick “Decide later” if you're not sure.</li>
+    </ol>
+    <h3>Good to know in game</h3>
+    <ul>
+      <li>Type <code>@menu</code>, or click the <b>@</b> button in the row under your HP/SP bars, for every command. You can use them straight from the menu, for example to jump to any town.</li>
+      <li>Every town has a free <b>Healer</b> and a <b>Warper</b>.</li>
+      <li>Monsters drop <b>HuffLabs Coins</b>. Spend them at the coin shop in Prontera.</li>
+      <li>Updates install themselves: just open the game the usual way.</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h2>If something goes wrong</h2>
+    <ul>
+      <li><b>Can't connect or log in:</b> check Tailscale is connected and that you accepted the share link. Then try again.</li>
+      <li><b>“There was an error when loading the data account settings”:</b> harmless. Click OK and carry on.</li>
+      <li><b>The setup or launcher is blocked by your antivirus:</b> allow it. The files come from this site only.</li>
+      <li><b>Anything else:</b> send a screenshot to whoever invited you.</li>
+    </ul>
+
+    <p class="center"><a class="btn-ghost small" href="/">← Back to the main page</a></p>
+  </section>
+</main>
+{{template "foot" .}}

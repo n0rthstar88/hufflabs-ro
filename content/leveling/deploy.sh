@@ -19,7 +19,7 @@ stamp=$(date +%Y%m%d-%H%M%S)
 put /tmp/hlro-leveling.patch rathena.patch
 run "set -e; cd $RA; G='git -c safe.directory=*'
 if \$G apply -R --check /tmp/hlro-leveling.patch 2>/dev/null; then echo 'patch: already applied'
-else \$G apply --check /tmp/hlro-leveling.patch; \$G apply /tmp/hlro-leveling.patch; chown rathena:rathena src/map/map.hpp src/map/pc.cpp; echo 'patch: applied'; fi
+else \$G apply --check /tmp/hlro-leveling.patch; \$G apply /tmp/hlro-leveling.patch; \$G apply --numstat /tmp/hlro-leveling.patch | cut -f3 | xargs chown rathena:rathena; echo 'patch: applied'; fi
 rm -f /tmp/hlro-leveling.patch"
 
 # 2. db/import files
@@ -43,6 +43,8 @@ if compgen -G 'server/npc/*.txt' >/dev/null; then
     echo "npc/custom/hufflabs/$b: installed"
   done
 fi
+# stock rAthena healer in every town (healer_extra.txt adds Lasagna and needs it loaded first)
+run "cd $RA; grep -qx 'npc: npc/custom/healer.txt' conf/import/map_conf.txt || sed -i '\\|^npc: npc/custom/hufflabs/healer_extra.txt|i npc: npc/custom/healer.txt' conf/import/map_conf.txt; grep -qx 'npc: npc/custom/healer.txt' conf/import/map_conf.txt || echo 'npc: npc/custom/healer.txt' >> conf/import/map_conf.txt"
 
 # 4. battle config block (between the HuffLabs leveling markers, replaced each time)
 put /tmp/hlro-battle.txt server/battle_conf.txt

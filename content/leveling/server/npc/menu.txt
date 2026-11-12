@@ -1,0 +1,189 @@
+//===== HuffLabs RO =========================================
+//= @menu: a menu of every command a normal player can use.
+//= Server commands (@): picking one explains it, then "Use it now" runs it
+//=   (@go asks for the town, @warp asks for the map name).
+//= Client commands (/): explained only; a script can't type them for the player.
+//= Keep the @ list in step with group 0 in conf/import/groups.yml and any bindatcmd.
+//==========================================================
+
+-	script	HuffLabsMenu	-1,{
+OnInit:
+	bindatcmd "menu", strnpcinfo(3) + "::OnMenu", 0, 99;
+	// @go town numbers (src/map/atcommand.cpp, ACMD_FUNC(go)); 16 = Prison is left out.
+	setarray .towns$, "Prontera", "Morroc", "Geffen", "Payon", "Alberta", "Izlude", "Al De Baran",
+		"Lutie", "Comodo", "Yuno", "Amatsu", "Gonryun", "Umbala", "Niflheim", "Louyang",
+		"Training Grounds", "", "Jawaii", "Ayothaya", "Einbroch", "Lighthalzen", "Einbech",
+		"Hugel", "Rachel", "Veins", "Moscovia", "Midgard Camp", "Manuk", "Splendide",
+		"Brasilis", "El Dicastes", "Mora", "Dewata", "Malangdo Island", "Malaya Port",
+		"Eclage", "Lasagna";
+	end;
+
+OnMenu:
+	while (1) {
+		mes "[Command Menu]";
+		mes "Every command you can use on HuffLabs RO.";
+		mes "Type ^0000FF@menu^000000 anytime to open this again.";
+		switch (select("Server commands (@)", "Client commands (/)", "Close")) {
+		case 1: callsub S_Server; break;
+		case 2: callsub S_Client; break;
+		default: close;
+		}
+	}
+
+S_Server:
+	while (1) {
+		clear;
+		mes "[Server Commands]";
+		mes "Type these in the chat box. Pick one to learn more or use it.";
+		switch (select("@go - jump to a town", "@warp - jump to any map", "@pace - check your XP pace",
+			"@resurrect - revive with a Token", "@changedress - take off an outfit", "Back")) {
+		case 1:
+			clear;
+			mes "[@go]";
+			mes "Teleports you to a town.";
+			mes "Type ^0000FF@go <town>^000000, for example";
+			mes "^0000FF@go prontera^000000 or ^0000FF@go 0^000000.";
+			mes "Type ^0000FF@go^000000 alone to see the town numbers.";
+			mes "Some maps don't allow it (WoE, battlegrounds).";
+			if (select("Use it now", "Back") == 2) break;
+			clear;
+			mes "[@go]";
+			mes "Where to?";
+			.@menu$ = "";
+			for (.@i = 0; .@i < getarraysize(.towns$); .@i++)
+				.@menu$ += .towns$[.@i] + ":"; // empty entries are hidden by select
+			.@menu$ += "Cancel";
+			.@pick = select(.@menu$) - 1;
+			if (.@pick >= getarraysize(.towns$)) break;
+			close2;
+			atcommand "@go " + .@pick;
+			end;
+		case 2:
+			clear;
+			mes "[@warp]";
+			mes "Teleports you to any map by its map name.";
+			mes "Type ^0000FF@warp <map> [x y]^000000, for example";
+			mes "^0000FF@warp prt_fild08^000000 or ^0000FF@warp payon 160 230^000000.";
+			mes "Map names show with ^0000FF/where^000000.";
+			mes "Jail, GM rooms and some event maps refuse it.";
+			if (select("Use it now", "Back") == 2) break;
+			clear;
+			mes "[@warp]";
+			mes "Type the map name (for example ^0000FFpay_dun00^000000).";
+			input .@map$;
+			if (getmapusers(.@map$) < 0) {
+				mes "There's no map called \"" + .@map$ + "\".";
+				next;
+				break;
+			}
+			close2;
+			atcommand "@warp " + .@map$;
+			end;
+		case 3:
+			clear;
+			mes "[@pace]";
+			mes "Shows this character's XP pace:";
+			mes "Standard (1x) or Fast (15x).";
+			mes "You choose it once, at first login, and it is locked for good.";
+			if (select("Use it now", "Back") == 2) break;
+			close2;
+			atcommand "@pace";
+			end;
+		case 4:
+			clear;
+			mes "[@resurrect]";
+			mes "While you're dead, revives you on the spot with full HP and SP.";
+			mes "It uses up one ^0000FFToken of Siegfried^000000 from your inventory.";
+			mes "Without one it does nothing.";
+			if (Hp > 0) {
+				mes "You're alive right now, so there's nothing to use it on.";
+				select("Back");
+				break;
+			}
+			if (select("Use it now", "Back") == 2) break;
+			close2;
+			atcommand "@resurrect";
+			end;
+		case 5:
+			clear;
+			mes "[@changedress]";
+			mes "Takes off a special outfit: Wedding, Xmas, Summer,";
+			mes "Dress Up, Hanbok or Oktoberfest.";
+			mes "Handy when an event outfit stops you from fighting or using skills.";
+			if (select("Use it now", "Back") == 2) break;
+			close2;
+			atcommand "@changedress";
+			end;
+		default:
+			clear;
+			return;
+		}
+	}
+
+S_Client:
+	while (1) {
+		clear;
+		mes "[Client Commands]";
+		mes "These are built into the game. Type them in the chat box.";
+		mes "Type ^0000FF/h^000000 in game for the full list.";
+		switch (select("Basics", "Chat and whispers", "Party and guild", "Display and sound", "Rankings and more", "Back")) {
+		case 1:
+			clear;
+			mes "[Basics]";
+			mes "^0000FF/sit^000000, ^0000FF/stand^000000 - sit (faster regen) or stand up. Insert key does the same.";
+			mes "^0000FF/where^000000 - your map name and coordinates.";
+			mes "^0000FF/who^000000 - how many players are online.";
+			mes "^0000FF/memo^000000 - save a Warp Portal point (Acolyte line).";
+			mes "^0000FF/noctrl^000000 - attack without holding Ctrl.";
+			mes "^0000FF/noshift^000000 - heal/support others without holding Shift.";
+			mes "^0000FF/quickspell^000000 - right-click casts your F9 skill.";
+			mes "^0000FF/bangbang^000000, ^0000FF/bingbing^000000 - turn your character.";
+			break;
+		case 2:
+			clear;
+			mes "[Chat and Whispers]";
+			mes "^0000FF/ex <name>^000000, ^0000FF/in <name>^000000 - block or unblock whispers from someone.";
+			mes "^0000FF/exall^000000, ^0000FF/inall^000000 - block or unblock all whispers.";
+			mes "^0000FFAlt+C^000000 - open a chat room.";
+			mes "^0000FF/savechat^000000 - save the chat log to a file.";
+			mes "Emotes like ^0000FF/heh^000000, ^0000FF/thx^000000, ^0000FF/omg^000000. Alt+L lists them all.";
+			mes "^0000FF/notalkmsg^000000 - hide chat in the main chat box.";
+			break;
+		case 3:
+			clear;
+			mes "[Party and Guild]";
+			mes "^0000FF/organize <name>^000000 - create a party.";
+			mes "To invite someone, right-click them and pick the party invite.";
+			mes "^0000FF/leave^000000 - leave your party.";
+			mes "^0000FF/guild <name>^000000 - create a guild (needs an Emperium).";
+			mes "^0000FF/breakguild <name>^000000 - disband your guild (leader only).";
+			break;
+		case 4:
+			clear;
+			mes "[Display and Sound]";
+			mes "^0000FF/effect^000000 - skill effects on or off.";
+			mes "^0000FF/mineffect^000000 - lighter effects (helps busy fights).";
+			mes "^0000FF/bgm^000000, ^0000FF/sound^000000 - music or sound effects on or off.";
+			mes "^0000FF/camera^000000 - free camera on or off.";
+			mes "^0000FF/fog^000000, ^0000FF/lightmap^000000 - fog or map lighting on or off.";
+			mes "^0000FF/aura^000000 - simpler aura at high levels.";
+			mes "^0000FF/monsterhp^000000 - show HP bars on monsters you hit.";
+			mes "^0000FF/skillfail^000000 - hide \"skill failed\" messages.";
+			mes "^0000FF/snap^000000 - snap onto targets when you click near them.";
+			break;
+		case 5:
+			clear;
+			mes "[Rankings and More]";
+			mes "^0000FF/blacksmith^000000, ^0000FF/alchemist^000000, ^0000FF/taekwon^000000 - top 10 rankings.";
+			mes "^0000FF/hoai^000000 - Homunculus custom AI on or off.";
+			mes "^0000FF/merai^000000 - Mercenary custom AI on or off.";
+			mes "^0000FF/tip^000000 - tip of the day window.";
+			mes "^0000FF/h^000000 - every client command.";
+			break;
+		default:
+			clear;
+			return;
+		}
+		if (select("Back to client commands", "Close") == 2) close;
+	}
+}

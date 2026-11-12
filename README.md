@@ -49,7 +49,7 @@ of the server's machine, an invite code, and nothing else.
 | `deploy/` | Container setup and deployment of the site. |
 | `tailscale/policy-snippet.hujson` | The policy grant that limits friends to the game server. |
 | `content/coin-shop/` | HuffLabs Coin: a coin that drops from monsters (more from bosses) and two Prontera merchants that sell costumes and gear for it. Server scripts, item entries, the client item descriptions and a deploy script. |
-| `content/leveling/` | Leveling: each character picks normal or 15x XP at first login, max level 500/250 for final classes, stats up to 1,000 and tougher bosses. A small rAthena source patch, generated XP and stat tables, and the client XP-bar patch profile. See its README. |
+| `content/leveling/` | Leveling: each character picks normal or 15x XP at first login, max level 500/250 for final classes, stats up to 1,000 and tougher bosses, plus an `@menu` command menu (with a HUD button) and healers in every town. A small rAthena source patch, generated XP and stat tables, and the client patch profile. See its README. |
 
 ## Running your own
 

@@ -1,0 +1,15 @@
+//===== HuffLabs RO =========================================
+//= Healer for Lasagna, the one town rAthena's npc/custom/healer.txt leaves out.
+//= healer.txt (enabled in conf/import/map_conf.txt) defines the Healer NPC and its
+//= 36 town spots; this is a duplicate of it next to the @go spot.
+//= At start-up the spot is checked and a warning is logged if it isn't walkable.
+//==========================================================
+
+lasagna,196,182,4	duplicate(Healer)	Healer#las	909
+
+-	script	HuffLabsHealerCheck	-1,{
+OnInit:
+	if (!checkcell("lasagna", 196, 182, cell_chkpass))
+		debugmes "HuffLabs healer: lasagna 196,182 is not walkable, move it";
+	end;
+}

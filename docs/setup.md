@@ -10,6 +10,10 @@ comfortable with Linux, Proxmox and Tailscale; adapt freely.
   `ragnarok`) with MariaDB, in a Proxmox container. The scripts reach it with
   `ssh <proxmox host> pct exec <container id> -- …`, and install rAthena's checkout
   at `/home/rathena/rathena`.
+  Also run rAthena's `web-server` (built with the others) as a fourth unit, with
+  `bind_ip` set to the server's Tailscale address and `web_port: 8888` in
+  `conf/import/web_conf.txt`: the client loads account settings and guild emblems from
+  it, through the launcher's relay.
 - **Tailscale** on the container, with HTTPS certificates on, tagged `tag:Game`, and
   the grant in [`tailscale/policy-snippet.hujson`](../tailscale/policy-snippet.hujson).
   An OAuth client with only the `device_invites` scope lets the site check share
