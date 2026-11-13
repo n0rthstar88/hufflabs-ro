@@ -1,0 +1,12 @@
+# HuffLabs RO import (content/world-round1): Mini Endless Tower timers.
+Header:
+  Type: QUEST_DB
+  Version: 3
+
+Body:
+  - Id: 150000
+    Title: Mini Endless Tower Time Limit
+    TimeLimit: +4h
+  - Id: 150001
+    Title: Mini Endless Tower Effect
+    TimeLimit: +1d

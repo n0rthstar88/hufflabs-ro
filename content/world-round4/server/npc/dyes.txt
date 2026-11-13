@@ -1,0 +1,60 @@
+//===== HuffLabs RO =========================================
+//= Extra dyes (content/world-round4): 251 hair colours, 553 clothes colours from the
+//= "553 Clothes Dyes + 251 Hair Dyes" pack (client: hlro_dyes.grf, loaded after data.grf).
+//= The pack only has palettes for some jobs and hairstyles, so:
+//=  - F_HLRO_DyeMax tells the Stylist the highest colour this character may pick;
+//=  - F_HLRO_DyeFix puts a colour the client has no palette for back to a standard one
+//=    (run after Stylist changes, on login and on every job level up, so soon after a job change).
+//= Hair: styles 1-37 have the extra colours (not Doram). Clothes: Novice to 3rd jobs incl.
+//= Taekwon, Star Gladiator, Soul Linker, Gunslinger, Ninja; not 4th jobs, Doram, babies,
+//= Kagerou/Oboro, Rebellion, Star Emperor, Soul Reaper, expanded Super Novice, Madogear, mounts.
+//==========================================================
+
+// callfunc("F_HLRO_DyeCover", <0 hair | 1 clothes>) -> true if the pack has palettes for this character
+function	script	F_HLRO_DyeCover	{
+	.@e = eaclass();
+	.@base = .@e & EAJ_BASEMASK;
+	if (.@base == EAJ_SUMMONER || (.@e & EAJL_BABY))
+		return false;
+	if (getarg(0) == 0) {
+		.@h = getlook(LOOK_HAIR);
+		return (.@h >= 1 && .@h <= 37);
+	}
+	if ((.@e & EAJL_FOURTH) || .@e == EAJ_SUPER_NOVICE_E)
+		return false;
+	if ((.@base == EAJ_NINJA || .@base == EAJ_GUNSLINGER) && (.@e & EAJL_2))
+		return false;
+	if (.@base == EAJ_TAEKWON && (.@e & EAJL_THIRD))
+		return false;
+	if (checkmadogear() || ismounting())
+		return false;
+	return true;
+}
+
+// callfunc("F_HLRO_DyeMax", <stylist menu: 0 hairstyle | 1 hair colour | 2 clothes colour>, <server max>)
+function	script	F_HLRO_DyeMax	{
+	switch (getarg(0)) {
+	case 1: return callfunc("F_HLRO_DyeCover", 0) ? getarg(1) : 8;
+	case 2: return callfunc("F_HLRO_DyeCover", 1) ? getarg(1) : 7;
+	}
+	return getarg(1);
+}
+
+function	script	F_HLRO_DyeFix	{
+	if (getlook(LOOK_HAIR_COLOR) > 8 && !callfunc("F_HLRO_DyeCover", 0)) {
+		setlook LOOK_HAIR_COLOR, 0;
+		dispbottom "Your hair colour went back to standard: this hairstyle or job has no extra colours.";
+	}
+	if (getlook(LOOK_CLOTHES_COLOR) > 7 && !callfunc("F_HLRO_DyeCover", 1)) {
+		setlook LOOK_CLOTHES_COLOR, 0;
+		dispbottom "Your clothes colour went back to standard: this job or mount has no extra colours.";
+	}
+	return;
+}
+
+-	script	HLRO_DyeGuard	-1,{
+OnPCLoginEvent:
+OnPCJobLvUpEvent:
+	callfunc "F_HLRO_DyeFix";
+	end;
+}

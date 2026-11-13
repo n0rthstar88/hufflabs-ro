@@ -1,0 +1,3549 @@
+# HuffLabs RO (content/world-round4): costume headgears from Mihael's custom pack, no stats.
+# Built by build-server.py from headgears.tsv.
+Header:
+  Type: ITEM_DB
+  Version: 3
+
+Body:
+  - Id: 2601000
+    AegisName: C_HLRO_EVIL_PORING_HAT
+    Name: Costume Evil Poring Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2936
+  - Id: 2601001
+    AegisName: C_HLRO_EVILA_HELM
+    Name: Costume Demonic Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2937
+  - Id: 2601002
+    AegisName: C_HLRO_SHADOW_HELM
+    Name: Costume Shadow Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2938
+  - Id: 2601003
+    AegisName: C_HLRO_ASURA_HELM
+    Name: Costume Asura Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2939
+  - Id: 2601004
+    AegisName: C_HLRO_DRAGON_HELM
+    Name: Costume Dragon Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2940
+  - Id: 2601005
+    AegisName: C_HLRO_EVILBONE_HELM
+    Name: Costume Evil Bone Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2941
+  - Id: 2601006
+    AegisName: C_HLRO_DOWRY
+    Name: Costume Dowry Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2942
+  - Id: 2601007
+    AegisName: C_HLRO_GOLDEN_VALK
+    Name: Costume Golden Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2943
+  - Id: 2601008
+    AegisName: C_HLRO_KAKASHI
+    Name: Costume Kakashi Headband
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2944
+  - Id: 2601009
+    AegisName: C_HLRO_VALK
+    Name: Costume Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2945
+  - Id: 2601010
+    AegisName: C_HLRO_KONOHAHP
+    Name: Costume Konoha Head Protector
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2946
+  - Id: 2601011
+    AegisName: C_HLRO_MYSTHP
+    Name: Costume Myst Head Protector
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2947
+  - Id: 2601012
+    AegisName: C_HLRO_SOUNDHP
+    Name: Costume Sound Head Protector
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2948
+  - Id: 2601013
+    AegisName: C_HLRO_SANDHP
+    Name: Costume Sand Head Protector
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2949
+  - Id: 2601014
+    AegisName: C_HLRO_LIGHTNINGHP
+    Name: Costume Storm Head Protector
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2950
+  - Id: 2601015
+    AegisName: C_HLRO_ROCKHP
+    Name: Costume Rock Head Protector
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2951
+  - Id: 2601016
+    AegisName: C_HLRO_WHITE_MAGICIAN_HAT
+    Name: Costume White Magician Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2952
+  - Id: 2601017
+    AegisName: C_HLRO_ANGEL_WING
+    Name: Costume Angel Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2953
+  - Id: 2601018
+    AegisName: C_HLRO_ANGELING_WING
+    Name: Costume Angeling Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2954
+  - Id: 2601019
+    AegisName: C_HLRO_WING_ZERO
+    Name: Costume Wing Zero
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2955
+  - Id: 2601020
+    AegisName: C_HLRO_BUTTERFLY_WING
+    Name: Costume Butterfly Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2956
+  - Id: 2601021
+    AegisName: C_HLRO_WBUTTERFLY_WING
+    Name: Costume White Butterfly Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2957
+  - Id: 2601022
+    AegisName: C_HLRO_DARK_WING
+    Name: Costume Dark Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2958
+  - Id: 2601023
+    AegisName: C_HLRO_SNIPER_WING
+    Name: Costume Sniper Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2959
+  - Id: 2601024
+    AegisName: C_HLRO_TORN_WING
+    Name: Costume Torn Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2960
+  - Id: 2601025
+    AegisName: C_HLRO_GARGOYLE_WING
+    Name: Costume Gargoyle Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2961
+  - Id: 2601026
+    AegisName: C_HLRO_DEVIL_WING
+    Name: Costume Evil Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2962
+  - Id: 2601027
+    AegisName: C_HLRO_FALLEN_WING
+    Name: Costume Wings Of Fallen Angel
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2963
+  - Id: 2601028
+    AegisName: C_HLRO_BBUTTERFLY_WING
+    Name: Costume Black Butterfly Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2964
+  - Id: 2601029
+    AegisName: C_HLRO_PHOENIX_WING
+    Name: Costume Phoenix Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2965
+  - Id: 2601030
+    AegisName: C_HLRO_ARTIC_WING
+    Name: Costume Arctic Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2966
+  - Id: 2601031
+    AegisName: C_HLRO_FAIRY_WING
+    Name: Costume Fairy Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2967
+  - Id: 2601032
+    AegisName: C_HLRO_DEMON_WING
+    Name: Costume Demon Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2968
+  - Id: 2601033
+    AegisName: C_HLRO_CHII_EARS
+    Name: Costume Chii Ears
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2969
+  - Id: 2601034
+    AegisName: C_HLRO_ANBU
+    Name: Costume ANBU Mask
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2970
+  - Id: 2601035
+    AegisName: C_HLRO_BLACK_HELM
+    Name: Costume Black Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2971
+  - Id: 2601036
+    AegisName: C_HLRO_HUNTER_NIN_MASK
+    Name: Costume Hunter Ninja Mask
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2972
+  - Id: 2601037
+    AegisName: C_HLRO_HELM_OF_HERMES
+    Name: Costume Hermes Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2973
+  - Id: 2601038
+    AegisName: C_HLRO_HOLY_EVIL
+    Name: Costume Holy Evil Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2974
+  - Id: 2601039
+    AegisName: C_HLRO_HELM_BAAL
+    Name: Costume Baal Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2975
+  - Id: 2601040
+    AegisName: C_HLRO_HOKAGE
+    Name: Costume Hokage Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2976
+  - Id: 2601041
+    AegisName: C_HLRO_EARTH
+    Name: Costume Earth Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2977
+  - Id: 2601042
+    AegisName: C_HLRO_FREEZY
+    Name: Costume Freezy Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2978
+  - Id: 2601043
+    AegisName: C_HLRO_DEVILING
+    Name: Costume Deviling Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2979
+  - Id: 2601044
+    AegisName: C_HLRO_DARK_MASTER_WING
+    Name: Costume Dark Master Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2980
+  - Id: 2601045
+    AegisName: C_HLRO_INCUBUS_WING
+    Name: Costume Incubus Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2981
+  - Id: 2601046
+    AegisName: C_HLRO_FUSION_WING
+    Name: Costume Fusion Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2982
+  - Id: 2601047
+    AegisName: C_HLRO_YING_YANG_WING
+    Name: Costume Ying Yang Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2983
+  - Id: 2601048
+    AegisName: C_HLRO_HELM_OF_GOD
+    Name: Costume Helm Of God
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2984
+  - Id: 2601049
+    AegisName: C_HLRO_HELM_OF_ANGEL
+    Name: Costume Angels' Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2985
+  - Id: 2601050
+    AegisName: C_HLRO_GOLDEN_DRAGON
+    Name: Costume Golden Dragon
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2986
+  - Id: 2601051
+    AegisName: C_HLRO_SKEL_WING
+    Name: Costume Skeleton Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2987
+  - Id: 2601052
+    AegisName: C_HLRO_FANTASY_WING
+    Name: Costume Fantasy Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2988
+  - Id: 2601053
+    AegisName: C_HLRO_ULTIMATE_WING
+    Name: Costume Ultimate Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2989
+  - Id: 2601054
+    AegisName: C_HLRO_MASTER_DEVIL_WINGS
+    Name: Costume Master Devil Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2990
+  - Id: 2601055
+    AegisName: C_HLRO_PHOENIX_OF_DEATH
+    Name: Costume Phoenix of Death
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2991
+  - Id: 2601056
+    AegisName: C_HLRO_PHOENIX_OF_BLOOD
+    Name: Costume Phoenix of Blood
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2992
+  - Id: 2601057
+    AegisName: C_HLRO_PINCER_ARMS
+    Name: Costume Pincer Arms
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2993
+  - Id: 2601058
+    AegisName: C_HLRO_GOLD_VALK
+    Name: Costume Gold Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2994
+  - Id: 2601059
+    AegisName: C_HLRO_DEVILING_WINGS
+    Name: Costume Deviling Wings II
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2995
+  - Id: 2601060
+    AegisName: C_HLRO_RETRIBUITION
+    Name: Costume Wings of Retribution
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2996
+  - Id: 2601061
+    AegisName: C_HLRO_RABO_DE_GATO
+    Name: Costume Cat Tail
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2997
+  - Id: 2601062
+    AegisName: C_HLRO_NINJA_HAT
+    Name: Costume Ninja Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2998
+  - Id: 2601063
+    AegisName: C_HLRO_TORN_WINGS
+    Name: Costume Torn Wings II
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2999
+  - Id: 2601064
+    AegisName: C_HLRO_CUTIE_WINGS
+    Name: Costume Cutie Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3000
+  - Id: 2601065
+    AegisName: C_HLRO_FOX_EARS
+    Name: Costume Fox Ears
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3001
+  - Id: 2601066
+    AegisName: C_HLRO_LIGHTING_WINGS
+    Name: Costume Lightning Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3002
+  - Id: 2601067
+    AegisName: C_HLRO_ATITUDE_CAP
+    Name: Costume Attitude Cap
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3003
+  - Id: 2601068
+    AegisName: C_HLRO_KARU_HAT
+    Name: Costume Karu Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3004
+  - Id: 2601069
+    AegisName: C_HLRO_CHECKERED_CAP
+    Name: Costume Taxi Driver Cap
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3005
+  - Id: 2601070
+    AegisName: C_HLRO_BUNNY_HAT
+    Name: Costume Bunny Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3006
+  - Id: 2601071
+    AegisName: C_HLRO_TONE_HAT
+    Name: Costume Tone Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3007
+  - Id: 2601072
+    AegisName: C_HLRO_AFRO_HAT
+    Name: Costume Afro Wig
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3008
+  - Id: 2601073
+    AegisName: C_HLRO_ORC_HERO_HELM
+    Name: Costume True Orc Hero Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3009
+  - Id: 2601074
+    AegisName: C_HLRO_SPELL_AURA
+    Name: Costume Holy Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3010
+  - Id: 2601075
+    AegisName: C_HLRO_VALK_SHIELD
+    Name: Costume Valkyrie Shield
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3011
+  - Id: 2601076
+    AegisName: C_HLRO_VIVI_HAT
+    Name: Costume Vivi Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3012
+  - Id: 2601077
+    AegisName: C_HLRO_CAPUZ_DE_CARONTES
+    Name: Costume Charon's Hood
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3013
+  - Id: 2601078
+    AegisName: C_HLRO_CHAPEU_DE_ALMIRANTE
+    Name: Costume Admiral Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3014
+  - Id: 2601079
+    AegisName: C_HLRO_CHAPEU_FASHION
+    Name: Costume Fashion Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3015
+  - Id: 2601080
+    AegisName: C_HLRO_O_ANJO_ENFURECIDO
+    Name: Costume Furious Angel Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3016
+  - Id: 2601081
+    AegisName: C_HLRO_CHAPEU_ARCANO_CELESTE
+    Name: Costume Celestial Arcane Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3017
+  - Id: 2601082
+    AegisName: C_HLRO_ASAS_DE_BORBOLETA_MISTICA
+    Name: Costume Mystic Butterfly Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3018
+  - Id: 2601083
+    AegisName: C_HLRO_ASAS_DA_REENCARNACAO
+    Name: Costume Rebirth Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3019
+  - Id: 2601084
+    AegisName: C_HLRO_SUPER_COELHO
+    Name: Costume Super Bunny Ears
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3020
+  - Id: 2601085
+    AegisName: C_HLRO_ASAS_ANJO_DA_MORTE
+    Name: Costume Angel of Death Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3021
+  - Id: 2601086
+    AegisName: C_HLRO_ASAS_DE_ANJO_INCANDESCENTE
+    Name: Costume Blazing Angel Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3022
+  - Id: 2601087
+    AegisName: C_HLRO_ASAS_SEICHIM
+    Name: Costume Seichim Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3023
+  - Id: 2601088
+    AegisName: C_HLRO_ASAS_VERDES_METAL
+    Name: Costume Green Metal Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3024
+  - Id: 2601089
+    AegisName: C_HLRO_RED_FIRE_DARK_DRAGON
+    Name: Costume Fire Dragon
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3025
+  - Id: 2601090
+    AegisName: C_HLRO_ANGEL_UP_WING
+    Name: Costume Divine Angel Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3026
+  - Id: 2601091
+    AegisName: C_HLRO_ARIES_WINGS
+    Name: Costume Aries Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3027
+  - Id: 2601092
+    AegisName: C_HLRO_ASA_DE_CISNEY
+    Name: Costume Swan Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3028
+  - Id: 2601093
+    AegisName: C_HLRO_BARACUDA_WINGS
+    Name: Costume Barracuda Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3029
+  - Id: 2601094
+    AegisName: C_HLRO_BLACK_DARK_DRAGON
+    Name: Costume Shadow Dragon Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3030
+  - Id: 2601095
+    AegisName: C_HLRO_CISNEI_NEGRO
+    Name: Costume Black Swan Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3031
+  - Id: 2601096
+    AegisName: C_HLRO_HARPYWINGS
+    Name: Costume Harpy Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3032
+  - Id: 2601097
+    AegisName: C_HLRO_HELL_SLAYER_WING
+    Name: Costume Hell Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3033
+  - Id: 2601098
+    AegisName: C_HLRO_IRMANS_DE_FOGO
+    Name: Costume Fire Sisters Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3034
+  - Id: 2601099
+    AegisName: C_HLRO_IRMANS_NATUREZA
+    Name: Costume Nature Sisters Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3035
+  - Id: 2601100
+    AegisName: C_HLRO_LUIGICAP
+    Name: Costume Luigi Cap
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3036
+  - Id: 2601101
+    AegisName: C_HLRO_MARIO_CAP
+    Name: Costume Mario Cap
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3037
+  - Id: 2601102
+    AegisName: C_HLRO_DRAGAO_BRANCO_DE_GELO
+    Name: Costume Ice Dragon
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3038
+  - Id: 2601103
+    AegisName: C_HLRO_CAVALO_MARINHO_AZUL
+    Name: Costume Blue Seahorse
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3039
+  - Id: 2601104
+    AegisName: C_HLRO_CAVALO_MARINHO_DO_ARCO_IRIS
+    Name: Costume Rainbow Seahorse
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3040
+  - Id: 2601105
+    AegisName: C_HLRO_DRAGAO_DO_FOGO
+    Name: Costume Fire Dragon (Mid)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3041
+  - Id: 2601106
+    AegisName: C_HLRO_SHARINGAN
+    Name: Costume Mangekyou Sharingan
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3042
+  - Id: 2601107
+    AegisName: C_HLRO_BYAKUGAN
+    Name: Costume Byakugan
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3043
+  - Id: 2601108
+    AegisName: C_HLRO_HWING
+    Name: Costume Heaven Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3044
+  - Id: 2601109
+    AegisName: C_HLRO_DRAGON
+    Name: Costume Dragon Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3045
+  - Id: 2601110
+    AegisName: C_HLRO_ALUCARDHAT
+    Name: Costume Alucard Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3046
+  - Id: 2601111
+    AegisName: C_HLRO_ALUCAD
+    Name: Costume Alucard Glasses
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3047
+  - Id: 2601112
+    AegisName: C_HLRO_FRED_ANJONEGRO
+    Name: Costume Black Angel
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3048
+  - Id: 2601113
+    AegisName: C_HLRO_FRED_ASASDALUACRESCENTE
+    Name: Costume Crescent Moon Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3049
+  - Id: 2601114
+    AegisName: C_HLRO_VALKIRYE_WINGS_GRANDE
+    Name: Costume Valkyrie Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3050
+  - Id: 2601115
+    AegisName: C_HLRO_FRED_AURADOAMOR
+    Name: Costume Aura of Love
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3051
+  - Id: 2601116
+    AegisName: C_HLRO_FRED_ASASSELESTIAIS
+    Name: Costume Celestial Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3052
+  - Id: 2601117
+    AegisName: C_HLRO_FRED_ASASDOSABIO
+    Name: Costume Sage's Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3053
+  - Id: 2601118
+    AegisName: C_HLRO_FRED_ASASDECRISTAL
+    Name: Costume Crystal Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3054
+  - Id: 2601119
+    AegisName: C_HLRO_FRED_ASASDESHAIRA
+    Name: Costume Shaira's Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3055
+  - Id: 2601120
+    AegisName: C_HLRO_FRED_ASATRIBAL
+    Name: Costume Tribal Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3056
+  - Id: 2601121
+    AegisName: C_HLRO_FRED_ASADEFADA
+    Name: Costume Fairy Wing II
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3057
+  - Id: 2601122
+    AegisName: C_HLRO_FRED_ASADEMETAL2
+    Name: Costume Metal Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3058
+  - Id: 2601123
+    AegisName: C_HLRO_FRED_ASAMISTICAAMARELA
+    Name: Costume Yellow Mystic Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3059
+  - Id: 2601124
+    AegisName: C_HLRO_FRED_ASASDEAGUA
+    Name: Costume Water Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3060
+  - Id: 2601125
+    AegisName: C_HLRO_FRED_ASASDEBORBOLETA
+    Name: Costume Butterfly Wings (Fred)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3061
+  - Id: 2601126
+    AegisName: C_HLRO_FRED_ASASDEFADADOURADA
+    Name: Costume Golden Fairy Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3062
+  - Id: 2601127
+    AegisName: C_HLRO_FRED_ASASDEFLOR
+    Name: Costume Flower Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3063
+  - Id: 2601128
+    AegisName: C_HLRO_FRED_ASASDEGELO
+    Name: Costume Ice Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3064
+  - Id: 2601129
+    AegisName: C_HLRO_FRED_ELMODODRAGAO
+    Name: Costume Dragon Helm (Fred)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3065
+  - Id: 2601130
+    AegisName: C_HLRO_FRED_ELMOLUNAR
+    Name: Costume Lunar Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3066
+  - Id: 2601131
+    AegisName: C_HLRO_FRED_ELMOSINISTRO1
+    Name: Costume Sinister Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3067
+  - Id: 2601132
+    AegisName: C_HLRO_FROST_WING_GRANDE
+    Name: Costume Frost Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3068
+  - Id: 2601133
+    AegisName: C_HLRO_HELM_OF_GM
+    Name: Costume Gold Hokage Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3069
+  - Id: 2601134
+    AegisName: C_HLRO_NEMESISWINGS
+    Name: Costume Nemesis Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3070
+  - Id: 2601135
+    AegisName: C_HLRO_REVOLT_BUTTERFLY_WINGS
+    Name: Costume Revolt Butterfly Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3071
+  - Id: 2601136
+    AegisName: C_HLRO_SPECTER_WING
+    Name: Costume Specter Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3072
+  - Id: 2601137
+    AegisName: C_HLRO_SYGNUN_HELM
+    Name: Costume Signum Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3073
+  - Id: 2601138
+    AegisName: C_HLRO_FRED_ASASDAINVOCACAO
+    Name: Costume Summoning Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3074
+  - Id: 2601139
+    AegisName: C_HLRO_FRED_ASADEFOGOPRETO
+    Name: Costume Black Fire Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3075
+  - Id: 2601140
+    AegisName: C_HLRO_FRED_RABODERAPOSA
+    Name: Costume Fox Tail
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3076
+  - Id: 2601141
+    AegisName: C_HLRO_FRED_RABODOGOKU
+    Name: Costume Goku's Tail
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3077
+  - Id: 2601142
+    AegisName: C_HLRO_FRED_VALKIRIEDOMAL
+    Name: Costume Evil Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3078
+  - Id: 2601143
+    AegisName: C_HLRO_REQUIEMHAT
+    Name: Costume Requiem Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3079
+  - Id: 2601144
+    AegisName: C_HLRO_ROMANTICROSE
+    Name: Costume Romantic Rose
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3080
+  - Id: 2601145
+    AegisName: C_HLRO_FRED_ASADEMETAL
+    Name: Costume Metal Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3081
+  - Id: 2601146
+    AegisName: C_HLRO_FRED_ASASDEDOACAO
+    Name: Costume Donation Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3082
+  - Id: 2601147
+    AegisName: C_HLRO_FRED_ASASDEFOGO
+    Name: Costume Fire Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3083
+  - Id: 2601148
+    AegisName: C_HLRO_FRED_ASASDETEIA
+    Name: Costume Web Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3084
+  - Id: 2601149
+    AegisName: C_HLRO_FRED_ASASELEMENTAIS
+    Name: Costume Elemental Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3085
+  - Id: 2601150
+    AegisName: C_HLRO_FRED_ASATOSCA
+    Name: Costume Rough Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3086
+  - Id: 2601151
+    AegisName: C_HLRO_FRED_FADA
+    Name: Costume Fairy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3087
+  - Id: 2601152
+    AegisName: C_HLRO_GREEN_VALKYRIE_HELM
+    Name: Costume Green Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3088
+  - Id: 2601153
+    AegisName: C_HLRO_RED_VALKYRIE_HELM
+    Name: Costume Red Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3089
+  - Id: 2601154
+    AegisName: C_HLRO_DARK_VALKYRIE_HELM
+    Name: Costume Evil Valkyrie Helm (Dark)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3090
+  - Id: 2601155
+    AegisName: C_HLRO_BROWN_VALKYRIE_HELM
+    Name: Costume Brown Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3091
+  - Id: 2601156
+    AegisName: C_HLRO_FRED_ASASLORNY
+    Name: Costume Lorny Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3092
+  - Id: 2601157
+    AegisName: C_HLRO_FRED_ASASTYREL
+    Name: Costume Tyrel Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3093
+  - Id: 2601158
+    AegisName: C_HLRO_FRED_AURADEFLOR
+    Name: Costume Flower Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3094
+  - Id: 2601159
+    AegisName: C_HLRO_FRED_AURARING2
+    Name: Costume Aura Ring II
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3095
+  - Id: 2601160
+    AegisName: C_HLRO_FRED_AURARING3
+    Name: Costume Aura Ring III
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3096
+  - Id: 2601161
+    AegisName: C_HLRO_FRED_CHAPEUDOSABIO
+    Name: Costume Sage's Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3097
+  - Id: 2601162
+    AegisName: C_HLRO_FRED_ELMODOSANJOS
+    Name: Costume Angels' Helm (Fred)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3098
+  - Id: 2601163
+    AegisName: C_HLRO_FRED_PRESILIADECORACAO
+    Name: Costume Heart Hairpin
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3099
+  - Id: 2601164
+    AegisName: C_HLRO_FRED_ROSAPRETA
+    Name: Costume Black Rose
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3100
+  - Id: 2601165
+    AegisName: C_HLRO_FRED_SPLINTERCELL
+    Name: Costume Splinter Cell
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3101
+  - Id: 2601166
+    AegisName: C_HLRO_FRED_VALKIRIEBRANCO
+    Name: Costume White Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3102
+  - Id: 2601167
+    AegisName: C_HLRO_FRED_VALKIRIEMESTICO
+    Name: Costume Mixed Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3103
+  - Id: 2601168
+    AegisName: C_HLRO_FRED_VULCAO
+    Name: Costume Volcano
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3104
+  - Id: 2601169
+    AegisName: C_HLRO_DJHEAD
+    Name: Costume DJ Head
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3105
+  - Id: 2601170
+    AegisName: C_HLRO_DRAGON_WING2
+    Name: Costume Dragon Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3106
+  - Id: 2601171
+    AegisName: C_HLRO_FOXHAT
+    Name: Costume Fox Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3107
+  - Id: 2601172
+    AegisName: C_HLRO_FRED_ANGEL_HEART
+    Name: Costume Angel Heart
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3108
+  - Id: 2601173
+    AegisName: C_HLRO_FRED_ASADEANJO1
+    Name: Costume Angel Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3109
+  - Id: 2601174
+    AegisName: C_HLRO_FRED_ASADEFADAAZUL
+    Name: Costume Blue Fairy Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3110
+  - Id: 2601175
+    AegisName: C_HLRO_FRED_ASAPARACABECA
+    Name: Costume Head Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3111
+  - Id: 2601176
+    AegisName: C_HLRO_FRED_ASASDEAJUDA
+    Name: Costume Helper Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3112
+  - Id: 2601177
+    AegisName: C_HLRO_FRED_CHAPEUDEINDIO
+    Name: Costume Feathered Headdress
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3113
+  - Id: 2601178
+    AegisName: C_HLRO_FRED_CHAPEUDODEMONIO
+    Name: Costume Demon Hat
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3114
+  - Id: 2601179
+    AegisName: C_HLRO_FRED_COROADOURADA
+    Name: Costume Golden Crown
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3115
+  - Id: 2601180
+    AegisName: C_HLRO_FRED_ELMODEMETAL
+    Name: Costume Metal Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3116
+  - Id: 2601181
+    AegisName: C_HLRO_FRED_ELMODOMENSAGEIRO
+    Name: Costume Messenger Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3117
+  - Id: 2601182
+    AegisName: C_HLRO_FRED_MASCARADOJASON
+    Name: Costume Jason Mask
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3118
+  - Id: 2601183
+    AegisName: C_HLRO_FRED_VALKIRIEROSA
+    Name: Costume Pink Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3119
+  - Id: 2601184
+    AegisName: C_HLRO_ORELHAS_NEGRAS
+    Name: Costume Black Ears
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3120
+  - Id: 2601185
+    AegisName: C_HLRO_BACK_SWORD
+    Name: Costume Back Sword
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3121
+  - Id: 2601186
+    AegisName: C_HLRO_SAKURAWINGS
+    Name: Costume Sakura Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3122
+  - Id: 2601187
+    AegisName: C_HLRO_SHINY_WINGS
+    Name: Costume Shiny Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3123
+  - Id: 2601188
+    AegisName: C_HLRO_AUREOLA_MISTICA
+    Name: Costume Mystic Halo
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3124
+  - Id: 2601189
+    AegisName: C_HLRO_BLUE_VALK
+    Name: Costume Blue Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3125
+  - Id: 2601190
+    AegisName: C_HLRO_DRAGAO_NEGRO
+    Name: Costume Black Dragon Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3126
+  - Id: 2601191
+    AegisName: C_HLRO_FIRE_VALKYRIE_HELM
+    Name: Costume Fire Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3127
+  - Id: 2601192
+    AegisName: C_HLRO_GOLDEN_WINGS
+    Name: Costume Golden Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3128
+  - Id: 2601193
+    AegisName: C_HLRO_V_P
+    Name: Costume V P
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3129
+  - Id: 2601194
+    AegisName: C_HLRO_ANDROMEDA_WINGS
+    Name: Costume Andromeda Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3130
+  - Id: 2601195
+    AegisName: C_HLRO_3D_GLASSES
+    Name: Costume 3D Glasses
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3131
+  - Id: 2601196
+    AegisName: C_HLRO_CHANCESWINGS
+    Name: Costume Chance Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3132
+  - Id: 2601197
+    AegisName: C_HLRO_DRAGONH
+    Name: Costume Blue Dragon Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3133
+  - Id: 2601198
+    AegisName: C_HLRO_THOUSANDWINGS
+    Name: Costume Thousand Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3134
+  - Id: 2601199
+    AegisName: C_HLRO_DARKMAGICALWINGS
+    Name: Costume Dark Magical Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3135
+  - Id: 2601200
+    AegisName: C_HLRO_DARK_ELVEN_WINGS
+    Name: Costume Dark Elven Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3136
+  - Id: 2601201
+    AegisName: C_HLRO_WINGED
+    Name: Costume Winged Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3137
+  - Id: 2601202
+    AegisName: C_HLRO_ELMO_DE_DEVILING
+    Name: Costume Deviling Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3138
+  - Id: 2601203
+    AegisName: C_HLRO_ASA_DIABOLICA
+    Name: Costume Diabolic Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3139
+  - Id: 2601204
+    AegisName: C_HLRO_ELMO_DE_VALKYRIA_YING_YANG
+    Name: Costume Yin Yang Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3140
+  - Id: 2601205
+    AegisName: C_HLRO_ASA_YING_YANG
+    Name: Costume Yin Yang Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3141
+  - Id: 2601206
+    AegisName: C_HLRO_ELMO_DE_DRAGAO
+    Name: Costume Dragon Helm (Classic)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3142
+  - Id: 2601207
+    AegisName: C_HLRO_ASA_DE_DRAGAO
+    Name: Costume Dragon Wing (Classic)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3143
+  - Id: 2601208
+    AegisName: C_HLRO_ELMO_DA_RETRIBUICAO
+    Name: Costume Helm of Retribution
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3144
+  - Id: 2601209
+    AegisName: C_HLRO_ASA_DA_RETRIBUICAO
+    Name: Costume Wing of Retribution
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3145
+  - Id: 2601210
+    AegisName: C_HLRO_ELMO_ANGELICAL_SUPREMO
+    Name: Costume Supreme Angelic Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3146
+  - Id: 2601211
+    AegisName: C_HLRO_ASA_SUPREMA
+    Name: Costume Supreme Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3147
+  - Id: 2601212
+    AegisName: C_HLRO_ELMO_ANGELICAL_MALIGNO
+    Name: Costume Wicked Angelic Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3148
+  - Id: 2601213
+    AegisName: C_HLRO_ASA_VERMELHA
+    Name: Costume Red Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3149
+  - Id: 2601214
+    AegisName: C_HLRO_ELMO_DE_VALKYRIA_PRETO
+    Name: Costume Black Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3150
+  - Id: 2601215
+    AegisName: C_HLRO_ASA_PRETA
+    Name: Costume Black Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3151
+  - Id: 2601216
+    AegisName: C_HLRO_ELMO_DE_VALKYRIA_BRANCO
+    Name: Costume White Valkyrie Helm (Classic)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3152
+  - Id: 2601217
+    AegisName: C_HLRO_ASA_BRANCA
+    Name: Costume White Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3153
+  - Id: 2601218
+    AegisName: C_HLRO_ELMO_DE_VALKYRIA_AZUL
+    Name: Costume Blue Valkyrie Helm (Classic)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3154
+  - Id: 2601219
+    AegisName: C_HLRO_ASA_AZUL
+    Name: Costume Blue Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3155
+  - Id: 2601220
+    AegisName: C_HLRO_ELMO_DE_VALKYRIA_ROSA
+    Name: Costume Pink Valkyrie Helm (Classic)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3156
+  - Id: 2601221
+    AegisName: C_HLRO_ASA_ROSA
+    Name: Costume Pink Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3157
+  - Id: 2601222
+    AegisName: C_HLRO_ELMO_DE_VALKYRIA_VERDE
+    Name: Costume Green Valkyrie Helm (Classic)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3158
+  - Id: 2601223
+    AegisName: C_HLRO_ASA_VERDE
+    Name: Costume Green Wing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3159
+  - Id: 2601224
+    AegisName: C_HLRO_CHAPEU_DE_XERIFE_MASCULINO
+    Name: Costume Sheriff Hat (M)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3160
+  - Id: 2601225
+    AegisName: C_HLRO_CHAPEU_DE_XERIFE_FEMENINO
+    Name: Costume Sheriff Hat (F)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3161
+  - Id: 2601226
+    AegisName: C_HLRO_BOINA_DO_LUIGI
+    Name: Costume Luigi Beret
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3162
+  - Id: 2601227
+    AegisName: C_HLRO_BOINA_DO_MARIO
+    Name: Costume Mario Beret
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3163
+  - Id: 2601228
+    AegisName: C_HLRO_BLACK_POWER
+    Name: Costume Black Power
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3164
+  - Id: 2601229
+    AegisName: C_HLRO_CHAPEU_DE_ALUCARD
+    Name: Costume Alucard Hat (Classic)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3165
+  - Id: 2601230
+    AegisName: C_HLRO_OCULOS_DE_ALUCARD
+    Name: Costume Alucard Glasses (Classic)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3166
+  - Id: 2601231
+    AegisName: C_HLRO_ORELHAS_DE_CHII
+    Name: Costume Chii Ears (Classic)
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3167
+  - Id: 2601232
+    AegisName: C_HLRO_FADINHA
+    Name: Costume Little Fairy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3168
+  - Id: 2601233
+    AegisName: C_HLRO_CIRCULO_DE_AMOR
+    Name: Costume Circle of Love
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3169
+  - Id: 2601234
+    AegisName: C_HLRO_CIRCULO_DE_ESPERANCA
+    Name: Costume Circle of Hope
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3170
+  - Id: 2601235
+    AegisName: C_HLRO_CIRCULO_DE_PODER
+    Name: Costume Circle of Power
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3171
+  - Id: 2601236
+    AegisName: C_HLRO_CIRCULO_DE_DRAGAO
+    Name: Costume Dragon Circle
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3172
+  - Id: 2601237
+    AegisName: C_HLRO_RED_DEATH
+    Name: Costume Red Death
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3173
+  - Id: 2601238
+    AegisName: C_HLRO_RED_DEATH_VALK
+    Name: Costume Red Death Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3174
+  - Id: 2601239
+    AegisName: C_HLRO_RED_DEATH_WINGS
+    Name: Costume Red Death Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3175
+  - Id: 2601240
+    AegisName: C_HLRO_WHITE_HYOURINMARU
+    Name: Costume White Hyourinmaru
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3176
+  - Id: 2601241
+    AegisName: C_HLRO_HOLY_HYO
+    Name: Costume Holy Hyo
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3177
+  - Id: 2601242
+    AegisName: C_HLRO_SOLAR_HYOURINMARU
+    Name: Costume Solar Hyourinmaru
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3178
+  - Id: 2601243
+    AegisName: C_HLRO_PURPLE_HYOURINMARU
+    Name: Costume Purple Hyourinmaru
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3179
+  - Id: 2601244
+    AegisName: C_HLRO_PINK_HYOURINMARU
+    Name: Costume Pink Hyourinmaru
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3180
+  - Id: 2601245
+    AegisName: C_HLRO_FROZEN_HYO
+    Name: Costume Frozen Hyo
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3181
+  - Id: 2601246
+    AegisName: C_HLRO_BLACK_DEATH
+    Name: Costume Black Death
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3182
+  - Id: 2601247
+    AegisName: C_HLRO_BLACK_DEATH_WINGS
+    Name: Costume Black Death Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3183
+  - Id: 2601248
+    AegisName: C_HLRO_BLACK_DEATH_VALK
+    Name: Costume Black Death Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3184
+  - Id: 2601249
+    AegisName: C_HLRO_AKATSUKI
+    Name: Costume Akatsuki
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3185
+  - Id: 2601250
+    AegisName: C_HLRO_DEMONIC_DEATH
+    Name: Costume Demonic Death
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3186
+  - Id: 2601251
+    AegisName: C_HLRO_DEMONIC_DEATH_WINGS
+    Name: Costume Demonic Death Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3187
+  - Id: 2601252
+    AegisName: C_HLRO_DEMONIC_DEATH_VALK
+    Name: Costume Demonic Death Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3188
+  - Id: 2601253
+    AegisName: C_HLRO_DEVILS_DAIGUREN
+    Name: Costume Devils Daiguren
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3189
+  - Id: 2601254
+    AegisName: C_HLRO_DEVILS_HELM
+    Name: Costume Devils Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3190
+  - Id: 2601255
+    AegisName: C_HLRO_DEVILS_LORNY
+    Name: Costume Devils Lorny
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3191
+  - Id: 2601256
+    AegisName: C_HLRO_DEVILS_SPIRIT
+    Name: Costume Devils Spirit
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3192
+  - Id: 2601257
+    AegisName: C_HLRO_KA_DEATH
+    Name: Costume Ka Death
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3193
+  - Id: 2601258
+    AegisName: C_HLRO_KA_DEATH_WINGS
+    Name: Costume Ka Death Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3194
+  - Id: 2601259
+    AegisName: C_HLRO_KA_DEATH_VALK
+    Name: Costume Ka Death Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3195
+  - Id: 2601260
+    AegisName: C_HLRO_HOLY_DEATH
+    Name: Costume Holy Death
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3196
+  - Id: 2601261
+    AegisName: C_HLRO_HOLY_DEATH_WINGS
+    Name: Costume Holy Death Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3197
+  - Id: 2601262
+    AegisName: C_HLRO_HOLY_DEATH_VALK
+    Name: Costume Holy Death Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3198
+  - Id: 2601263
+    AegisName: C_HLRO_NATURE_DRAGON_FLAME
+    Name: Costume Nature Dragon Flame
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3199
+  - Id: 2601264
+    AegisName: C_HLRO_NATURE_DRAGON_WINGS
+    Name: Costume Nature Dragon Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3200
+  - Id: 2601265
+    AegisName: C_HLRO_NATURE_DRAGON_MASK
+    Name: Costume Nature Dragon Mask
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3201
+  - Id: 2601266
+    AegisName: C_HLRO_SOLAR_BLOOMY
+    Name: Costume Solar Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3202
+  - Id: 2601267
+    AegisName: C_HLRO_YELLOW_BLOOMY
+    Name: Costume Yellow Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3203
+  - Id: 2601268
+    AegisName: C_HLRO_WHITE_BLOOMY
+    Name: Costume White Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3204
+  - Id: 2601269
+    AegisName: C_HLRO_YELLOW_VALK
+    Name: Costume Yellow Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3205
+  - Id: 2601270
+    AegisName: C_HLRO_PINK_BLOOMY
+    Name: Costume Pink Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3206
+  - Id: 2601271
+    AegisName: C_HLRO_PURPLE_VALK
+    Name: Costume Purple Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3207
+  - Id: 2601272
+    AegisName: C_HLRO_PURPLE_BLOOMY
+    Name: Costume Purple Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3208
+  - Id: 2601273
+    AegisName: C_HLRO_BLUE_BLOOMY
+    Name: Costume Blue Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3209
+  - Id: 2601274
+    AegisName: C_HLRO_BLUE_HYOURINMARU
+    Name: Costume Blue Hyourinmaru
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3210
+  - Id: 2601275
+    AegisName: C_HLRO_CHAOS_DEATH
+    Name: Costume Chaos Death
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3211
+  - Id: 2601276
+    AegisName: C_HLRO_CHAOS_DEATH_WINGS
+    Name: Costume Chaos Death Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3212
+  - Id: 2601277
+    AegisName: C_HLRO_CHAOS_DEATH_VALK
+    Name: Costume Chaos Death Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3213
+  - Id: 2601278
+    AegisName: C_HLRO_CHERRY_DEATH
+    Name: Costume Cherry Death
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3214
+  - Id: 2601279
+    AegisName: C_HLRO_CHERRY_DEATH_WINGS
+    Name: Costume Cherry Death Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3215
+  - Id: 2601280
+    AegisName: C_HLRO_CHERRY_DEATH_VALK
+    Name: Costume Cherry Death Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3216
+  - Id: 2601281
+    AegisName: C_HLRO_PINK_VALKYRIE_HELM
+    Name: Costume Pink Valkyrie Helm II
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3217
+  - Id: 2601282
+    AegisName: C_HLRO_BLEACH
+    Name: Costume Bleach
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3218
+  - Id: 2601283
+    AegisName: C_HLRO_METALLISH_HYOURINMARU
+    Name: Costume Metallic Hyourinmaru
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3219
+  - Id: 2601284
+    AegisName: C_HLRO_METALLISH_BLOOMY
+    Name: Costume Metallic Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3220
+  - Id: 2601285
+    AegisName: C_HLRO_METALLISH_VALK
+    Name: Costume Metallic Valkyrie Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3221
+  - Id: 2601286
+    AegisName: C_HLRO_BLACK_WOLF
+    Name: Costume Black Wolf
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3222
+  - Id: 2601287
+    AegisName: C_HLRO_BLACK_WOLF_WINGS
+    Name: Costume Black Wolf Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3223
+  - Id: 2601288
+    AegisName: C_HLRO_BLACK_WOLF_HELM
+    Name: Costume Black Wolf Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3224
+  - Id: 2601289
+    AegisName: C_HLRO_INSANE_DEATH
+    Name: Costume Insane Death
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3225
+  - Id: 2601290
+    AegisName: C_HLRO_INSANE_DEATH_WINGS
+    Name: Costume Insane Death Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3226
+  - Id: 2601291
+    AegisName: C_HLRO_INSANE_DEATH_VALK
+    Name: Costume Insane Death Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3227
+  - Id: 2601292
+    AegisName: C_HLRO_GODS_BLESSING
+    Name: Costume Gods Blessing
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3228
+  - Id: 2601293
+    AegisName: C_HLRO_DARK_HYO
+    Name: Costume Dark Hyo
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3229
+  - Id: 2601294
+    AegisName: C_HLRO_DARK_BLOOMY
+    Name: Costume Dark Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3230
+  - Id: 2601295
+    AegisName: C_HLRO_DARK_VALK
+    Name: Costume Dark Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3231
+  - Id: 2601296
+    AegisName: C_HLRO_GREEN_BUTERFLY
+    Name: Costume Green Butterfly
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3232
+  - Id: 2601297
+    AegisName: C_HLRO_WOLF
+    Name: Costume Wolf
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3233
+  - Id: 2601298
+    AegisName: C_HLRO_WOLF_WINGS
+    Name: Costume Wolf Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3234
+  - Id: 2601299
+    AegisName: C_HLRO_WOLF_HELM
+    Name: Costume Wolf Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3235
+  - Id: 2601300
+    AegisName: C_HLRO_WHITE_WOLF
+    Name: Costume White Wolf
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3236
+  - Id: 2601301
+    AegisName: C_HLRO_WHITE_WOLF_WINGS
+    Name: Costume White Wolf Wings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3237
+  - Id: 2601302
+    AegisName: C_HLRO_WHITE_WOLF_HELM
+    Name: Costume White Wolf Helm
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3238
+  - Id: 2601303
+    AegisName: C_HLRO_BIGANGELWINGS
+    Name: Costume Bigangelwings
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3239
+  - Id: 2601304
+    AegisName: C_HLRO_SAIKOS_HYO
+    Name: Costume Saikos Hyo
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3240
+  - Id: 2601305
+    AegisName: C_HLRO_SAIKOS_BLOOMY
+    Name: Costume Saikos Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3241
+  - Id: 2601306
+    AegisName: C_HLRO_SAIKOS_VALK
+    Name: Costume Saikos Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3242
+  - Id: 2601307
+    AegisName: C_HLRO_TRUE_CASINO_HYOURINMARU
+    Name: Costume True Casino Hyourinmaru
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3243
+  - Id: 2601308
+    AegisName: C_HLRO_TRUE_EVENT_HYOURINMARU
+    Name: Costume True Event Hyourinmaru
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3244
+  - Id: 2601309
+    AegisName: C_HLRO_TRUE_RECOURSE_HYOURINMARU
+    Name: Costume True Recourse Hyourinmaru
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3245
+  - Id: 2601310
+    AegisName: C_HLRO_TRUE_CASINO_BLOOMY
+    Name: Costume True Casino Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3246
+  - Id: 2601311
+    AegisName: C_HLRO_TRUE_EVENT_BLOOMY
+    Name: Costume True Event Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3247
+  - Id: 2601312
+    AegisName: C_HLRO_TRUE_RECOURSE_BLOOMY
+    Name: Costume True Recourse Bloomy
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Mid: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3248
+  - Id: 2601313
+    AegisName: C_HLRO_TRUE_CASINO_VALK
+    Name: Costume True Casino Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3249
+  - Id: 2601314
+    AegisName: C_HLRO_TRUE_EVENT_VALK
+    Name: Costume True Event Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3250
+  - Id: 2601315
+    AegisName: C_HLRO_TRUE_RECOURSE_VALK
+    Name: Costume True Recourse Valk
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3251
+  - Id: 2601316
+    AegisName: C_HLRO_BLACK_VALENTINE_RING
+    Name: Costume Black Valentine Ring
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3252
+  - Id: 2601317
+    AegisName: C_HLRO_BLUE_VALENTINE_RING
+    Name: Costume Blue Valentine Ring
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3253
+  - Id: 2601318
+    AegisName: C_HLRO_CYAN_VALENTINE_RING
+    Name: Costume Cyan Valentine Ring
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3254
+  - Id: 2601319
+    AegisName: C_HLRO_GREEN_VALENTINE_RING
+    Name: Costume Green Valentine Ring
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3255
+  - Id: 2601320
+    AegisName: C_HLRO_ORANGE_VALENTINE_RING
+    Name: Costume Orange Valentine Ring
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3256
+  - Id: 2601321
+    AegisName: C_HLRO_PINK_VALENTINE_RING
+    Name: Costume Pink Valentine Ring
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3257
+  - Id: 2601322
+    AegisName: C_HLRO_PURPLE_VALENTINE_RING
+    Name: Costume Purple Valentine Ring
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3258
+  - Id: 2601323
+    AegisName: C_HLRO_RED_VALENTINE_RING
+    Name: Costume Red Valentine Ring
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3259
+  - Id: 2601324
+    AegisName: C_HLRO_WHITE_VALENTINE_RING
+    Name: Costume White Valentine Ring
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3260
+  - Id: 2601325
+    AegisName: C_HLRO_YELLOW_VALENTINE_RING
+    Name: Costume Yellow Valentine Ring
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3261
+  - Id: 2601326
+    AegisName: C_HLRO_FLAME1
+    Name: Costume Flame 1
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3262
+  - Id: 2601327
+    AegisName: C_HLRO_FLAME2
+    Name: Costume Flame 2
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3263
+  - Id: 2601328
+    AegisName: C_HLRO_FLAME3
+    Name: Costume Flame 3
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3264
+  - Id: 2601329
+    AegisName: C_HLRO_FLAME4
+    Name: Costume Flame 4
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3265
+  - Id: 2601330
+    AegisName: C_HLRO_FLAME5
+    Name: Costume Flame 5
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3266
+  - Id: 2601331
+    AegisName: C_HLRO_FLAME6
+    Name: Costume Flame 6
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3267
+  - Id: 2601332
+    AegisName: C_HLRO_FLAME7
+    Name: Costume Flame 7
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3268
+  - Id: 2601333
+    AegisName: C_HLRO_FLAME8
+    Name: Costume Flame 8
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3269
+  - Id: 2601334
+    AegisName: C_HLRO_FLAME9
+    Name: Costume Flame 9
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3270
+  - Id: 2601335
+    AegisName: C_HLRO_FLAME10
+    Name: Costume Flame 10
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3271
+  - Id: 2601336
+    AegisName: C_HLRO_FLAME11
+    Name: Costume Flame 11
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3272
+  - Id: 2601337
+    AegisName: C_HLRO_FLAME12
+    Name: Costume Flame 12
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3273
+  - Id: 2601338
+    AegisName: C_HLRO_FLAME13
+    Name: Costume Flame 13
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3274
+  - Id: 2601339
+    AegisName: C_HLRO_FLAME14
+    Name: Costume Flame 14
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3275
+  - Id: 2601340
+    AegisName: C_HLRO_FLAME15
+    Name: Costume Flame 15
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3276
+  - Id: 2601341
+    AegisName: C_HLRO_FLAME18
+    Name: Costume Flame 18
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3277
+  - Id: 2601342
+    AegisName: C_HLRO_GERMAN_FLAME
+    Name: Costume German Flame
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3278
+  - Id: 2601343
+    AegisName: C_HLRO_LILA_FLAME
+    Name: Costume Lila Flame
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3279
+  - Id: 2601344
+    AegisName: C_HLRO_WHITE_FLAME
+    Name: Costume White Flame
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3280
+  - Id: 2601345
+    AegisName: C_HLRO_BLACK_LIGHT_STAR_AURA
+    Name: Costume Black Light Star Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3281
+  - Id: 2601346
+    AegisName: C_HLRO_CYAN_LIGHT_STAR_AURA
+    Name: Costume Cyan Light Star Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3282
+  - Id: 2601347
+    AegisName: C_HLRO_GREEN_LIGHT_STAR_AURA
+    Name: Costume Green Light Star Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3283
+  - Id: 2601348
+    AegisName: C_HLRO_ORANGE_LIGHT_STAR_AURA
+    Name: Costume Orange Light Star Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3284
+  - Id: 2601349
+    AegisName: C_HLRO_PINK_LIGHT_STAR_AURA
+    Name: Costume Pink Light Star Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3285
+  - Id: 2601350
+    AegisName: C_HLRO_PURPLE_LIGHT_STAR_AURA
+    Name: Costume Purple Light Star Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3286
+  - Id: 2601351
+    AegisName: C_HLRO_RED_LIGHT_STAR_AURA
+    Name: Costume Red Light Star Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3287
+  - Id: 2601352
+    AegisName: C_HLRO_WHITE_LIGHT_STAR_AURA
+    Name: Costume White Light Star Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3288
+  - Id: 2601353
+    AegisName: C_HLRO_YELLOW_LIGHT_STAR_AURA
+    Name: Costume Yellow Light Star Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 3289

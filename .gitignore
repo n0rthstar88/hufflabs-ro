@@ -5,3 +5,7 @@ installer/windows/redist/*.exe
 cmd/hufflabs-ro-launcher/rsrc_windows_*.syso
 content/leveling/upstream/
 __pycache__/
+# built locally from rathena.org downloads (see the world-round READMEs)
+content/world-round1/server/npc/*.txt
+content/world-round2/server/db/import/item_randomopt_group.yml
+content/world-round2/server/db/import/mob_db_randopt.yml

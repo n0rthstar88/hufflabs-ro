@@ -4,6 +4,31 @@ Each version is tagged and has a [release](https://github.com/n0rthstar88/huffla
 with built tools. Every version passes the [tests](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml)
 on fresh Linux and Windows machines first.
 
+## v1.3.0
+
+**A bigger world: community NPCs, coin vending, seasons, 354 costumes.**
+
+Five content rounds built from free rathena.org community releases, adapted and fixed for
+HuffLabs RO. Each `content/world-round*/` folder has a README, a deploy script and the
+builders that recreate everything from the downloads. The downloads themselves (art and the
+authors' scripts) are not in this repository.
+
+- **Round 1:** ten community NPCs spread over the towns (punching bags, Build Manager,
+  stylist, enchanter, dress room, item mall, WoE controller, Mini Endless Tower, hunting
+  quest, costume enchant) and hand-placed source changes: monster element view, MVP tombs
+  with the MVP's sprite, MVP card announcements and charm items. Refines from +10 are
+  announced. The Super Saiyan Aura costume joins the coin shop.
+- **Round 2:** vendors pick Zeny or HuffLabs Coins as their shop's currency (a rewrite of
+  "Extended Vending" without its item-id, duplication and buffer bugs), and random option
+  drops on 792 monsters.
+- **Round 3:** Prontera follows the real season (`season.sh`, run daily by a timer), 25
+  Poring Family monsters roam the fields and 10 townsfolk use new NPC looks.
+- **Round 4:** 354 stat-less costume headgears at three Costume Tailors in Alberta, and
+  553 clothes / 251 hair dyes.
+- **Round 5:** a fill-only installer for missing item art, HD damage numbers and two new
+  cart looks.
+- `@menu` lists the new commands and can take you to each town service.
+
 ## v1.2.2
 
 **Account settings and a command menu.**
