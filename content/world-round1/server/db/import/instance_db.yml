@@ -1,0 +1,14 @@
+# HuffLabs RO import (content/world-round1): Sader1992's Mini Endless Tower.
+Header:
+  Type: INSTANCE_DB
+  Version: 2
+
+Body:
+  - Id: 100
+    Name: Mini Endless Tower
+    TimeLimit: 14400
+    IdleTimeOut: 300
+    Enter:
+      Map: 1@mtower
+      X: 50
+      Y: 355

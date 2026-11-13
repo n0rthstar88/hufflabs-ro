@@ -1,0 +1,291 @@
+diff -ruN a/conf/msg_conf/map_msg.conf b/conf/msg_conf/map_msg.conf
+--- a/conf/msg_conf/map_msg.conf	2026-11-12 20:22:37.145608054 -0800
++++ b/conf/msg_conf/map_msg.conf	2026-11-12 20:22:37.146349415 -0800
+@@ -1123,7 +1123,8 @@
+ // @partyrecall
+ 1035: Please enter a party name/ID (usage: @partyrecall <party_name/ID>).
+ 
+-//1036 free
++// HuffLabs: MVP / mini-boss card drop announce
++1036: %s defeated %s in %s and dropped %s (%0.02f%%)
+ //1037 free
+ 
+ // @mapinfo
+diff -ruN a/src/common/mmo.hpp b/src/common/mmo.hpp
+--- a/src/common/mmo.hpp	2026-11-12 20:22:37.116129220 -0800
++++ b/src/common/mmo.hpp	2026-11-12 20:22:37.116803508 -0800
+@@ -234,6 +234,7 @@
+ 	IT_AMMO,    //10
+ 	IT_DELAYCONSUME,//11
+ 	IT_SHADOWGEAR,  //12
++	IT_CHARM,       //13 HuffLabs: bonus applies while carried
+ 	IT_CASH = 18,
+ 	IT_MAX
+ };
+diff -ruN a/src/custom/battle_config_init.inc b/src/custom/battle_config_init.inc
+--- a/src/custom/battle_config_init.inc	2026-11-12 20:22:37.119027311 -0800
++++ b/src/custom/battle_config_init.inc	2026-11-12 20:22:37.119697832 -0800
+@@ -11,3 +11,8 @@
+  *	 { "name", &battle_config.<variable name>, <default value>, <minimum value>, <maximum value> },
+  **/
+ 
++	// HuffLabs
++	{ "mob_ele_view",                       &battle_config.mob_ele_view,                    1,        0,      1,              },
++	{ "mvp_card_announce_color",            &battle_config.mvp_card_announce_color,         0x3DBBFF, 0,      0xFFFFFF,       },
++	{ "miniboss_card_announce_color",       &battle_config.miniboss_card_announce_color,    0xF6FF00, 0,      0xFFFFFF,       },
++
+diff -ruN a/src/custom/battle_config_struct.inc b/src/custom/battle_config_struct.inc
+--- a/src/custom/battle_config_struct.inc	2026-11-12 20:22:37.121960436 -0800
++++ b/src/custom/battle_config_struct.inc	2026-11-12 20:22:37.122612243 -0800
+@@ -12,3 +12,8 @@
+  *	 <datatype> name;
+  **/
+ 
++	// HuffLabs
++	int32 mob_ele_view;
++	int32 mvp_card_announce_color;
++	int32 miniboss_card_announce_color;
++
+diff -ruN a/src/map/clif.cpp b/src/map/clif.cpp
+--- a/src/map/clif.cpp	2026-11-12 20:22:37.124902117 -0800
++++ b/src/map/clif.cpp	2026-11-12 20:22:37.125886655 -0800
+@@ -115,6 +115,8 @@
+ 		else
+ 			return IT_ARMOR;
+ 	}
++	if( type == IT_CHARM ) // HuffLabs: the client has no charm type
++		return IT_ETC;
+ 	return ( type == IT_PETEGG ) ? IT_ARMOR : type;
+ }
+ 
+@@ -10077,6 +10079,17 @@
+ 					memcpy(packet.title, ud->title, NAME_LENGTH);
+ 					packet.groupId = ud->group_id;
+ 				}
++
++				// HuffLabs: show the monster's element as an icon and title (based on Hyroshima's Mob Element View).
++				// Icons are data/texture/<UI>/group/group_51..60.bmp in the client.
++				if (battle_config.mob_ele_view) {
++					static const char* ele_names[ELE_ALL] = { "Neutral", "Water", "Earth", "Fire", "Wind", "Poison", "Holy", "Shadow", "Ghost", "Undead" };
++					int32 ele = md->status.def_ele;
++					if (ele >= ELE_NEUTRAL && ele < ELE_ALL) {
++						packet.groupId = 51 + ele;
++						safesnprintf(packet.title, NAME_LENGTH, "%s Lv %d", ele_names[ele], md->status.ele_lv);
++					}
++				}
+ #endif
+ 
+ 				clif_send(&packet, sizeof(packet), src, target);
+diff -ruN a/src/map/itemdb.cpp b/src/map/itemdb.cpp
+--- a/src/map/itemdb.cpp	2026-11-12 20:22:37.128435745 -0800
++++ b/src/map/itemdb.cpp	2026-11-12 20:22:37.129172598 -0800
+@@ -3186,6 +3186,7 @@
+ 		case IT_AMMO:           return "Arrow/Ammunition";
+ 		case IT_DELAYCONSUME:   return "Delay-Consume Usable";
+ 		case IT_SHADOWGEAR:     return "Shadow Equipment";
++		case IT_CHARM:          return "Charm";
+ 		case IT_CASH:           return "Cash Usable";
+ 	}
+ 	return "Unknown Type";
+@@ -4936,6 +4937,7 @@
+ 		case IT_PETEGG:
+ 		case IT_PETARMOR:
+ 		case IT_SHADOWGEAR:
++		case IT_CHARM:
+ 			return false;
+ 	}
+ 	return true;
+diff -ruN a/src/map/mob.cpp b/src/map/mob.cpp
+--- a/src/map/mob.cpp	2026-11-12 20:22:37.131592250 -0800
++++ b/src/map/mob.cpp	2026-11-12 20:22:37.132530734 -0800
+@@ -201,9 +201,105 @@
+ 	nd->y = md->y;
+ 	nd->type = BL_NPC;
+ 
+-	safestrncpy(nd->name, msg_txt(nullptr,656), sizeof(nd->name));
++	// HuffLabs: the tomb carries the MVP's name and, where the client has one, a tomb sprite of that MVP
++	// (NPC ids 19100-19190 = data/sprite/npc/<mob id>n.spr, from DynamicMVPTomb).
++	static const std::unordered_map<uint16, int16> tomb_sprite = {
++		{ 1038, 19100 },
++		{ 1046, 19101 },
++		{ 1059, 19102 },
++		{ 1086, 19103 },
++		{ 1087, 19104 },
++		{ 1112, 19105 },
++		{ 1115, 19106 },
++		{ 1147, 19107 },
++		{ 1150, 19108 },
++		{ 1157, 19109 },
++		{ 1159, 19110 },
++		{ 1190, 19111 },
++		{ 1251, 19112 },
++		{ 1252, 19113 },
++		{ 1272, 19114 },
++		{ 1312, 19115 },
++		{ 1373, 19116 },
++		{ 1389, 19117 },
++		{ 1418, 19118 },
++		{ 1492, 19119 },
++		{ 1511, 19120 },
++		{ 1583, 19121 },
++		{ 1623, 19122 },
++		{ 1630, 19123 },
++		{ 1646, 19124 },
++		{ 1647, 19125 },
++		{ 1648, 19126 },
++		{ 1649, 19127 },
++		{ 1650, 19128 },
++		{ 1651, 19129 },
++		{ 1685, 19130 },
++		{ 1688, 19131 },
++		{ 1708, 19132 },
++		{ 1719, 19133 },
++		{ 1734, 19134 },
++		{ 1751, 19135 },
++		{ 1768, 19136 },
++		{ 1779, 19137 },
++		{ 1785, 19138 },
++		{ 1832, 19139 },
++		{ 1885, 19140 },
++		{ 1917, 19141 },
++		{ 2022, 19142 },
++		{ 2068, 19143 },
++		{ 2087, 19144 },
++		{ 2131, 19145 },
++		{ 2156, 19146 },
++		{ 2165, 19147 },
++		{ 2202, 19148 },
++		{ 2236, 19149 },
++		{ 2237, 19150 },
++		{ 2238, 19151 },
++		{ 2239, 19152 },
++		{ 2240, 19153 },
++		{ 2241, 19154 },
++		{ 2249, 19155 },
++		{ 2251, 19156 },
++		{ 2253, 19157 },
++		{ 2255, 19158 },
++		{ 2319, 19159 },
++		{ 2362, 19160 },
++		{ 2441, 19161 },
++		{ 2442, 19162 },
++		{ 2446, 19163 },
++		{ 2529, 19164 },
++		{ 2532, 19165 },
++		{ 2533, 19166 },
++		{ 2534, 19167 },
++		{ 2535, 19168 },
++		{ 2996, 19169 },
++		{ 3000, 19170 },
++		{ 3029, 19171 },
++		{ 3073, 19172 },
++		{ 3074, 19173 },
++		{ 3091, 19174 },
++		{ 3092, 19175 },
++		{ 3096, 19176 },
++		{ 3097, 19177 },
++		{ 3124, 19178 },
++		{ 3181, 19179 },
++		{ 3254, 19180 },
++		{ 3426, 19181 },
++		{ 3427, 19182 },
++		{ 3428, 19183 },
++		{ 3429, 19184 },
++		{ 3430, 19185 },
++		{ 3450, 19186 },
++		{ 3628, 19187 },
++		{ 3633, 19188 },
++		{ 3757, 19189 },
++		{ 3758, 19190 }
++	};
++	safestrncpy(nd->name, md->name, sizeof(nd->name));
+ 
+-	nd->class_ = 565;
++	auto tomb = tomb_sprite.find(md->mob_id);
++	nd->class_ = tomb != tomb_sprite.end() ? tomb->second : 565;
+ 	nd->speed = DEFAULT_NPC_WALK_SPEED;
+ 	nd->subtype = NPCTYPE_TOMB;
+ 
+@@ -3352,6 +3448,20 @@
+ 			// Announce first, or else ditem will be freed. [Lance]
+ 			// By popular demand, use base drop rate for autoloot code. [Skotlex]
+ 			mob_item_drop(md, dlist, ditem, 0, battle_config.autoloot_adjust ? drop_rate : entry->rate, homkillonly || merckillonly);
++
++			// HuffLabs: announce MVP / mini-boss card drops (idea from "MvP and Mini-Boss Card Ad" by [Bad])
++			if (first_sd != nullptr && it->type == IT_CARD) {
++				int32 color = 0;
++				if (md->get_bosstype() == BOSSTYPE_MVP)
++					color = battle_config.mvp_card_announce_color;
++				else if (md->get_bosstype() == BOSSTYPE_MINIBOSS)
++					color = battle_config.miniboss_card_announce_color;
++				if (color > 0) {
++					char message[CHAT_SIZE_MAX];
++					safesnprintf(message, sizeof(message), msg_txt(nullptr, 1036), first_sd->status.name, md->name, map_mapid2mapname(md->m), it->ename.c_str(), (float)drop_rate / 100);
++					intif_broadcast2(message, strlen(message) + 1, color, 0x190, 12, 0, 0);
++				}
++			}
+ 		}
+ 
+ 		// Ore Discovery (triggers if owner has loot priority, does not require to be the killer)
+diff -ruN a/src/map/pc.cpp b/src/map/pc.cpp
+--- a/src/map/pc.cpp	2026-11-12 20:22:37.134971836 -0800
++++ b/src/map/pc.cpp	2026-11-12 20:22:37.136009441 -0800
+@@ -6072,6 +6072,9 @@
+ 	if(id->flag.autoequip)
+ 		pc_equipitem(sd, i, id->equip);
+ 
++	if( id->type == IT_CHARM ) // HuffLabs: charms work while carried
++		status_calc_pc(sd, SCO_NONE);
++
+ 	/* rental item check */
+ 	if( item->expire_time ) {
+ 		if( time(nullptr) > item->expire_time ) {
+@@ -6109,6 +6112,7 @@
+ 
+ 	log_pick_pc(sd, log_type, -amount, &sd->inventory.u.items_inventory[n]);
+ 
++	bool charm = sd->inventory_data[n]->type == IT_CHARM; // HuffLabs
+ 	sd->inventory.u.items_inventory[n].amount -= amount;
+ 	sd->weight -= sd->inventory_data[n]->weight*amount ;
+ 	if( sd->inventory.u.items_inventory[n].amount <= 0 ){
+@@ -6124,6 +6128,9 @@
+ 
+ 	pc_show_questinfo(sd);
+ 
++	if( charm )
++		status_calc_pc(sd, SCO_NONE);
++
+ 	return 0;
+ }
+ 
+diff -ruN a/src/map/script_constants.hpp b/src/map/script_constants.hpp
+--- a/src/map/script_constants.hpp	2026-11-12 20:22:37.138576744 -0800
++++ b/src/map/script_constants.hpp	2026-11-12 20:22:37.139469884 -0800
+@@ -3768,6 +3768,7 @@
+ 	export_constant(IT_AMMO);
+ 	export_constant(IT_DELAYCONSUME);
+ 	export_constant(IT_SHADOWGEAR);
++	export_constant(IT_CHARM);
+ 	export_constant(IT_CASH);
+ 
+ 	/* weapon types */
+diff -ruN a/src/map/status.cpp b/src/map/status.cpp
+--- a/src/map/status.cpp	2026-11-12 20:22:37.141982498 -0800
++++ b/src/map/status.cpp	2026-11-12 20:22:37.142918145 -0800
+@@ -3901,6 +3901,16 @@
+ 		pet_delautobonus(*sd, sd->pd->autobonus3, true);
+ 	}
+ 
++	// HuffLabs: charms (IT_CHARM) run their item script while they are in the inventory
++	for (i = 0; i < MAX_INVENTORY; i++) {
++		const item_data* charm = sd->inventory_data[i];
++		if (charm == nullptr || charm->type != IT_CHARM || charm->script == nullptr || charm->elv > sd->status.base_level)
++			continue;
++		run_script(charm->script, 0, sd->id, 0);
++		if (!calculating)
++			return 1;
++	}
++
+ 	// Parse equipment
+ 	for (i = 0; i < EQI_MAX; i++) {
+ 		current_equip_item_index = index = sd->equip_index[i]; // We pass INDEX to current_equip_item_index - for EQUIP_SCRIPT (new cards solution) [Lupus]

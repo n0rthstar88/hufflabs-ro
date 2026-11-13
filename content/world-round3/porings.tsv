@@ -1,0 +1,26 @@
+# id	sprite	name	level	element	element_lv	race	size	hp	class	map spawns (map:count,...)
+31000	AQUARING	Aquaring	6	Water	1	Plant	Medium	180	Normal	prt_fild08:4,prt_fild05:3
+31001	BLACKNEKORING	Black Nekoring	14	Dark	1	Brute	Small	620	Normal	prt_fild06:4,prt_fild01:3
+31002	BLOODRING	Bloodring	20	Fire	2	Demon	Medium	1100	Normal	prt_fild06:3
+31003	BLUENEKORING	Blue Nekoring	12	Water	1	Brute	Small	520	Normal	prt_fild05:4
+31004	COWRING	Cowring	9	Earth	1	Brute	Medium	360	Normal	prt_fild08:4
+31005	CREAMRING	Creamring	4	Neutral	1	Plant	Medium	120	Normal	prt_fild08:5
+31006	DEMONRING	Demonring	22	Dark	2	Demon	Medium	1300	Normal	prt_fild06:3
+31007	GHOSTPORING	Ghost Poring	18	Ghost	1	Undead	Medium	900	Normal	prt_fild01:3
+31008	GLOOMRING	Gloomring	16	Dark	1	Plant	Medium	780	Normal	prt_fild01:3
+31009	GREENAPPLEPORING	Green Apple Poring	5	Earth	1	Plant	Medium	150	Normal	prt_fild08:5
+31010	GREENNEKORING	Green Nekoring	12	Wind	1	Brute	Small	520	Normal	prt_fild05:4
+31011	GREYNEKORING	Grey Nekoring	13	Neutral	1	Brute	Small	570	Normal	prt_fild01:4
+31012	HALLOWRING	Hallowring	19	Undead	1	Undead	Medium	1000	Normal	prt_fild06:3
+31013	LOVEPORING	Love Poring	7	Holy	1	Plant	Medium	220	Normal	prt_fild08:4
+31014	NEKORING	Nekoring	10	Neutral	1	Brute	Small	420	Normal	prt_fild05:4
+31015	ORCPORING	Orc Poring	15	Earth	1	Demihuman	Medium	700	Normal	prt_fild01:4
+31016	PANDARING	Pandaring	11	Neutral	1	Brute	Medium	470	Normal	prt_fild05:4
+31017	PINKNEKORING	Pink Nekoring	12	Fire	1	Brute	Small	520	Normal	prt_fild05:4
+31018	PORINGKING	Poring King	45	Water	3	Plant	Large	25000	Boss	prt_fild08:1
+31019	PUMPKINRING	Pumpkinring	17	Earth	2	Plant	Medium	840	Normal	prt_fild06:3
+31020	PURPLENEKORING	Purple Nekoring	13	Poison	1	Brute	Small	570	Normal	prt_fild06:4
+31021	REDAPPLEPORING	Red Apple Poring	5	Fire	1	Plant	Medium	150	Normal	prt_fild08:5
+31022	SPROURING	Sprouring	3	Earth	1	Plant	Small	90	Normal	prt_fild08:5
+31023	WHISPERING	Whispering	16	Ghost	2	Undead	Small	760	Normal	prt_fild01:3
+31024	WHITEPORING	White Poring	8	Holy	1	Plant	Medium	280	Normal	prt_fild08:4

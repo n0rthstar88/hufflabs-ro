@@ -140,6 +140,6249 @@ tbl_custom = {
 		ClassNum = 0,
 		costume = false
 	},
+	[2600200] = {
+		unidentifiedDisplayName = "Zeny",
+		unidentifiedResourceName = "황금",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Zeny",
+		identifiedResourceName = "황금",
+		identifiedDescriptionName = {
+			"Shop currency choice: this shop takes Zeny.",
+			"Pick this or HuffLabs Coin when you open a vending shop.",
+			"Not a real item."
+		},
+		slotCount = 0,
+		ClassNum = 0,
+		costume = true
+	},
+	[2600100] = {
+		unidentifiedDisplayName = "Costume Super Saiyan Aura",
+		unidentifiedResourceName = "saiyan_aura",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Super Saiyan Aura",
+		identifiedResourceName = "saiyan_aura",
+		identifiedDescriptionName = {
+			"A blazing golden aura. Power level: over 9000.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2935,
+		costume = true
+	},
+	[2601000] = {
+		unidentifiedDisplayName = "Costume Evil Poring Hat",
+		unidentifiedResourceName = "hlro_evil_poring_hat",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Evil Poring Hat",
+		identifiedResourceName = "hlro_evil_poring_hat",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2936,
+		costume = true
+	},
+	[2601001] = {
+		unidentifiedDisplayName = "Costume Demonic Helm",
+		unidentifiedResourceName = "hlro_evila_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Demonic Helm",
+		identifiedResourceName = "hlro_evila_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2937,
+		costume = true
+	},
+	[2601002] = {
+		unidentifiedDisplayName = "Costume Shadow Helm",
+		unidentifiedResourceName = "hlro_shadow_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Shadow Helm",
+		identifiedResourceName = "hlro_shadow_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2938,
+		costume = true
+	},
+	[2601003] = {
+		unidentifiedDisplayName = "Costume Asura Helm",
+		unidentifiedResourceName = "hlro_asura_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Asura Helm",
+		identifiedResourceName = "hlro_asura_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2939,
+		costume = true
+	},
+	[2601004] = {
+		unidentifiedDisplayName = "Costume Dragon Helm",
+		unidentifiedResourceName = "hlro_dragon_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dragon Helm",
+		identifiedResourceName = "hlro_dragon_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2940,
+		costume = true
+	},
+	[2601005] = {
+		unidentifiedDisplayName = "Costume Evil Bone Helm",
+		unidentifiedResourceName = "hlro_evilbone_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Evil Bone Helm",
+		identifiedResourceName = "hlro_evilbone_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2941,
+		costume = true
+	},
+	[2601006] = {
+		unidentifiedDisplayName = "Costume Dowry Hat",
+		unidentifiedResourceName = "hlro_dowry",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dowry Hat",
+		identifiedResourceName = "hlro_dowry",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2942,
+		costume = true
+	},
+	[2601007] = {
+		unidentifiedDisplayName = "Costume Golden Valkyrie Helm",
+		unidentifiedResourceName = "hlro_golden_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Golden Valkyrie Helm",
+		identifiedResourceName = "hlro_golden_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2943,
+		costume = true
+	},
+	[2601008] = {
+		unidentifiedDisplayName = "Costume Kakashi Headband",
+		unidentifiedResourceName = "hlro_kakashi",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Kakashi Headband",
+		identifiedResourceName = "hlro_kakashi",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2944,
+		costume = true
+	},
+	[2601009] = {
+		unidentifiedDisplayName = "Costume Valkyrie Helm",
+		unidentifiedResourceName = "hlro_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Valkyrie Helm",
+		identifiedResourceName = "hlro_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2945,
+		costume = true
+	},
+	[2601010] = {
+		unidentifiedDisplayName = "Costume Konoha Head Protector",
+		unidentifiedResourceName = "hlro_konohahp",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Konoha Head Protector",
+		identifiedResourceName = "hlro_konohahp",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2946,
+		costume = true
+	},
+	[2601011] = {
+		unidentifiedDisplayName = "Costume Myst Head Protector",
+		unidentifiedResourceName = "hlro_mysthp",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Myst Head Protector",
+		identifiedResourceName = "hlro_mysthp",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2947,
+		costume = true
+	},
+	[2601012] = {
+		unidentifiedDisplayName = "Costume Sound Head Protector",
+		unidentifiedResourceName = "hlro_soundhp",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Sound Head Protector",
+		identifiedResourceName = "hlro_soundhp",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2948,
+		costume = true
+	},
+	[2601013] = {
+		unidentifiedDisplayName = "Costume Sand Head Protector",
+		unidentifiedResourceName = "hlro_sandhp",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Sand Head Protector",
+		identifiedResourceName = "hlro_sandhp",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2949,
+		costume = true
+	},
+	[2601014] = {
+		unidentifiedDisplayName = "Costume Storm Head Protector",
+		unidentifiedResourceName = "hlro_lightninghp",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Storm Head Protector",
+		identifiedResourceName = "hlro_lightninghp",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2950,
+		costume = true
+	},
+	[2601015] = {
+		unidentifiedDisplayName = "Costume Rock Head Protector",
+		unidentifiedResourceName = "hlro_rockhp",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Rock Head Protector",
+		identifiedResourceName = "hlro_rockhp",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2951,
+		costume = true
+	},
+	[2601016] = {
+		unidentifiedDisplayName = "Costume White Magician Hat",
+		unidentifiedResourceName = "hlro_white_magician_hat",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Magician Hat",
+		identifiedResourceName = "hlro_white_magician_hat",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2952,
+		costume = true
+	},
+	[2601017] = {
+		unidentifiedDisplayName = "Costume Angel Wings",
+		unidentifiedResourceName = "hlro_angel_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Angel Wings",
+		identifiedResourceName = "hlro_angel_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2953,
+		costume = true
+	},
+	[2601018] = {
+		unidentifiedDisplayName = "Costume Angeling Wings",
+		unidentifiedResourceName = "hlro_angeling_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Angeling Wings",
+		identifiedResourceName = "hlro_angeling_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2954,
+		costume = true
+	},
+	[2601019] = {
+		unidentifiedDisplayName = "Costume Wing Zero",
+		unidentifiedResourceName = "hlro_wing_zero",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Wing Zero",
+		identifiedResourceName = "hlro_wing_zero",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2955,
+		costume = true
+	},
+	[2601020] = {
+		unidentifiedDisplayName = "Costume Butterfly Wings",
+		unidentifiedResourceName = "hlro_butterfly_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Butterfly Wings",
+		identifiedResourceName = "hlro_butterfly_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2956,
+		costume = true
+	},
+	[2601021] = {
+		unidentifiedDisplayName = "Costume White Butterfly Wings",
+		unidentifiedResourceName = "hlro_wbutterfly_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Butterfly Wings",
+		identifiedResourceName = "hlro_wbutterfly_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2957,
+		costume = true
+	},
+	[2601022] = {
+		unidentifiedDisplayName = "Costume Dark Wings",
+		unidentifiedResourceName = "hlro_dark_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dark Wings",
+		identifiedResourceName = "hlro_dark_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2958,
+		costume = true
+	},
+	[2601023] = {
+		unidentifiedDisplayName = "Costume Sniper Wings",
+		unidentifiedResourceName = "hlro_sniper_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Sniper Wings",
+		identifiedResourceName = "hlro_sniper_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2959,
+		costume = true
+	},
+	[2601024] = {
+		unidentifiedDisplayName = "Costume Torn Wings",
+		unidentifiedResourceName = "hlro_torn_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Torn Wings",
+		identifiedResourceName = "hlro_torn_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2960,
+		costume = true
+	},
+	[2601025] = {
+		unidentifiedDisplayName = "Costume Gargoyle Wings",
+		unidentifiedResourceName = "hlro_gargoyle_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Gargoyle Wings",
+		identifiedResourceName = "hlro_gargoyle_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2961,
+		costume = true
+	},
+	[2601026] = {
+		unidentifiedDisplayName = "Costume Evil Wings",
+		unidentifiedResourceName = "hlro_devil_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Evil Wings",
+		identifiedResourceName = "hlro_devil_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2962,
+		costume = true
+	},
+	[2601027] = {
+		unidentifiedDisplayName = "Costume Wings Of Fallen Angel",
+		unidentifiedResourceName = "hlro_fallen_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Wings Of Fallen Angel",
+		identifiedResourceName = "hlro_fallen_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2963,
+		costume = true
+	},
+	[2601028] = {
+		unidentifiedDisplayName = "Costume Black Butterfly Wings",
+		unidentifiedResourceName = "hlro_bbutterfly_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Butterfly Wings",
+		identifiedResourceName = "hlro_bbutterfly_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2964,
+		costume = true
+	},
+	[2601029] = {
+		unidentifiedDisplayName = "Costume Phoenix Wings",
+		unidentifiedResourceName = "hlro_phoenix_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Phoenix Wings",
+		identifiedResourceName = "hlro_phoenix_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2965,
+		costume = true
+	},
+	[2601030] = {
+		unidentifiedDisplayName = "Costume Arctic Wings",
+		unidentifiedResourceName = "hlro_artic_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Arctic Wings",
+		identifiedResourceName = "hlro_artic_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2966,
+		costume = true
+	},
+	[2601031] = {
+		unidentifiedDisplayName = "Costume Fairy Wing",
+		unidentifiedResourceName = "hlro_fairy_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fairy Wing",
+		identifiedResourceName = "hlro_fairy_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2967,
+		costume = true
+	},
+	[2601032] = {
+		unidentifiedDisplayName = "Costume Demon Wings",
+		unidentifiedResourceName = "hlro_demon_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Demon Wings",
+		identifiedResourceName = "hlro_demon_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2968,
+		costume = true
+	},
+	[2601033] = {
+		unidentifiedDisplayName = "Costume Chii Ears",
+		unidentifiedResourceName = "hlro_chii_ears",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Chii Ears",
+		identifiedResourceName = "hlro_chii_ears",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2969,
+		costume = true
+	},
+	[2601034] = {
+		unidentifiedDisplayName = "Costume ANBU Mask",
+		unidentifiedResourceName = "hlro_anbu",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume ANBU Mask",
+		identifiedResourceName = "hlro_anbu",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle, Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2970,
+		costume = true
+	},
+	[2601035] = {
+		unidentifiedDisplayName = "Costume Black Helm",
+		unidentifiedResourceName = "hlro_black_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Helm",
+		identifiedResourceName = "hlro_black_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2971,
+		costume = true
+	},
+	[2601036] = {
+		unidentifiedDisplayName = "Costume Hunter Ninja Mask",
+		unidentifiedResourceName = "hlro_hunter_nin_mask",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Hunter Ninja Mask",
+		identifiedResourceName = "hlro_hunter_nin_mask",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle, Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2972,
+		costume = true
+	},
+	[2601037] = {
+		unidentifiedDisplayName = "Costume Hermes Hat",
+		unidentifiedResourceName = "hlro_helm_of_hermes",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Hermes Hat",
+		identifiedResourceName = "hlro_helm_of_hermes",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2973,
+		costume = true
+	},
+	[2601038] = {
+		unidentifiedDisplayName = "Costume Holy Evil Helm",
+		unidentifiedResourceName = "hlro_holy_evil",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Holy Evil Helm",
+		identifiedResourceName = "hlro_holy_evil",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2974,
+		costume = true
+	},
+	[2601039] = {
+		unidentifiedDisplayName = "Costume Baal Helm",
+		unidentifiedResourceName = "hlro_helm_baal",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Baal Helm",
+		identifiedResourceName = "hlro_helm_baal",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2975,
+		costume = true
+	},
+	[2601040] = {
+		unidentifiedDisplayName = "Costume Hokage Hat",
+		unidentifiedResourceName = "hlro_hokage",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Hokage Hat",
+		identifiedResourceName = "hlro_hokage",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2976,
+		costume = true
+	},
+	[2601041] = {
+		unidentifiedDisplayName = "Costume Earth Wings",
+		unidentifiedResourceName = "hlro_earth",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Earth Wings",
+		identifiedResourceName = "hlro_earth",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2977,
+		costume = true
+	},
+	[2601042] = {
+		unidentifiedDisplayName = "Costume Freezy Wings",
+		unidentifiedResourceName = "hlro_freezy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Freezy Wings",
+		identifiedResourceName = "hlro_freezy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2978,
+		costume = true
+	},
+	[2601043] = {
+		unidentifiedDisplayName = "Costume Deviling Wings",
+		unidentifiedResourceName = "hlro_deviling",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Deviling Wings",
+		identifiedResourceName = "hlro_deviling",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2979,
+		costume = true
+	},
+	[2601044] = {
+		unidentifiedDisplayName = "Costume Dark Master Wing",
+		unidentifiedResourceName = "hlro_dark_master_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dark Master Wing",
+		identifiedResourceName = "hlro_dark_master_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2980,
+		costume = true
+	},
+	[2601045] = {
+		unidentifiedDisplayName = "Costume Incubus Wing",
+		unidentifiedResourceName = "hlro_incubus_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Incubus Wing",
+		identifiedResourceName = "hlro_incubus_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2981,
+		costume = true
+	},
+	[2601046] = {
+		unidentifiedDisplayName = "Costume Fusion Wing",
+		unidentifiedResourceName = "hlro_fusion_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fusion Wing",
+		identifiedResourceName = "hlro_fusion_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2982,
+		costume = true
+	},
+	[2601047] = {
+		unidentifiedDisplayName = "Costume Ying Yang Wing",
+		unidentifiedResourceName = "hlro_ying_yang_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Ying Yang Wing",
+		identifiedResourceName = "hlro_ying_yang_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2983,
+		costume = true
+	},
+	[2601048] = {
+		unidentifiedDisplayName = "Costume Helm Of God",
+		unidentifiedResourceName = "hlro_helm_of_god",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Helm Of God",
+		identifiedResourceName = "hlro_helm_of_god",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2984,
+		costume = true
+	},
+	[2601049] = {
+		unidentifiedDisplayName = "Costume Angels' Helm",
+		unidentifiedResourceName = "hlro_helm_of_angel",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Angels' Helm",
+		identifiedResourceName = "hlro_helm_of_angel",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2985,
+		costume = true
+	},
+	[2601050] = {
+		unidentifiedDisplayName = "Costume Golden Dragon",
+		unidentifiedResourceName = "hlro_golden_dragon",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Golden Dragon",
+		identifiedResourceName = "hlro_golden_dragon",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2986,
+		costume = true
+	},
+	[2601051] = {
+		unidentifiedDisplayName = "Costume Skeleton Wings",
+		unidentifiedResourceName = "hlro_skel_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Skeleton Wings",
+		identifiedResourceName = "hlro_skel_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2987,
+		costume = true
+	},
+	[2601052] = {
+		unidentifiedDisplayName = "Costume Fantasy Wing",
+		unidentifiedResourceName = "hlro_fantasy_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fantasy Wing",
+		identifiedResourceName = "hlro_fantasy_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2988,
+		costume = true
+	},
+	[2601053] = {
+		unidentifiedDisplayName = "Costume Ultimate Wing",
+		unidentifiedResourceName = "hlro_ultimate_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Ultimate Wing",
+		identifiedResourceName = "hlro_ultimate_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2989,
+		costume = true
+	},
+	[2601054] = {
+		unidentifiedDisplayName = "Costume Master Devil Wing",
+		unidentifiedResourceName = "hlro_master_devil_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Master Devil Wing",
+		identifiedResourceName = "hlro_master_devil_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2990,
+		costume = true
+	},
+	[2601055] = {
+		unidentifiedDisplayName = "Costume Phoenix of Death",
+		unidentifiedResourceName = "hlro_phoenix_of_death",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Phoenix of Death",
+		identifiedResourceName = "hlro_phoenix_of_death",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2991,
+		costume = true
+	},
+	[2601056] = {
+		unidentifiedDisplayName = "Costume Phoenix of Blood",
+		unidentifiedResourceName = "hlro_phoenix_of_blood",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Phoenix of Blood",
+		identifiedResourceName = "hlro_phoenix_of_blood",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2992,
+		costume = true
+	},
+	[2601057] = {
+		unidentifiedDisplayName = "Costume Pincer Arms",
+		unidentifiedResourceName = "hlro_pincer_arms",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Pincer Arms",
+		identifiedResourceName = "hlro_pincer_arms",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2993,
+		costume = true
+	},
+	[2601058] = {
+		unidentifiedDisplayName = "Costume Gold Valkyrie Helm",
+		unidentifiedResourceName = "hlro_gold_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Gold Valkyrie Helm",
+		identifiedResourceName = "hlro_gold_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2994,
+		costume = true
+	},
+	[2601059] = {
+		unidentifiedDisplayName = "Costume Deviling Wings II",
+		unidentifiedResourceName = "hlro_deviling_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Deviling Wings II",
+		identifiedResourceName = "hlro_deviling_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2995,
+		costume = true
+	},
+	[2601060] = {
+		unidentifiedDisplayName = "Costume Wings of Retribution",
+		unidentifiedResourceName = "hlro_retribuition",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Wings of Retribution",
+		identifiedResourceName = "hlro_retribuition",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2996,
+		costume = true
+	},
+	[2601061] = {
+		unidentifiedDisplayName = "Costume Cat Tail",
+		unidentifiedResourceName = "hlro_rabo_de_gato",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Cat Tail",
+		identifiedResourceName = "hlro_rabo_de_gato",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2997,
+		costume = true
+	},
+	[2601062] = {
+		unidentifiedDisplayName = "Costume Ninja Hat",
+		unidentifiedResourceName = "hlro_ninja_hat",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Ninja Hat",
+		identifiedResourceName = "hlro_ninja_hat",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2998,
+		costume = true
+	},
+	[2601063] = {
+		unidentifiedDisplayName = "Costume Torn Wings II",
+		unidentifiedResourceName = "hlro_torn_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Torn Wings II",
+		identifiedResourceName = "hlro_torn_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 2999,
+		costume = true
+	},
+	[2601064] = {
+		unidentifiedDisplayName = "Costume Cutie Wings",
+		unidentifiedResourceName = "hlro_cutie_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Cutie Wings",
+		identifiedResourceName = "hlro_cutie_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3000,
+		costume = true
+	},
+	[2601065] = {
+		unidentifiedDisplayName = "Costume Fox Ears",
+		unidentifiedResourceName = "hlro_fox_ears",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fox Ears",
+		identifiedResourceName = "hlro_fox_ears",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3001,
+		costume = true
+	},
+	[2601066] = {
+		unidentifiedDisplayName = "Costume Lightning Wings",
+		unidentifiedResourceName = "hlro_lighting_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Lightning Wings",
+		identifiedResourceName = "hlro_lighting_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3002,
+		costume = true
+	},
+	[2601067] = {
+		unidentifiedDisplayName = "Costume Attitude Cap",
+		unidentifiedResourceName = "hlro_atitude_cap",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Attitude Cap",
+		identifiedResourceName = "hlro_atitude_cap",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3003,
+		costume = true
+	},
+	[2601068] = {
+		unidentifiedDisplayName = "Costume Karu Hat",
+		unidentifiedResourceName = "hlro_karu_hat",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Karu Hat",
+		identifiedResourceName = "hlro_karu_hat",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3004,
+		costume = true
+	},
+	[2601069] = {
+		unidentifiedDisplayName = "Costume Taxi Driver Cap",
+		unidentifiedResourceName = "hlro_checkered_cap",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Taxi Driver Cap",
+		identifiedResourceName = "hlro_checkered_cap",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3005,
+		costume = true
+	},
+	[2601070] = {
+		unidentifiedDisplayName = "Costume Bunny Hat",
+		unidentifiedResourceName = "hlro_bunny_hat",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Bunny Hat",
+		identifiedResourceName = "hlro_bunny_hat",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3006,
+		costume = true
+	},
+	[2601071] = {
+		unidentifiedDisplayName = "Costume Tone Hat",
+		unidentifiedResourceName = "hlro_tone_hat",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Tone Hat",
+		identifiedResourceName = "hlro_tone_hat",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3007,
+		costume = true
+	},
+	[2601072] = {
+		unidentifiedDisplayName = "Costume Afro Wig",
+		unidentifiedResourceName = "hlro_afro_hat",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Afro Wig",
+		identifiedResourceName = "hlro_afro_hat",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3008,
+		costume = true
+	},
+	[2601073] = {
+		unidentifiedDisplayName = "Costume True Orc Hero Helm",
+		unidentifiedResourceName = "hlro_orc_hero_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume True Orc Hero Helm",
+		identifiedResourceName = "hlro_orc_hero_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3009,
+		costume = true
+	},
+	[2601074] = {
+		unidentifiedDisplayName = "Costume Holy Aura",
+		unidentifiedResourceName = "hlro_spell_aura",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Holy Aura",
+		identifiedResourceName = "hlro_spell_aura",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3010,
+		costume = true
+	},
+	[2601075] = {
+		unidentifiedDisplayName = "Costume Valkyrie Shield",
+		unidentifiedResourceName = "hlro_valk_shield",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Valkyrie Shield",
+		identifiedResourceName = "hlro_valk_shield",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3011,
+		costume = true
+	},
+	[2601076] = {
+		unidentifiedDisplayName = "Costume Vivi Hat",
+		unidentifiedResourceName = "hlro_vivi_hat",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Vivi Hat",
+		identifiedResourceName = "hlro_vivi_hat",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3012,
+		costume = true
+	},
+	[2601077] = {
+		unidentifiedDisplayName = "Costume Charon's Hood",
+		unidentifiedResourceName = "hlro_capuz_de_carontes",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Charon's Hood",
+		identifiedResourceName = "hlro_capuz_de_carontes",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3013,
+		costume = true
+	},
+	[2601078] = {
+		unidentifiedDisplayName = "Costume Admiral Hat",
+		unidentifiedResourceName = "hlro_chapeu_de_almirante",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Admiral Hat",
+		identifiedResourceName = "hlro_chapeu_de_almirante",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3014,
+		costume = true
+	},
+	[2601079] = {
+		unidentifiedDisplayName = "Costume Fashion Hat",
+		unidentifiedResourceName = "hlro_chapeu_fashion",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fashion Hat",
+		identifiedResourceName = "hlro_chapeu_fashion",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3015,
+		costume = true
+	},
+	[2601080] = {
+		unidentifiedDisplayName = "Costume Furious Angel Helm",
+		unidentifiedResourceName = "hlro_o_anjo_enfurecido",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Furious Angel Helm",
+		identifiedResourceName = "hlro_o_anjo_enfurecido",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3016,
+		costume = true
+	},
+	[2601081] = {
+		unidentifiedDisplayName = "Costume Celestial Arcane Hat",
+		unidentifiedResourceName = "hlro_chapeu_arcano_celeste",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Celestial Arcane Hat",
+		identifiedResourceName = "hlro_chapeu_arcano_celeste",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3017,
+		costume = true
+	},
+	[2601082] = {
+		unidentifiedDisplayName = "Costume Mystic Butterfly Wings",
+		unidentifiedResourceName = "hlro_asas_de_borboleta_mistica",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Mystic Butterfly Wings",
+		identifiedResourceName = "hlro_asas_de_borboleta_mistica",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3018,
+		costume = true
+	},
+	[2601083] = {
+		unidentifiedDisplayName = "Costume Rebirth Wings",
+		unidentifiedResourceName = "hlro_asas_da_reencarnacao",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Rebirth Wings",
+		identifiedResourceName = "hlro_asas_da_reencarnacao",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3019,
+		costume = true
+	},
+	[2601084] = {
+		unidentifiedDisplayName = "Costume Super Bunny Ears",
+		unidentifiedResourceName = "hlro_super_coelho",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Super Bunny Ears",
+		identifiedResourceName = "hlro_super_coelho",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3020,
+		costume = true
+	},
+	[2601085] = {
+		unidentifiedDisplayName = "Costume Angel of Death Wings",
+		unidentifiedResourceName = "hlro_asas_anjo_da_morte",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Angel of Death Wings",
+		identifiedResourceName = "hlro_asas_anjo_da_morte",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3021,
+		costume = true
+	},
+	[2601086] = {
+		unidentifiedDisplayName = "Costume Blazing Angel Wings",
+		unidentifiedResourceName = "hlro_asas_de_anjo_incandescente",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Blazing Angel Wings",
+		identifiedResourceName = "hlro_asas_de_anjo_incandescente",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3022,
+		costume = true
+	},
+	[2601087] = {
+		unidentifiedDisplayName = "Costume Seichim Wings",
+		unidentifiedResourceName = "hlro_asas_seichim",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Seichim Wings",
+		identifiedResourceName = "hlro_asas_seichim",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3023,
+		costume = true
+	},
+	[2601088] = {
+		unidentifiedDisplayName = "Costume Green Metal Wings",
+		unidentifiedResourceName = "hlro_asas_verdes_metal",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Green Metal Wings",
+		identifiedResourceName = "hlro_asas_verdes_metal",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3024,
+		costume = true
+	},
+	[2601089] = {
+		unidentifiedDisplayName = "Costume Fire Dragon",
+		unidentifiedResourceName = "hlro_red_fire_dark_dragon",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fire Dragon",
+		identifiedResourceName = "hlro_red_fire_dark_dragon",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3025,
+		costume = true
+	},
+	[2601090] = {
+		unidentifiedDisplayName = "Costume Divine Angel Wings",
+		unidentifiedResourceName = "hlro_angel_up_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Divine Angel Wings",
+		identifiedResourceName = "hlro_angel_up_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3026,
+		costume = true
+	},
+	[2601091] = {
+		unidentifiedDisplayName = "Costume Aries Wings",
+		unidentifiedResourceName = "hlro_aries_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Aries Wings",
+		identifiedResourceName = "hlro_aries_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3027,
+		costume = true
+	},
+	[2601092] = {
+		unidentifiedDisplayName = "Costume Swan Wings",
+		unidentifiedResourceName = "hlro_asa_de_cisney",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Swan Wings",
+		identifiedResourceName = "hlro_asa_de_cisney",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3028,
+		costume = true
+	},
+	[2601093] = {
+		unidentifiedDisplayName = "Costume Barracuda Wings",
+		unidentifiedResourceName = "hlro_baracuda_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Barracuda Wings",
+		identifiedResourceName = "hlro_baracuda_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3029,
+		costume = true
+	},
+	[2601094] = {
+		unidentifiedDisplayName = "Costume Shadow Dragon Wings",
+		unidentifiedResourceName = "hlro_black_dark_dragon",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Shadow Dragon Wings",
+		identifiedResourceName = "hlro_black_dark_dragon",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3030,
+		costume = true
+	},
+	[2601095] = {
+		unidentifiedDisplayName = "Costume Black Swan Wings",
+		unidentifiedResourceName = "hlro_cisnei_negro",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Swan Wings",
+		identifiedResourceName = "hlro_cisnei_negro",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3031,
+		costume = true
+	},
+	[2601096] = {
+		unidentifiedDisplayName = "Costume Harpy Wings",
+		unidentifiedResourceName = "hlro_harpywings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Harpy Wings",
+		identifiedResourceName = "hlro_harpywings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3032,
+		costume = true
+	},
+	[2601097] = {
+		unidentifiedDisplayName = "Costume Hell Wings",
+		unidentifiedResourceName = "hlro_hell_slayer_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Hell Wings",
+		identifiedResourceName = "hlro_hell_slayer_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3033,
+		costume = true
+	},
+	[2601098] = {
+		unidentifiedDisplayName = "Costume Fire Sisters Wings",
+		unidentifiedResourceName = "hlro_irmans_de_fogo",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fire Sisters Wings",
+		identifiedResourceName = "hlro_irmans_de_fogo",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3034,
+		costume = true
+	},
+	[2601099] = {
+		unidentifiedDisplayName = "Costume Nature Sisters Wings",
+		unidentifiedResourceName = "hlro_irmans_natureza",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Nature Sisters Wings",
+		identifiedResourceName = "hlro_irmans_natureza",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3035,
+		costume = true
+	},
+	[2601100] = {
+		unidentifiedDisplayName = "Costume Luigi Cap",
+		unidentifiedResourceName = "hlro_luigicap",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Luigi Cap",
+		identifiedResourceName = "hlro_luigicap",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3036,
+		costume = true
+	},
+	[2601101] = {
+		unidentifiedDisplayName = "Costume Mario Cap",
+		unidentifiedResourceName = "hlro_mario_cap",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Mario Cap",
+		identifiedResourceName = "hlro_mario_cap",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3037,
+		costume = true
+	},
+	[2601102] = {
+		unidentifiedDisplayName = "Costume Ice Dragon",
+		unidentifiedResourceName = "hlro_dragao_branco_de_gelo",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Ice Dragon",
+		identifiedResourceName = "hlro_dragao_branco_de_gelo",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3038,
+		costume = true
+	},
+	[2601103] = {
+		unidentifiedDisplayName = "Costume Blue Seahorse",
+		unidentifiedResourceName = "hlro_cavalo_marinho_azul",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Blue Seahorse",
+		identifiedResourceName = "hlro_cavalo_marinho_azul",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3039,
+		costume = true
+	},
+	[2601104] = {
+		unidentifiedDisplayName = "Costume Rainbow Seahorse",
+		unidentifiedResourceName = "hlro_cavalo_marinho_do_arco_iris",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Rainbow Seahorse",
+		identifiedResourceName = "hlro_cavalo_marinho_do_arco_iris",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3040,
+		costume = true
+	},
+	[2601105] = {
+		unidentifiedDisplayName = "Costume Fire Dragon (Mid)",
+		unidentifiedResourceName = "hlro_dragao_do_fogo",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fire Dragon (Mid)",
+		identifiedResourceName = "hlro_dragao_do_fogo",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3041,
+		costume = true
+	},
+	[2601106] = {
+		unidentifiedDisplayName = "Costume Mangekyou Sharingan",
+		unidentifiedResourceName = "hlro_sharingan",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Mangekyou Sharingan",
+		identifiedResourceName = "hlro_sharingan",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3042,
+		costume = true
+	},
+	[2601107] = {
+		unidentifiedDisplayName = "Costume Byakugan",
+		unidentifiedResourceName = "hlro_byakugan",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Byakugan",
+		identifiedResourceName = "hlro_byakugan",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3043,
+		costume = true
+	},
+	[2601108] = {
+		unidentifiedDisplayName = "Costume Heaven Wings",
+		unidentifiedResourceName = "hlro_hwing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Heaven Wings",
+		identifiedResourceName = "hlro_hwing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3044,
+		costume = true
+	},
+	[2601109] = {
+		unidentifiedDisplayName = "Costume Dragon Wings",
+		unidentifiedResourceName = "hlro_dragon",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dragon Wings",
+		identifiedResourceName = "hlro_dragon",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3045,
+		costume = true
+	},
+	[2601110] = {
+		unidentifiedDisplayName = "Costume Alucard Hat",
+		unidentifiedResourceName = "hlro_alucardhat",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Alucard Hat",
+		identifiedResourceName = "hlro_alucardhat",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3046,
+		costume = true
+	},
+	[2601111] = {
+		unidentifiedDisplayName = "Costume Alucard Glasses",
+		unidentifiedResourceName = "hlro_alucad",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Alucard Glasses",
+		identifiedResourceName = "hlro_alucad",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3047,
+		costume = true
+	},
+	[2601112] = {
+		unidentifiedDisplayName = "Costume Black Angel",
+		unidentifiedResourceName = "hlro_fred_anjonegro",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Angel",
+		identifiedResourceName = "hlro_fred_anjonegro",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3048,
+		costume = true
+	},
+	[2601113] = {
+		unidentifiedDisplayName = "Costume Crescent Moon Wings",
+		unidentifiedResourceName = "hlro_fred_asasdaluacrescente",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Crescent Moon Wings",
+		identifiedResourceName = "hlro_fred_asasdaluacrescente",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3049,
+		costume = true
+	},
+	[2601114] = {
+		unidentifiedDisplayName = "Costume Valkyrie Wings",
+		unidentifiedResourceName = "hlro_valkirye_wings_grande",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Valkyrie Wings",
+		identifiedResourceName = "hlro_valkirye_wings_grande",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3050,
+		costume = true
+	},
+	[2601115] = {
+		unidentifiedDisplayName = "Costume Aura of Love",
+		unidentifiedResourceName = "hlro_fred_auradoamor",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Aura of Love",
+		identifiedResourceName = "hlro_fred_auradoamor",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3051,
+		costume = true
+	},
+	[2601116] = {
+		unidentifiedDisplayName = "Costume Celestial Wings",
+		unidentifiedResourceName = "hlro_fred_asasselestiais",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Celestial Wings",
+		identifiedResourceName = "hlro_fred_asasselestiais",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3052,
+		costume = true
+	},
+	[2601117] = {
+		unidentifiedDisplayName = "Costume Sage's Wings",
+		unidentifiedResourceName = "hlro_fred_asasdosabio",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Sage's Wings",
+		identifiedResourceName = "hlro_fred_asasdosabio",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3053,
+		costume = true
+	},
+	[2601118] = {
+		unidentifiedDisplayName = "Costume Crystal Wings",
+		unidentifiedResourceName = "hlro_fred_asasdecristal",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Crystal Wings",
+		identifiedResourceName = "hlro_fred_asasdecristal",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3054,
+		costume = true
+	},
+	[2601119] = {
+		unidentifiedDisplayName = "Costume Shaira's Wings",
+		unidentifiedResourceName = "hlro_fred_asasdeshaira",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Shaira's Wings",
+		identifiedResourceName = "hlro_fred_asasdeshaira",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3055,
+		costume = true
+	},
+	[2601120] = {
+		unidentifiedDisplayName = "Costume Tribal Wing",
+		unidentifiedResourceName = "hlro_fred_asatribal",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Tribal Wing",
+		identifiedResourceName = "hlro_fred_asatribal",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3056,
+		costume = true
+	},
+	[2601121] = {
+		unidentifiedDisplayName = "Costume Fairy Wing II",
+		unidentifiedResourceName = "hlro_fred_asadefada",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fairy Wing II",
+		identifiedResourceName = "hlro_fred_asadefada",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3057,
+		costume = true
+	},
+	[2601122] = {
+		unidentifiedDisplayName = "Costume Metal Wing",
+		unidentifiedResourceName = "hlro_fred_asademetal2",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Metal Wing",
+		identifiedResourceName = "hlro_fred_asademetal2",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3058,
+		costume = true
+	},
+	[2601123] = {
+		unidentifiedDisplayName = "Costume Yellow Mystic Wing",
+		unidentifiedResourceName = "hlro_fred_asamisticaamarela",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Yellow Mystic Wing",
+		identifiedResourceName = "hlro_fred_asamisticaamarela",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3059,
+		costume = true
+	},
+	[2601124] = {
+		unidentifiedDisplayName = "Costume Water Wings",
+		unidentifiedResourceName = "hlro_fred_asasdeagua",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Water Wings",
+		identifiedResourceName = "hlro_fred_asasdeagua",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3060,
+		costume = true
+	},
+	[2601125] = {
+		unidentifiedDisplayName = "Costume Butterfly Wings (Fred)",
+		unidentifiedResourceName = "hlro_fred_asasdeborboleta",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Butterfly Wings (Fred)",
+		identifiedResourceName = "hlro_fred_asasdeborboleta",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3061,
+		costume = true
+	},
+	[2601126] = {
+		unidentifiedDisplayName = "Costume Golden Fairy Wings",
+		unidentifiedResourceName = "hlro_fred_asasdefadadourada",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Golden Fairy Wings",
+		identifiedResourceName = "hlro_fred_asasdefadadourada",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3062,
+		costume = true
+	},
+	[2601127] = {
+		unidentifiedDisplayName = "Costume Flower Wings",
+		unidentifiedResourceName = "hlro_fred_asasdeflor",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flower Wings",
+		identifiedResourceName = "hlro_fred_asasdeflor",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3063,
+		costume = true
+	},
+	[2601128] = {
+		unidentifiedDisplayName = "Costume Ice Wings",
+		unidentifiedResourceName = "hlro_fred_asasdegelo",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Ice Wings",
+		identifiedResourceName = "hlro_fred_asasdegelo",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3064,
+		costume = true
+	},
+	[2601129] = {
+		unidentifiedDisplayName = "Costume Dragon Helm (Fred)",
+		unidentifiedResourceName = "hlro_fred_elmododragao",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dragon Helm (Fred)",
+		identifiedResourceName = "hlro_fred_elmododragao",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3065,
+		costume = true
+	},
+	[2601130] = {
+		unidentifiedDisplayName = "Costume Lunar Helm",
+		unidentifiedResourceName = "hlro_fred_elmolunar",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Lunar Helm",
+		identifiedResourceName = "hlro_fred_elmolunar",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3066,
+		costume = true
+	},
+	[2601131] = {
+		unidentifiedDisplayName = "Costume Sinister Helm",
+		unidentifiedResourceName = "hlro_fred_elmosinistro1",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Sinister Helm",
+		identifiedResourceName = "hlro_fred_elmosinistro1",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3067,
+		costume = true
+	},
+	[2601132] = {
+		unidentifiedDisplayName = "Costume Frost Wings",
+		unidentifiedResourceName = "hlro_frost_wing_grande",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Frost Wings",
+		identifiedResourceName = "hlro_frost_wing_grande",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3068,
+		costume = true
+	},
+	[2601133] = {
+		unidentifiedDisplayName = "Costume Gold Hokage Hat",
+		unidentifiedResourceName = "hlro_helm_of_gm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Gold Hokage Hat",
+		identifiedResourceName = "hlro_helm_of_gm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3069,
+		costume = true
+	},
+	[2601134] = {
+		unidentifiedDisplayName = "Costume Nemesis Wings",
+		unidentifiedResourceName = "hlro_nemesiswings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Nemesis Wings",
+		identifiedResourceName = "hlro_nemesiswings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3070,
+		costume = true
+	},
+	[2601135] = {
+		unidentifiedDisplayName = "Costume Revolt Butterfly Wings",
+		unidentifiedResourceName = "hlro_revolt_butterfly_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Revolt Butterfly Wings",
+		identifiedResourceName = "hlro_revolt_butterfly_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3071,
+		costume = true
+	},
+	[2601136] = {
+		unidentifiedDisplayName = "Costume Specter Wings",
+		unidentifiedResourceName = "hlro_specter_wing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Specter Wings",
+		identifiedResourceName = "hlro_specter_wing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3072,
+		costume = true
+	},
+	[2601137] = {
+		unidentifiedDisplayName = "Costume Signum Helm",
+		unidentifiedResourceName = "hlro_sygnun_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Signum Helm",
+		identifiedResourceName = "hlro_sygnun_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3073,
+		costume = true
+	},
+	[2601138] = {
+		unidentifiedDisplayName = "Costume Summoning Wing",
+		unidentifiedResourceName = "hlro_fred_asasdainvocacao",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Summoning Wing",
+		identifiedResourceName = "hlro_fred_asasdainvocacao",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3074,
+		costume = true
+	},
+	[2601139] = {
+		unidentifiedDisplayName = "Costume Black Fire Wing",
+		unidentifiedResourceName = "hlro_fred_asadefogopreto",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Fire Wing",
+		identifiedResourceName = "hlro_fred_asadefogopreto",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3075,
+		costume = true
+	},
+	[2601140] = {
+		unidentifiedDisplayName = "Costume Fox Tail",
+		unidentifiedResourceName = "hlro_fred_raboderaposa",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fox Tail",
+		identifiedResourceName = "hlro_fred_raboderaposa",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3076,
+		costume = true
+	},
+	[2601141] = {
+		unidentifiedDisplayName = "Costume Goku's Tail",
+		unidentifiedResourceName = "hlro_fred_rabodogoku",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Goku's Tail",
+		identifiedResourceName = "hlro_fred_rabodogoku",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3077,
+		costume = true
+	},
+	[2601142] = {
+		unidentifiedDisplayName = "Costume Evil Valkyrie Helm",
+		unidentifiedResourceName = "hlro_fred_valkiriedomal",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Evil Valkyrie Helm",
+		identifiedResourceName = "hlro_fred_valkiriedomal",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3078,
+		costume = true
+	},
+	[2601143] = {
+		unidentifiedDisplayName = "Costume Requiem Hat",
+		unidentifiedResourceName = "hlro_requiemhat",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Requiem Hat",
+		identifiedResourceName = "hlro_requiemhat",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3079,
+		costume = true
+	},
+	[2601144] = {
+		unidentifiedDisplayName = "Costume Romantic Rose",
+		unidentifiedResourceName = "hlro_romanticrose",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Romantic Rose",
+		identifiedResourceName = "hlro_romanticrose",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3080,
+		costume = true
+	},
+	[2601145] = {
+		unidentifiedDisplayName = "Costume Metal Wings",
+		unidentifiedResourceName = "hlro_fred_asademetal",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Metal Wings",
+		identifiedResourceName = "hlro_fred_asademetal",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3081,
+		costume = true
+	},
+	[2601146] = {
+		unidentifiedDisplayName = "Costume Donation Wings",
+		unidentifiedResourceName = "hlro_fred_asasdedoacao",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Donation Wings",
+		identifiedResourceName = "hlro_fred_asasdedoacao",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3082,
+		costume = true
+	},
+	[2601147] = {
+		unidentifiedDisplayName = "Costume Fire Wings",
+		unidentifiedResourceName = "hlro_fred_asasdefogo",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fire Wings",
+		identifiedResourceName = "hlro_fred_asasdefogo",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3083,
+		costume = true
+	},
+	[2601148] = {
+		unidentifiedDisplayName = "Costume Web Wings",
+		unidentifiedResourceName = "hlro_fred_asasdeteia",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Web Wings",
+		identifiedResourceName = "hlro_fred_asasdeteia",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3084,
+		costume = true
+	},
+	[2601149] = {
+		unidentifiedDisplayName = "Costume Elemental Wings",
+		unidentifiedResourceName = "hlro_fred_asaselementais",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Elemental Wings",
+		identifiedResourceName = "hlro_fred_asaselementais",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3085,
+		costume = true
+	},
+	[2601150] = {
+		unidentifiedDisplayName = "Costume Rough Wing",
+		unidentifiedResourceName = "hlro_fred_asatosca",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Rough Wing",
+		identifiedResourceName = "hlro_fred_asatosca",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3086,
+		costume = true
+	},
+	[2601151] = {
+		unidentifiedDisplayName = "Costume Fairy",
+		unidentifiedResourceName = "hlro_fred_fada",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fairy",
+		identifiedResourceName = "hlro_fred_fada",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3087,
+		costume = true
+	},
+	[2601152] = {
+		unidentifiedDisplayName = "Costume Green Valkyrie Helm",
+		unidentifiedResourceName = "hlro_green_valkyrie_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Green Valkyrie Helm",
+		identifiedResourceName = "hlro_green_valkyrie_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3088,
+		costume = true
+	},
+	[2601153] = {
+		unidentifiedDisplayName = "Costume Red Valkyrie Helm",
+		unidentifiedResourceName = "hlro_red_valkyrie_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Red Valkyrie Helm",
+		identifiedResourceName = "hlro_red_valkyrie_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3089,
+		costume = true
+	},
+	[2601154] = {
+		unidentifiedDisplayName = "Costume Evil Valkyrie Helm (Dark)",
+		unidentifiedResourceName = "hlro_dark_valkyrie_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Evil Valkyrie Helm (Dark)",
+		identifiedResourceName = "hlro_dark_valkyrie_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3090,
+		costume = true
+	},
+	[2601155] = {
+		unidentifiedDisplayName = "Costume Brown Valkyrie Helm",
+		unidentifiedResourceName = "hlro_brown_valkyrie_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Brown Valkyrie Helm",
+		identifiedResourceName = "hlro_brown_valkyrie_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3091,
+		costume = true
+	},
+	[2601156] = {
+		unidentifiedDisplayName = "Costume Lorny Wings",
+		unidentifiedResourceName = "hlro_fred_asaslorny",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Lorny Wings",
+		identifiedResourceName = "hlro_fred_asaslorny",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3092,
+		costume = true
+	},
+	[2601157] = {
+		unidentifiedDisplayName = "Costume Tyrel Wings",
+		unidentifiedResourceName = "hlro_fred_asastyrel",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Tyrel Wings",
+		identifiedResourceName = "hlro_fred_asastyrel",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3093,
+		costume = true
+	},
+	[2601158] = {
+		unidentifiedDisplayName = "Costume Flower Aura",
+		unidentifiedResourceName = "hlro_fred_auradeflor",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flower Aura",
+		identifiedResourceName = "hlro_fred_auradeflor",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3094,
+		costume = true
+	},
+	[2601159] = {
+		unidentifiedDisplayName = "Costume Aura Ring II",
+		unidentifiedResourceName = "hlro_fred_auraring2",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Aura Ring II",
+		identifiedResourceName = "hlro_fred_auraring2",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3095,
+		costume = true
+	},
+	[2601160] = {
+		unidentifiedDisplayName = "Costume Aura Ring III",
+		unidentifiedResourceName = "hlro_fred_auraring3",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Aura Ring III",
+		identifiedResourceName = "hlro_fred_auraring3",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3096,
+		costume = true
+	},
+	[2601161] = {
+		unidentifiedDisplayName = "Costume Sage's Hat",
+		unidentifiedResourceName = "hlro_fred_chapeudosabio",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Sage's Hat",
+		identifiedResourceName = "hlro_fred_chapeudosabio",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3097,
+		costume = true
+	},
+	[2601162] = {
+		unidentifiedDisplayName = "Costume Angels' Helm (Fred)",
+		unidentifiedResourceName = "hlro_fred_elmodosanjos",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Angels' Helm (Fred)",
+		identifiedResourceName = "hlro_fred_elmodosanjos",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3098,
+		costume = true
+	},
+	[2601163] = {
+		unidentifiedDisplayName = "Costume Heart Hairpin",
+		unidentifiedResourceName = "hlro_fred_presiliadecoracao",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Heart Hairpin",
+		identifiedResourceName = "hlro_fred_presiliadecoracao",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3099,
+		costume = true
+	},
+	[2601164] = {
+		unidentifiedDisplayName = "Costume Black Rose",
+		unidentifiedResourceName = "hlro_fred_rosapreta",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Rose",
+		identifiedResourceName = "hlro_fred_rosapreta",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3100,
+		costume = true
+	},
+	[2601165] = {
+		unidentifiedDisplayName = "Costume Splinter Cell",
+		unidentifiedResourceName = "hlro_fred_splintercell",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Splinter Cell",
+		identifiedResourceName = "hlro_fred_splintercell",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3101,
+		costume = true
+	},
+	[2601166] = {
+		unidentifiedDisplayName = "Costume White Valkyrie Helm",
+		unidentifiedResourceName = "hlro_fred_valkiriebranco",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Valkyrie Helm",
+		identifiedResourceName = "hlro_fred_valkiriebranco",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3102,
+		costume = true
+	},
+	[2601167] = {
+		unidentifiedDisplayName = "Costume Mixed Valkyrie Helm",
+		unidentifiedResourceName = "hlro_fred_valkiriemestico",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Mixed Valkyrie Helm",
+		identifiedResourceName = "hlro_fred_valkiriemestico",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3103,
+		costume = true
+	},
+	[2601168] = {
+		unidentifiedDisplayName = "Costume Volcano",
+		unidentifiedResourceName = "hlro_fred_vulcao",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Volcano",
+		identifiedResourceName = "hlro_fred_vulcao",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3104,
+		costume = true
+	},
+	[2601169] = {
+		unidentifiedDisplayName = "Costume DJ Head",
+		unidentifiedResourceName = "hlro_djhead",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume DJ Head",
+		identifiedResourceName = "hlro_djhead",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3105,
+		costume = true
+	},
+	[2601170] = {
+		unidentifiedDisplayName = "Costume Dragon Wing",
+		unidentifiedResourceName = "hlro_dragon_wing2",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dragon Wing",
+		identifiedResourceName = "hlro_dragon_wing2",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3106,
+		costume = true
+	},
+	[2601171] = {
+		unidentifiedDisplayName = "Costume Fox Hat",
+		unidentifiedResourceName = "hlro_foxhat",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fox Hat",
+		identifiedResourceName = "hlro_foxhat",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3107,
+		costume = true
+	},
+	[2601172] = {
+		unidentifiedDisplayName = "Costume Angel Heart",
+		unidentifiedResourceName = "hlro_fred_angel_heart",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Angel Heart",
+		identifiedResourceName = "hlro_fred_angel_heart",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3108,
+		costume = true
+	},
+	[2601173] = {
+		unidentifiedDisplayName = "Costume Angel Wing",
+		unidentifiedResourceName = "hlro_fred_asadeanjo1",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Angel Wing",
+		identifiedResourceName = "hlro_fred_asadeanjo1",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3109,
+		costume = true
+	},
+	[2601174] = {
+		unidentifiedDisplayName = "Costume Blue Fairy Wing",
+		unidentifiedResourceName = "hlro_fred_asadefadaazul",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Blue Fairy Wing",
+		identifiedResourceName = "hlro_fred_asadefadaazul",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3110,
+		costume = true
+	},
+	[2601175] = {
+		unidentifiedDisplayName = "Costume Head Wing",
+		unidentifiedResourceName = "hlro_fred_asaparacabeca",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Head Wing",
+		identifiedResourceName = "hlro_fred_asaparacabeca",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3111,
+		costume = true
+	},
+	[2601176] = {
+		unidentifiedDisplayName = "Costume Helper Wings",
+		unidentifiedResourceName = "hlro_fred_asasdeajuda",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Helper Wings",
+		identifiedResourceName = "hlro_fred_asasdeajuda",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3112,
+		costume = true
+	},
+	[2601177] = {
+		unidentifiedDisplayName = "Costume Feathered Headdress",
+		unidentifiedResourceName = "hlro_fred_chapeudeindio",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Feathered Headdress",
+		identifiedResourceName = "hlro_fred_chapeudeindio",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3113,
+		costume = true
+	},
+	[2601178] = {
+		unidentifiedDisplayName = "Costume Demon Hat",
+		unidentifiedResourceName = "hlro_fred_chapeudodemonio",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Demon Hat",
+		identifiedResourceName = "hlro_fred_chapeudodemonio",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3114,
+		costume = true
+	},
+	[2601179] = {
+		unidentifiedDisplayName = "Costume Golden Crown",
+		unidentifiedResourceName = "hlro_fred_coroadourada",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Golden Crown",
+		identifiedResourceName = "hlro_fred_coroadourada",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3115,
+		costume = true
+	},
+	[2601180] = {
+		unidentifiedDisplayName = "Costume Metal Helm",
+		unidentifiedResourceName = "hlro_fred_elmodemetal",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Metal Helm",
+		identifiedResourceName = "hlro_fred_elmodemetal",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3116,
+		costume = true
+	},
+	[2601181] = {
+		unidentifiedDisplayName = "Costume Messenger Helm",
+		unidentifiedResourceName = "hlro_fred_elmodomensageiro",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Messenger Helm",
+		identifiedResourceName = "hlro_fred_elmodomensageiro",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3117,
+		costume = true
+	},
+	[2601182] = {
+		unidentifiedDisplayName = "Costume Jason Mask",
+		unidentifiedResourceName = "hlro_fred_mascaradojason",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Jason Mask",
+		identifiedResourceName = "hlro_fred_mascaradojason",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3118,
+		costume = true
+	},
+	[2601183] = {
+		unidentifiedDisplayName = "Costume Pink Valkyrie Helm",
+		unidentifiedResourceName = "hlro_fred_valkirierosa",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Pink Valkyrie Helm",
+		identifiedResourceName = "hlro_fred_valkirierosa",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3119,
+		costume = true
+	},
+	[2601184] = {
+		unidentifiedDisplayName = "Costume Black Ears",
+		unidentifiedResourceName = "hlro_orelhas_negras",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Ears",
+		identifiedResourceName = "hlro_orelhas_negras",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3120,
+		costume = true
+	},
+	[2601185] = {
+		unidentifiedDisplayName = "Costume Back Sword",
+		unidentifiedResourceName = "hlro_back_sword",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Back Sword",
+		identifiedResourceName = "hlro_back_sword",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3121,
+		costume = true
+	},
+	[2601186] = {
+		unidentifiedDisplayName = "Costume Sakura Wings",
+		unidentifiedResourceName = "hlro_sakurawings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Sakura Wings",
+		identifiedResourceName = "hlro_sakurawings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3122,
+		costume = true
+	},
+	[2601187] = {
+		unidentifiedDisplayName = "Costume Shiny Wings",
+		unidentifiedResourceName = "hlro_shiny_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Shiny Wings",
+		identifiedResourceName = "hlro_shiny_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3123,
+		costume = true
+	},
+	[2601188] = {
+		unidentifiedDisplayName = "Costume Mystic Halo",
+		unidentifiedResourceName = "hlro_aureola_mistica",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Mystic Halo",
+		identifiedResourceName = "hlro_aureola_mistica",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3124,
+		costume = true
+	},
+	[2601189] = {
+		unidentifiedDisplayName = "Costume Blue Valkyrie Helm",
+		unidentifiedResourceName = "hlro_blue_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Blue Valkyrie Helm",
+		identifiedResourceName = "hlro_blue_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3125,
+		costume = true
+	},
+	[2601190] = {
+		unidentifiedDisplayName = "Costume Black Dragon Helm",
+		unidentifiedResourceName = "hlro_dragao_negro",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Dragon Helm",
+		identifiedResourceName = "hlro_dragao_negro",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3126,
+		costume = true
+	},
+	[2601191] = {
+		unidentifiedDisplayName = "Costume Fire Valkyrie Helm",
+		unidentifiedResourceName = "hlro_fire_valkyrie_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Fire Valkyrie Helm",
+		identifiedResourceName = "hlro_fire_valkyrie_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3127,
+		costume = true
+	},
+	[2601192] = {
+		unidentifiedDisplayName = "Costume Golden Wings",
+		unidentifiedResourceName = "hlro_golden_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Golden Wings",
+		identifiedResourceName = "hlro_golden_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3128,
+		costume = true
+	},
+	[2601193] = {
+		unidentifiedDisplayName = "Costume V P",
+		unidentifiedResourceName = "hlro_v-p",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume V P",
+		identifiedResourceName = "hlro_v-p",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3129,
+		costume = true
+	},
+	[2601194] = {
+		unidentifiedDisplayName = "Costume Andromeda Wings",
+		unidentifiedResourceName = "hlro_andromeda_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Andromeda Wings",
+		identifiedResourceName = "hlro_andromeda_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3130,
+		costume = true
+	},
+	[2601195] = {
+		unidentifiedDisplayName = "Costume 3D Glasses",
+		unidentifiedResourceName = "hlro_3d_glasses",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume 3D Glasses",
+		identifiedResourceName = "hlro_3d_glasses",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3131,
+		costume = true
+	},
+	[2601196] = {
+		unidentifiedDisplayName = "Costume Chance Wings",
+		unidentifiedResourceName = "hlro_chanceswings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Chance Wings",
+		identifiedResourceName = "hlro_chanceswings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3132,
+		costume = true
+	},
+	[2601197] = {
+		unidentifiedDisplayName = "Costume Blue Dragon Helm",
+		unidentifiedResourceName = "hlro_dragonh",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Blue Dragon Helm",
+		identifiedResourceName = "hlro_dragonh",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3133,
+		costume = true
+	},
+	[2601198] = {
+		unidentifiedDisplayName = "Costume Thousand Wings",
+		unidentifiedResourceName = "hlro_thousandwings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Thousand Wings",
+		identifiedResourceName = "hlro_thousandwings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3134,
+		costume = true
+	},
+	[2601199] = {
+		unidentifiedDisplayName = "Costume Dark Magical Wings",
+		unidentifiedResourceName = "hlro_darkmagicalwings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dark Magical Wings",
+		identifiedResourceName = "hlro_darkmagicalwings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3135,
+		costume = true
+	},
+	[2601200] = {
+		unidentifiedDisplayName = "Costume Dark Elven Wings",
+		unidentifiedResourceName = "hlro_dark_elven_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dark Elven Wings",
+		identifiedResourceName = "hlro_dark_elven_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3136,
+		costume = true
+	},
+	[2601201] = {
+		unidentifiedDisplayName = "Costume Winged Helm",
+		unidentifiedResourceName = "hlro_winged",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Winged Helm",
+		identifiedResourceName = "hlro_winged",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3137,
+		costume = true
+	},
+	[2601202] = {
+		unidentifiedDisplayName = "Costume Deviling Helm",
+		unidentifiedResourceName = "hlro_elmo_de_deviling",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Deviling Helm",
+		identifiedResourceName = "hlro_elmo_de_deviling",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3138,
+		costume = true
+	},
+	[2601203] = {
+		unidentifiedDisplayName = "Costume Diabolic Wing",
+		unidentifiedResourceName = "hlro_asa_diabolica",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Diabolic Wing",
+		identifiedResourceName = "hlro_asa_diabolica",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3139,
+		costume = true
+	},
+	[2601204] = {
+		unidentifiedDisplayName = "Costume Yin Yang Valkyrie Helm",
+		unidentifiedResourceName = "hlro_elmo_de_valkyria_ying_yang",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Yin Yang Valkyrie Helm",
+		identifiedResourceName = "hlro_elmo_de_valkyria_ying_yang",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3140,
+		costume = true
+	},
+	[2601205] = {
+		unidentifiedDisplayName = "Costume Yin Yang Wing",
+		unidentifiedResourceName = "hlro_asa_ying_yang",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Yin Yang Wing",
+		identifiedResourceName = "hlro_asa_ying_yang",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3141,
+		costume = true
+	},
+	[2601206] = {
+		unidentifiedDisplayName = "Costume Dragon Helm (Classic)",
+		unidentifiedResourceName = "hlro_elmo_de_dragao",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dragon Helm (Classic)",
+		identifiedResourceName = "hlro_elmo_de_dragao",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3142,
+		costume = true
+	},
+	[2601207] = {
+		unidentifiedDisplayName = "Costume Dragon Wing (Classic)",
+		unidentifiedResourceName = "hlro_asa_de_dragao",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dragon Wing (Classic)",
+		identifiedResourceName = "hlro_asa_de_dragao",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3143,
+		costume = true
+	},
+	[2601208] = {
+		unidentifiedDisplayName = "Costume Helm of Retribution",
+		unidentifiedResourceName = "hlro_elmo_da_retribuicao",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Helm of Retribution",
+		identifiedResourceName = "hlro_elmo_da_retribuicao",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3144,
+		costume = true
+	},
+	[2601209] = {
+		unidentifiedDisplayName = "Costume Wing of Retribution",
+		unidentifiedResourceName = "hlro_asa_da_retribuicao",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Wing of Retribution",
+		identifiedResourceName = "hlro_asa_da_retribuicao",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3145,
+		costume = true
+	},
+	[2601210] = {
+		unidentifiedDisplayName = "Costume Supreme Angelic Helm",
+		unidentifiedResourceName = "hlro_elmo_angelical_supremo",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Supreme Angelic Helm",
+		identifiedResourceName = "hlro_elmo_angelical_supremo",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3146,
+		costume = true
+	},
+	[2601211] = {
+		unidentifiedDisplayName = "Costume Supreme Wing",
+		unidentifiedResourceName = "hlro_asa_suprema",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Supreme Wing",
+		identifiedResourceName = "hlro_asa_suprema",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3147,
+		costume = true
+	},
+	[2601212] = {
+		unidentifiedDisplayName = "Costume Wicked Angelic Helm",
+		unidentifiedResourceName = "hlro_elmo_angelical_maligno",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Wicked Angelic Helm",
+		identifiedResourceName = "hlro_elmo_angelical_maligno",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3148,
+		costume = true
+	},
+	[2601213] = {
+		unidentifiedDisplayName = "Costume Red Wing",
+		unidentifiedResourceName = "hlro_asa_vermelha",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Red Wing",
+		identifiedResourceName = "hlro_asa_vermelha",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3149,
+		costume = true
+	},
+	[2601214] = {
+		unidentifiedDisplayName = "Costume Black Valkyrie Helm",
+		unidentifiedResourceName = "hlro_elmo_de_valkyria_preto",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Valkyrie Helm",
+		identifiedResourceName = "hlro_elmo_de_valkyria_preto",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3150,
+		costume = true
+	},
+	[2601215] = {
+		unidentifiedDisplayName = "Costume Black Wing",
+		unidentifiedResourceName = "hlro_asa_preta",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Wing",
+		identifiedResourceName = "hlro_asa_preta",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3151,
+		costume = true
+	},
+	[2601216] = {
+		unidentifiedDisplayName = "Costume White Valkyrie Helm (Classic)",
+		unidentifiedResourceName = "hlro_elmo_de_valkyria_branco",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Valkyrie Helm (Classic)",
+		identifiedResourceName = "hlro_elmo_de_valkyria_branco",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3152,
+		costume = true
+	},
+	[2601217] = {
+		unidentifiedDisplayName = "Costume White Wing",
+		unidentifiedResourceName = "hlro_asa_branca",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Wing",
+		identifiedResourceName = "hlro_asa_branca",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3153,
+		costume = true
+	},
+	[2601218] = {
+		unidentifiedDisplayName = "Costume Blue Valkyrie Helm (Classic)",
+		unidentifiedResourceName = "hlro_elmo_de_valkyria_azul",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Blue Valkyrie Helm (Classic)",
+		identifiedResourceName = "hlro_elmo_de_valkyria_azul",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3154,
+		costume = true
+	},
+	[2601219] = {
+		unidentifiedDisplayName = "Costume Blue Wing",
+		unidentifiedResourceName = "hlro_asa_azul",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Blue Wing",
+		identifiedResourceName = "hlro_asa_azul",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3155,
+		costume = true
+	},
+	[2601220] = {
+		unidentifiedDisplayName = "Costume Pink Valkyrie Helm (Classic)",
+		unidentifiedResourceName = "hlro_elmo_de_valkyria_rosa",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Pink Valkyrie Helm (Classic)",
+		identifiedResourceName = "hlro_elmo_de_valkyria_rosa",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3156,
+		costume = true
+	},
+	[2601221] = {
+		unidentifiedDisplayName = "Costume Pink Wing",
+		unidentifiedResourceName = "hlro_asa_rosa",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Pink Wing",
+		identifiedResourceName = "hlro_asa_rosa",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3157,
+		costume = true
+	},
+	[2601222] = {
+		unidentifiedDisplayName = "Costume Green Valkyrie Helm (Classic)",
+		unidentifiedResourceName = "hlro_elmo_de_valkyria_verde",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Green Valkyrie Helm (Classic)",
+		identifiedResourceName = "hlro_elmo_de_valkyria_verde",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3158,
+		costume = true
+	},
+	[2601223] = {
+		unidentifiedDisplayName = "Costume Green Wing",
+		unidentifiedResourceName = "hlro_asa_verde",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Green Wing",
+		identifiedResourceName = "hlro_asa_verde",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3159,
+		costume = true
+	},
+	[2601224] = {
+		unidentifiedDisplayName = "Costume Sheriff Hat (M)",
+		unidentifiedResourceName = "hlro_chapeu_de_xerife_masculino",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Sheriff Hat (M)",
+		identifiedResourceName = "hlro_chapeu_de_xerife_masculino",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3160,
+		costume = true
+	},
+	[2601225] = {
+		unidentifiedDisplayName = "Costume Sheriff Hat (F)",
+		unidentifiedResourceName = "hlro_chapeu_de_xerife_femenino",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Sheriff Hat (F)",
+		identifiedResourceName = "hlro_chapeu_de_xerife_femenino",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3161,
+		costume = true
+	},
+	[2601226] = {
+		unidentifiedDisplayName = "Costume Luigi Beret",
+		unidentifiedResourceName = "hlro_boina_do_luigi",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Luigi Beret",
+		identifiedResourceName = "hlro_boina_do_luigi",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3162,
+		costume = true
+	},
+	[2601227] = {
+		unidentifiedDisplayName = "Costume Mario Beret",
+		unidentifiedResourceName = "hlro_boina_do_mario",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Mario Beret",
+		identifiedResourceName = "hlro_boina_do_mario",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3163,
+		costume = true
+	},
+	[2601228] = {
+		unidentifiedDisplayName = "Costume Black Power",
+		unidentifiedResourceName = "hlro_black_power",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Power",
+		identifiedResourceName = "hlro_black_power",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3164,
+		costume = true
+	},
+	[2601229] = {
+		unidentifiedDisplayName = "Costume Alucard Hat (Classic)",
+		unidentifiedResourceName = "hlro_chapeu_de_alucard",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Alucard Hat (Classic)",
+		identifiedResourceName = "hlro_chapeu_de_alucard",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3165,
+		costume = true
+	},
+	[2601230] = {
+		unidentifiedDisplayName = "Costume Alucard Glasses (Classic)",
+		unidentifiedResourceName = "hlro_oculos_de_alucard",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Alucard Glasses (Classic)",
+		identifiedResourceName = "hlro_oculos_de_alucard",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3166,
+		costume = true
+	},
+	[2601231] = {
+		unidentifiedDisplayName = "Costume Chii Ears (Classic)",
+		unidentifiedResourceName = "hlro_orelhas_de_chii",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Chii Ears (Classic)",
+		identifiedResourceName = "hlro_orelhas_de_chii",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3167,
+		costume = true
+	},
+	[2601232] = {
+		unidentifiedDisplayName = "Costume Little Fairy",
+		unidentifiedResourceName = "hlro_fadinha",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Little Fairy",
+		identifiedResourceName = "hlro_fadinha",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3168,
+		costume = true
+	},
+	[2601233] = {
+		unidentifiedDisplayName = "Costume Circle of Love",
+		unidentifiedResourceName = "hlro_circulo_de_amor",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Circle of Love",
+		identifiedResourceName = "hlro_circulo_de_amor",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3169,
+		costume = true
+	},
+	[2601234] = {
+		unidentifiedDisplayName = "Costume Circle of Hope",
+		unidentifiedResourceName = "hlro_circulo_de_esperanca",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Circle of Hope",
+		identifiedResourceName = "hlro_circulo_de_esperanca",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3170,
+		costume = true
+	},
+	[2601235] = {
+		unidentifiedDisplayName = "Costume Circle of Power",
+		unidentifiedResourceName = "hlro_circulo_de_poder",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Circle of Power",
+		identifiedResourceName = "hlro_circulo_de_poder",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3171,
+		costume = true
+	},
+	[2601236] = {
+		unidentifiedDisplayName = "Costume Dragon Circle",
+		unidentifiedResourceName = "hlro_circulo_de_dragao",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dragon Circle",
+		identifiedResourceName = "hlro_circulo_de_dragao",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3172,
+		costume = true
+	},
+	[2601237] = {
+		unidentifiedDisplayName = "Costume Red Death",
+		unidentifiedResourceName = "hlro_red_death",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Red Death",
+		identifiedResourceName = "hlro_red_death",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3173,
+		costume = true
+	},
+	[2601238] = {
+		unidentifiedDisplayName = "Costume Red Death Valk",
+		unidentifiedResourceName = "hlro_red_death_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Red Death Valk",
+		identifiedResourceName = "hlro_red_death_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3174,
+		costume = true
+	},
+	[2601239] = {
+		unidentifiedDisplayName = "Costume Red Death Wings",
+		unidentifiedResourceName = "hlro_red_death_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Red Death Wings",
+		identifiedResourceName = "hlro_red_death_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3175,
+		costume = true
+	},
+	[2601240] = {
+		unidentifiedDisplayName = "Costume White Hyourinmaru",
+		unidentifiedResourceName = "hlro_white_hyourinmaru",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Hyourinmaru",
+		identifiedResourceName = "hlro_white_hyourinmaru",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3176,
+		costume = true
+	},
+	[2601241] = {
+		unidentifiedDisplayName = "Costume Holy Hyo",
+		unidentifiedResourceName = "hlro_holy_hyo",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Holy Hyo",
+		identifiedResourceName = "hlro_holy_hyo",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3177,
+		costume = true
+	},
+	[2601242] = {
+		unidentifiedDisplayName = "Costume Solar Hyourinmaru",
+		unidentifiedResourceName = "hlro_solar_hyourinmaru",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Solar Hyourinmaru",
+		identifiedResourceName = "hlro_solar_hyourinmaru",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3178,
+		costume = true
+	},
+	[2601243] = {
+		unidentifiedDisplayName = "Costume Purple Hyourinmaru",
+		unidentifiedResourceName = "hlro_purple_hyourinmaru",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Purple Hyourinmaru",
+		identifiedResourceName = "hlro_purple_hyourinmaru",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3179,
+		costume = true
+	},
+	[2601244] = {
+		unidentifiedDisplayName = "Costume Pink Hyourinmaru",
+		unidentifiedResourceName = "hlro_pink_hyourinmaru",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Pink Hyourinmaru",
+		identifiedResourceName = "hlro_pink_hyourinmaru",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3180,
+		costume = true
+	},
+	[2601245] = {
+		unidentifiedDisplayName = "Costume Frozen Hyo",
+		unidentifiedResourceName = "hlro_frozen_hyo",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Frozen Hyo",
+		identifiedResourceName = "hlro_frozen_hyo",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3181,
+		costume = true
+	},
+	[2601246] = {
+		unidentifiedDisplayName = "Costume Black Death",
+		unidentifiedResourceName = "hlro_black_death",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Death",
+		identifiedResourceName = "hlro_black_death",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3182,
+		costume = true
+	},
+	[2601247] = {
+		unidentifiedDisplayName = "Costume Black Death Wings",
+		unidentifiedResourceName = "hlro_black_death_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Death Wings",
+		identifiedResourceName = "hlro_black_death_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3183,
+		costume = true
+	},
+	[2601248] = {
+		unidentifiedDisplayName = "Costume Black Death Valk",
+		unidentifiedResourceName = "hlro_black_death_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Death Valk",
+		identifiedResourceName = "hlro_black_death_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3184,
+		costume = true
+	},
+	[2601249] = {
+		unidentifiedDisplayName = "Costume Akatsuki",
+		unidentifiedResourceName = "hlro_akatsuki",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Akatsuki",
+		identifiedResourceName = "hlro_akatsuki",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3185,
+		costume = true
+	},
+	[2601250] = {
+		unidentifiedDisplayName = "Costume Demonic Death",
+		unidentifiedResourceName = "hlro_demonic_death",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Demonic Death",
+		identifiedResourceName = "hlro_demonic_death",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3186,
+		costume = true
+	},
+	[2601251] = {
+		unidentifiedDisplayName = "Costume Demonic Death Wings",
+		unidentifiedResourceName = "hlro_demonic_death_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Demonic Death Wings",
+		identifiedResourceName = "hlro_demonic_death_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3187,
+		costume = true
+	},
+	[2601252] = {
+		unidentifiedDisplayName = "Costume Demonic Death Valk",
+		unidentifiedResourceName = "hlro_demonic_death_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Demonic Death Valk",
+		identifiedResourceName = "hlro_demonic_death_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3188,
+		costume = true
+	},
+	[2601253] = {
+		unidentifiedDisplayName = "Costume Devils Daiguren",
+		unidentifiedResourceName = "hlro_devils_daiguren",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Devils Daiguren",
+		identifiedResourceName = "hlro_devils_daiguren",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3189,
+		costume = true
+	},
+	[2601254] = {
+		unidentifiedDisplayName = "Costume Devils Helm",
+		unidentifiedResourceName = "hlro_devils_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Devils Helm",
+		identifiedResourceName = "hlro_devils_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3190,
+		costume = true
+	},
+	[2601255] = {
+		unidentifiedDisplayName = "Costume Devils Lorny",
+		unidentifiedResourceName = "hlro_devils_lorny",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Devils Lorny",
+		identifiedResourceName = "hlro_devils_lorny",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3191,
+		costume = true
+	},
+	[2601256] = {
+		unidentifiedDisplayName = "Costume Devils Spirit",
+		unidentifiedResourceName = "hlro_devils_spirit",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Devils Spirit",
+		identifiedResourceName = "hlro_devils_spirit",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3192,
+		costume = true
+	},
+	[2601257] = {
+		unidentifiedDisplayName = "Costume Ka Death",
+		unidentifiedResourceName = "hlro_ka_death",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Ka Death",
+		identifiedResourceName = "hlro_ka_death",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3193,
+		costume = true
+	},
+	[2601258] = {
+		unidentifiedDisplayName = "Costume Ka Death Wings",
+		unidentifiedResourceName = "hlro_ka_death_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Ka Death Wings",
+		identifiedResourceName = "hlro_ka_death_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3194,
+		costume = true
+	},
+	[2601259] = {
+		unidentifiedDisplayName = "Costume Ka Death Valk",
+		unidentifiedResourceName = "hlro_ka_death_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Ka Death Valk",
+		identifiedResourceName = "hlro_ka_death_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3195,
+		costume = true
+	},
+	[2601260] = {
+		unidentifiedDisplayName = "Costume Holy Death",
+		unidentifiedResourceName = "hlro_holy_death",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Holy Death",
+		identifiedResourceName = "hlro_holy_death",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3196,
+		costume = true
+	},
+	[2601261] = {
+		unidentifiedDisplayName = "Costume Holy Death Wings",
+		unidentifiedResourceName = "hlro_holy_death_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Holy Death Wings",
+		identifiedResourceName = "hlro_holy_death_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3197,
+		costume = true
+	},
+	[2601262] = {
+		unidentifiedDisplayName = "Costume Holy Death Valk",
+		unidentifiedResourceName = "hlro_holy_death_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Holy Death Valk",
+		identifiedResourceName = "hlro_holy_death_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3198,
+		costume = true
+	},
+	[2601263] = {
+		unidentifiedDisplayName = "Costume Nature Dragon Flame",
+		unidentifiedResourceName = "hlro_nature_dragon_flame",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Nature Dragon Flame",
+		identifiedResourceName = "hlro_nature_dragon_flame",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3199,
+		costume = true
+	},
+	[2601264] = {
+		unidentifiedDisplayName = "Costume Nature Dragon Wings",
+		unidentifiedResourceName = "hlro_nature_dragon_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Nature Dragon Wings",
+		identifiedResourceName = "hlro_nature_dragon_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3200,
+		costume = true
+	},
+	[2601265] = {
+		unidentifiedDisplayName = "Costume Nature Dragon Mask",
+		unidentifiedResourceName = "hlro_nature_dragon_mask",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Nature Dragon Mask",
+		identifiedResourceName = "hlro_nature_dragon_mask",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3201,
+		costume = true
+	},
+	[2601266] = {
+		unidentifiedDisplayName = "Costume Solar Bloomy",
+		unidentifiedResourceName = "hlro_solar_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Solar Bloomy",
+		identifiedResourceName = "hlro_solar_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3202,
+		costume = true
+	},
+	[2601267] = {
+		unidentifiedDisplayName = "Costume Yellow Bloomy",
+		unidentifiedResourceName = "hlro_yellow_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Yellow Bloomy",
+		identifiedResourceName = "hlro_yellow_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3203,
+		costume = true
+	},
+	[2601268] = {
+		unidentifiedDisplayName = "Costume White Bloomy",
+		unidentifiedResourceName = "hlro_white_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Bloomy",
+		identifiedResourceName = "hlro_white_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3204,
+		costume = true
+	},
+	[2601269] = {
+		unidentifiedDisplayName = "Costume Yellow Valk",
+		unidentifiedResourceName = "hlro_yellow_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Yellow Valk",
+		identifiedResourceName = "hlro_yellow_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3205,
+		costume = true
+	},
+	[2601270] = {
+		unidentifiedDisplayName = "Costume Pink Bloomy",
+		unidentifiedResourceName = "hlro_pink_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Pink Bloomy",
+		identifiedResourceName = "hlro_pink_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3206,
+		costume = true
+	},
+	[2601271] = {
+		unidentifiedDisplayName = "Costume Purple Valk",
+		unidentifiedResourceName = "hlro_purple_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Purple Valk",
+		identifiedResourceName = "hlro_purple_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3207,
+		costume = true
+	},
+	[2601272] = {
+		unidentifiedDisplayName = "Costume Purple Bloomy",
+		unidentifiedResourceName = "hlro_purple_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Purple Bloomy",
+		identifiedResourceName = "hlro_purple_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3208,
+		costume = true
+	},
+	[2601273] = {
+		unidentifiedDisplayName = "Costume Blue Bloomy",
+		unidentifiedResourceName = "hlro_blue_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Blue Bloomy",
+		identifiedResourceName = "hlro_blue_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3209,
+		costume = true
+	},
+	[2601274] = {
+		unidentifiedDisplayName = "Costume Blue Hyourinmaru",
+		unidentifiedResourceName = "hlro_blue_hyourinmaru",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Blue Hyourinmaru",
+		identifiedResourceName = "hlro_blue_hyourinmaru",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3210,
+		costume = true
+	},
+	[2601275] = {
+		unidentifiedDisplayName = "Costume Chaos Death",
+		unidentifiedResourceName = "hlro_chaos_death",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Chaos Death",
+		identifiedResourceName = "hlro_chaos_death",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3211,
+		costume = true
+	},
+	[2601276] = {
+		unidentifiedDisplayName = "Costume Chaos Death Wings",
+		unidentifiedResourceName = "hlro_chaos_death_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Chaos Death Wings",
+		identifiedResourceName = "hlro_chaos_death_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3212,
+		costume = true
+	},
+	[2601277] = {
+		unidentifiedDisplayName = "Costume Chaos Death Valk",
+		unidentifiedResourceName = "hlro_chaos_death_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Chaos Death Valk",
+		identifiedResourceName = "hlro_chaos_death_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3213,
+		costume = true
+	},
+	[2601278] = {
+		unidentifiedDisplayName = "Costume Cherry Death",
+		unidentifiedResourceName = "hlro_cherry_death",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Cherry Death",
+		identifiedResourceName = "hlro_cherry_death",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3214,
+		costume = true
+	},
+	[2601279] = {
+		unidentifiedDisplayName = "Costume Cherry Death Wings",
+		unidentifiedResourceName = "hlro_cherry_death_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Cherry Death Wings",
+		identifiedResourceName = "hlro_cherry_death_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3215,
+		costume = true
+	},
+	[2601280] = {
+		unidentifiedDisplayName = "Costume Cherry Death Valk",
+		unidentifiedResourceName = "hlro_cherry_death_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Cherry Death Valk",
+		identifiedResourceName = "hlro_cherry_death_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3216,
+		costume = true
+	},
+	[2601281] = {
+		unidentifiedDisplayName = "Costume Pink Valkyrie Helm II",
+		unidentifiedResourceName = "hlro_pink_valkyrie_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Pink Valkyrie Helm II",
+		identifiedResourceName = "hlro_pink_valkyrie_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3217,
+		costume = true
+	},
+	[2601282] = {
+		unidentifiedDisplayName = "Costume Bleach",
+		unidentifiedResourceName = "hlro_bleach",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Bleach",
+		identifiedResourceName = "hlro_bleach",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3218,
+		costume = true
+	},
+	[2601283] = {
+		unidentifiedDisplayName = "Costume Metallic Hyourinmaru",
+		unidentifiedResourceName = "hlro_metallish_hyourinmaru",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Metallic Hyourinmaru",
+		identifiedResourceName = "hlro_metallish_hyourinmaru",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3219,
+		costume = true
+	},
+	[2601284] = {
+		unidentifiedDisplayName = "Costume Metallic Bloomy",
+		unidentifiedResourceName = "hlro_metallish_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Metallic Bloomy",
+		identifiedResourceName = "hlro_metallish_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3220,
+		costume = true
+	},
+	[2601285] = {
+		unidentifiedDisplayName = "Costume Metallic Valkyrie Helm",
+		unidentifiedResourceName = "hlro_metallish_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Metallic Valkyrie Helm",
+		identifiedResourceName = "hlro_metallish_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3221,
+		costume = true
+	},
+	[2601286] = {
+		unidentifiedDisplayName = "Costume Black Wolf",
+		unidentifiedResourceName = "hlro_black_wolf",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Wolf",
+		identifiedResourceName = "hlro_black_wolf",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3222,
+		costume = true
+	},
+	[2601287] = {
+		unidentifiedDisplayName = "Costume Black Wolf Wings",
+		unidentifiedResourceName = "hlro_black_wolf_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Wolf Wings",
+		identifiedResourceName = "hlro_black_wolf_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3223,
+		costume = true
+	},
+	[2601288] = {
+		unidentifiedDisplayName = "Costume Black Wolf Helm",
+		unidentifiedResourceName = "hlro_black_wolf_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Wolf Helm",
+		identifiedResourceName = "hlro_black_wolf_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3224,
+		costume = true
+	},
+	[2601289] = {
+		unidentifiedDisplayName = "Costume Insane Death",
+		unidentifiedResourceName = "hlro_insane_death",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Insane Death",
+		identifiedResourceName = "hlro_insane_death",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3225,
+		costume = true
+	},
+	[2601290] = {
+		unidentifiedDisplayName = "Costume Insane Death Wings",
+		unidentifiedResourceName = "hlro_insane_death_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Insane Death Wings",
+		identifiedResourceName = "hlro_insane_death_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3226,
+		costume = true
+	},
+	[2601291] = {
+		unidentifiedDisplayName = "Costume Insane Death Valk",
+		unidentifiedResourceName = "hlro_insane_death_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Insane Death Valk",
+		identifiedResourceName = "hlro_insane_death_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3227,
+		costume = true
+	},
+	[2601292] = {
+		unidentifiedDisplayName = "Costume Gods Blessing",
+		unidentifiedResourceName = "hlro_gods_blessing",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Gods Blessing",
+		identifiedResourceName = "hlro_gods_blessing",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3228,
+		costume = true
+	},
+	[2601293] = {
+		unidentifiedDisplayName = "Costume Dark Hyo",
+		unidentifiedResourceName = "hlro_dark_hyo",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dark Hyo",
+		identifiedResourceName = "hlro_dark_hyo",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3229,
+		costume = true
+	},
+	[2601294] = {
+		unidentifiedDisplayName = "Costume Dark Bloomy",
+		unidentifiedResourceName = "hlro_dark_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dark Bloomy",
+		identifiedResourceName = "hlro_dark_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3230,
+		costume = true
+	},
+	[2601295] = {
+		unidentifiedDisplayName = "Costume Dark Valk",
+		unidentifiedResourceName = "hlro_dark_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Dark Valk",
+		identifiedResourceName = "hlro_dark_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3231,
+		costume = true
+	},
+	[2601296] = {
+		unidentifiedDisplayName = "Costume Green Butterfly",
+		unidentifiedResourceName = "hlro_green_buterfly",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Green Butterfly",
+		identifiedResourceName = "hlro_green_buterfly",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3232,
+		costume = true
+	},
+	[2601297] = {
+		unidentifiedDisplayName = "Costume Wolf",
+		unidentifiedResourceName = "hlro_wolf",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Wolf",
+		identifiedResourceName = "hlro_wolf",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3233,
+		costume = true
+	},
+	[2601298] = {
+		unidentifiedDisplayName = "Costume Wolf Wings",
+		unidentifiedResourceName = "hlro_wolf_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Wolf Wings",
+		identifiedResourceName = "hlro_wolf_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3234,
+		costume = true
+	},
+	[2601299] = {
+		unidentifiedDisplayName = "Costume Wolf Helm",
+		unidentifiedResourceName = "hlro_wolf_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Wolf Helm",
+		identifiedResourceName = "hlro_wolf_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3235,
+		costume = true
+	},
+	[2601300] = {
+		unidentifiedDisplayName = "Costume White Wolf",
+		unidentifiedResourceName = "hlro_white_wolf",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Wolf",
+		identifiedResourceName = "hlro_white_wolf",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3236,
+		costume = true
+	},
+	[2601301] = {
+		unidentifiedDisplayName = "Costume White Wolf Wings",
+		unidentifiedResourceName = "hlro_white_wolf_wings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Wolf Wings",
+		identifiedResourceName = "hlro_white_wolf_wings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3237,
+		costume = true
+	},
+	[2601302] = {
+		unidentifiedDisplayName = "Costume White Wolf Helm",
+		unidentifiedResourceName = "hlro_white_wolf_helm",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Wolf Helm",
+		identifiedResourceName = "hlro_white_wolf_helm",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3238,
+		costume = true
+	},
+	[2601303] = {
+		unidentifiedDisplayName = "Costume Bigangelwings",
+		unidentifiedResourceName = "hlro_bigangelwings",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Bigangelwings",
+		identifiedResourceName = "hlro_bigangelwings",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3239,
+		costume = true
+	},
+	[2601304] = {
+		unidentifiedDisplayName = "Costume Saikos Hyo",
+		unidentifiedResourceName = "hlro_saikos_hyo",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Saikos Hyo",
+		identifiedResourceName = "hlro_saikos_hyo",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3240,
+		costume = true
+	},
+	[2601305] = {
+		unidentifiedDisplayName = "Costume Saikos Bloomy",
+		unidentifiedResourceName = "hlro_saikos_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Saikos Bloomy",
+		identifiedResourceName = "hlro_saikos_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3241,
+		costume = true
+	},
+	[2601306] = {
+		unidentifiedDisplayName = "Costume Saikos Valk",
+		unidentifiedResourceName = "hlro_saikos_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Saikos Valk",
+		identifiedResourceName = "hlro_saikos_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3242,
+		costume = true
+	},
+	[2601307] = {
+		unidentifiedDisplayName = "Costume True Casino Hyourinmaru",
+		unidentifiedResourceName = "hlro_true_casino_hyourinmaru",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume True Casino Hyourinmaru",
+		identifiedResourceName = "hlro_true_casino_hyourinmaru",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3243,
+		costume = true
+	},
+	[2601308] = {
+		unidentifiedDisplayName = "Costume True Event Hyourinmaru",
+		unidentifiedResourceName = "hlro_true_event_hyourinmaru",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume True Event Hyourinmaru",
+		identifiedResourceName = "hlro_true_event_hyourinmaru",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3244,
+		costume = true
+	},
+	[2601309] = {
+		unidentifiedDisplayName = "Costume True Recourse Hyourinmaru",
+		unidentifiedResourceName = "hlro_true_recourse_hyourinmaru",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume True Recourse Hyourinmaru",
+		identifiedResourceName = "hlro_true_recourse_hyourinmaru",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3245,
+		costume = true
+	},
+	[2601310] = {
+		unidentifiedDisplayName = "Costume True Casino Bloomy",
+		unidentifiedResourceName = "hlro_true_casino_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume True Casino Bloomy",
+		identifiedResourceName = "hlro_true_casino_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3246,
+		costume = true
+	},
+	[2601311] = {
+		unidentifiedDisplayName = "Costume True Event Bloomy",
+		unidentifiedResourceName = "hlro_true_event_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume True Event Bloomy",
+		identifiedResourceName = "hlro_true_event_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3247,
+		costume = true
+	},
+	[2601312] = {
+		unidentifiedDisplayName = "Costume True Recourse Bloomy",
+		unidentifiedResourceName = "hlro_true_recourse_bloomy",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume True Recourse Bloomy",
+		identifiedResourceName = "hlro_true_recourse_bloomy",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Middle^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3248,
+		costume = true
+	},
+	[2601313] = {
+		unidentifiedDisplayName = "Costume True Casino Valk",
+		unidentifiedResourceName = "hlro_true_casino_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume True Casino Valk",
+		identifiedResourceName = "hlro_true_casino_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3249,
+		costume = true
+	},
+	[2601314] = {
+		unidentifiedDisplayName = "Costume True Event Valk",
+		unidentifiedResourceName = "hlro_true_event_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume True Event Valk",
+		identifiedResourceName = "hlro_true_event_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3250,
+		costume = true
+	},
+	[2601315] = {
+		unidentifiedDisplayName = "Costume True Recourse Valk",
+		unidentifiedResourceName = "hlro_true_recourse_valk",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume True Recourse Valk",
+		identifiedResourceName = "hlro_true_recourse_valk",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Upper^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3251,
+		costume = true
+	},
+	[2601316] = {
+		unidentifiedDisplayName = "Costume Black Valentine Ring",
+		unidentifiedResourceName = "hlro_black_valentine_ring",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Black Valentine Ring",
+		identifiedResourceName = "hlro_black_valentine_ring",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3252,
+		costume = true
+	},
+	[2601317] = {
+		unidentifiedDisplayName = "Costume Blue Valentine Ring",
+		unidentifiedResourceName = "hlro_blue_valentine_ring",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Blue Valentine Ring",
+		identifiedResourceName = "hlro_blue_valentine_ring",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3253,
+		costume = true
+	},
+	[2601318] = {
+		unidentifiedDisplayName = "Costume Cyan Valentine Ring",
+		unidentifiedResourceName = "hlro_cyan_valentine_ring",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Cyan Valentine Ring",
+		identifiedResourceName = "hlro_cyan_valentine_ring",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3254,
+		costume = true
+	},
+	[2601319] = {
+		unidentifiedDisplayName = "Costume Green Valentine Ring",
+		unidentifiedResourceName = "hlro_green_valentine_ring",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Green Valentine Ring",
+		identifiedResourceName = "hlro_green_valentine_ring",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3255,
+		costume = true
+	},
+	[2601320] = {
+		unidentifiedDisplayName = "Costume Orange Valentine Ring",
+		unidentifiedResourceName = "hlro_orange_valentine_ring",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Orange Valentine Ring",
+		identifiedResourceName = "hlro_orange_valentine_ring",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3256,
+		costume = true
+	},
+	[2601321] = {
+		unidentifiedDisplayName = "Costume Pink Valentine Ring",
+		unidentifiedResourceName = "hlro_pink_valentine_ring",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Pink Valentine Ring",
+		identifiedResourceName = "hlro_pink_valentine_ring",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3257,
+		costume = true
+	},
+	[2601322] = {
+		unidentifiedDisplayName = "Costume Purple Valentine Ring",
+		unidentifiedResourceName = "hlro_purple_valentine_ring",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Purple Valentine Ring",
+		identifiedResourceName = "hlro_purple_valentine_ring",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3258,
+		costume = true
+	},
+	[2601323] = {
+		unidentifiedDisplayName = "Costume Red Valentine Ring",
+		unidentifiedResourceName = "hlro_red_valentine_ring",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Red Valentine Ring",
+		identifiedResourceName = "hlro_red_valentine_ring",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3259,
+		costume = true
+	},
+	[2601324] = {
+		unidentifiedDisplayName = "Costume White Valentine Ring",
+		unidentifiedResourceName = "hlro_white_valentine_ring",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Valentine Ring",
+		identifiedResourceName = "hlro_white_valentine_ring",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3260,
+		costume = true
+	},
+	[2601325] = {
+		unidentifiedDisplayName = "Costume Yellow Valentine Ring",
+		unidentifiedResourceName = "hlro_yellow_valentine_ring",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Yellow Valentine Ring",
+		identifiedResourceName = "hlro_yellow_valentine_ring",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3261,
+		costume = true
+	},
+	[2601326] = {
+		unidentifiedDisplayName = "Costume Flame 1",
+		unidentifiedResourceName = "hlro_flame1",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 1",
+		identifiedResourceName = "hlro_flame1",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3262,
+		costume = true
+	},
+	[2601327] = {
+		unidentifiedDisplayName = "Costume Flame 2",
+		unidentifiedResourceName = "hlro_flame2",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 2",
+		identifiedResourceName = "hlro_flame2",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3263,
+		costume = true
+	},
+	[2601328] = {
+		unidentifiedDisplayName = "Costume Flame 3",
+		unidentifiedResourceName = "hlro_flame3",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 3",
+		identifiedResourceName = "hlro_flame3",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3264,
+		costume = true
+	},
+	[2601329] = {
+		unidentifiedDisplayName = "Costume Flame 4",
+		unidentifiedResourceName = "hlro_flame4",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 4",
+		identifiedResourceName = "hlro_flame4",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3265,
+		costume = true
+	},
+	[2601330] = {
+		unidentifiedDisplayName = "Costume Flame 5",
+		unidentifiedResourceName = "hlro_flame5",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 5",
+		identifiedResourceName = "hlro_flame5",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3266,
+		costume = true
+	},
+	[2601331] = {
+		unidentifiedDisplayName = "Costume Flame 6",
+		unidentifiedResourceName = "hlro_flame6",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 6",
+		identifiedResourceName = "hlro_flame6",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3267,
+		costume = true
+	},
+	[2601332] = {
+		unidentifiedDisplayName = "Costume Flame 7",
+		unidentifiedResourceName = "hlro_flame7",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 7",
+		identifiedResourceName = "hlro_flame7",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3268,
+		costume = true
+	},
+	[2601333] = {
+		unidentifiedDisplayName = "Costume Flame 8",
+		unidentifiedResourceName = "hlro_flame8",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 8",
+		identifiedResourceName = "hlro_flame8",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3269,
+		costume = true
+	},
+	[2601334] = {
+		unidentifiedDisplayName = "Costume Flame 9",
+		unidentifiedResourceName = "hlro_flame9",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 9",
+		identifiedResourceName = "hlro_flame9",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3270,
+		costume = true
+	},
+	[2601335] = {
+		unidentifiedDisplayName = "Costume Flame 10",
+		unidentifiedResourceName = "hlro_flame10",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 10",
+		identifiedResourceName = "hlro_flame10",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3271,
+		costume = true
+	},
+	[2601336] = {
+		unidentifiedDisplayName = "Costume Flame 11",
+		unidentifiedResourceName = "hlro_flame11",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 11",
+		identifiedResourceName = "hlro_flame11",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3272,
+		costume = true
+	},
+	[2601337] = {
+		unidentifiedDisplayName = "Costume Flame 12",
+		unidentifiedResourceName = "hlro_flame12",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 12",
+		identifiedResourceName = "hlro_flame12",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3273,
+		costume = true
+	},
+	[2601338] = {
+		unidentifiedDisplayName = "Costume Flame 13",
+		unidentifiedResourceName = "hlro_flame13",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 13",
+		identifiedResourceName = "hlro_flame13",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3274,
+		costume = true
+	},
+	[2601339] = {
+		unidentifiedDisplayName = "Costume Flame 14",
+		unidentifiedResourceName = "hlro_flame14",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 14",
+		identifiedResourceName = "hlro_flame14",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3275,
+		costume = true
+	},
+	[2601340] = {
+		unidentifiedDisplayName = "Costume Flame 15",
+		unidentifiedResourceName = "hlro_flame15",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 15",
+		identifiedResourceName = "hlro_flame15",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3276,
+		costume = true
+	},
+	[2601341] = {
+		unidentifiedDisplayName = "Costume Flame 18",
+		unidentifiedResourceName = "hlro_flame18",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Flame 18",
+		identifiedResourceName = "hlro_flame18",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3277,
+		costume = true
+	},
+	[2601342] = {
+		unidentifiedDisplayName = "Costume German Flame",
+		unidentifiedResourceName = "hlro_german_flame",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume German Flame",
+		identifiedResourceName = "hlro_german_flame",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3278,
+		costume = true
+	},
+	[2601343] = {
+		unidentifiedDisplayName = "Costume Lila Flame",
+		unidentifiedResourceName = "hlro_lila_flame",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume Lila Flame",
+		identifiedResourceName = "hlro_lila_flame",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3279,
+		costume = true
+	},
+	[2601344] = {
+		unidentifiedDisplayName = "Costume White Flame",
+		unidentifiedResourceName = "hlro_white_flame",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Costume White Flame",
+		identifiedResourceName = "hlro_white_flame",
+		identifiedDescriptionName = {
+			"A one-of-a-kind costume from the HuffLabs Costume Tailors.",
+			"________________________",
+			"Type: ^000088Costume^000000",
+			"Position: ^000088Lower^000000",
+			"Weight: ^0000880^000000",
+			"All Jobs"
+		},
+		slotCount = 0,
+		ClassNum = 3280,
+		costume = true
+	},
 }
 
 -- Table for Official Overrides

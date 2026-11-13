@@ -1,0 +1,361 @@
+diff -ruN a/src/custom/battle_config_init.inc b/src/custom/battle_config_init.inc
+--- a/src/custom/battle_config_init.inc	2026-11-12 20:47:41.060844568 -0800
++++ b/src/custom/battle_config_init.inc	2026-11-12 20:47:41.061504078 -0800
+@@ -15,4 +15,7 @@
+ 	{ "mob_ele_view",                       &battle_config.mob_ele_view,                    1,        0,      1,              },
+ 	{ "mvp_card_announce_color",            &battle_config.mvp_card_announce_color,         0x3DBBFF, 0,      0xFFFFFF,       },
+ 	{ "miniboss_card_announce_color",       &battle_config.miniboss_card_announce_color,    0xF6FF00, 0,      0xFFFFFF,       },
++	// HuffLabs: vending currency. 0 = plain zeny shops. zeny item = the "Zeny" entry in the currency menu.
++	{ "vending_currency_item",              &battle_config.vending_currency_item,           2600000,  0,      INT32_MAX,      },
++	{ "vending_zeny_item",                  &battle_config.vending_zeny_item,               2600200,  0,      INT32_MAX,      },
+ 
+diff -ruN a/src/custom/battle_config_struct.inc b/src/custom/battle_config_struct.inc
+--- a/src/custom/battle_config_struct.inc	2026-11-12 20:47:41.063729884 -0800
++++ b/src/custom/battle_config_struct.inc	2026-11-12 20:47:41.064373715 -0800
+@@ -16,4 +16,6 @@
+ 	int32 mob_ele_view;
+ 	int32 mvp_card_announce_color;
+ 	int32 miniboss_card_announce_color;
++	int32 vending_currency_item;
++	int32 vending_zeny_item;
+ 
+diff -ruN a/src/map/buyingstore.hpp b/src/map/buyingstore.hpp
+--- a/src/map/buyingstore.hpp	2026-11-12 20:47:41.069569923 -0800
++++ b/src/map/buyingstore.hpp	2026-11-12 20:47:41.070211681 -0800
+@@ -51,6 +51,7 @@
+ 	char title[MESSAGE_SIZE]; ///< Store name
+ 	uint32 limit; ///< Maximum zeny to be spent (for buyingstore)
+ 	uint16 count; ///< Number of item in store
++	t_itemid currency; ///< HuffLabs: vending currency item (0 = zeny)
+ 	struct s_autotrade_entry **entries; ///< Store details
+ 	map_session_data *sd;
+ };
+diff -ruN a/src/map/clif.cpp b/src/map/clif.cpp
+--- a/src/map/clif.cpp	2026-11-12 20:47:41.075359931 -0800
++++ b/src/map/clif.cpp	2026-11-12 20:47:41.076308922 -0800
+@@ -13492,6 +13492,9 @@
+ 		case NC_MAGICDECOY:
+ 			skill_magicdecoy(*sd,p->itemId);
+ 			break;
++		case MC_VENDING: // HuffLabs vending currency
++			vending_currency_select(*sd, p->itemId);
++			break;
+ 	}
+ 
+ 	clif_menuskill_clear(sd);
+@@ -14263,6 +14266,15 @@
+ 	if( message[0] == '\0' ) // invalid input
+ 		return;
+ 
++	// HuffLabs: the title shows the currency, e.g. "[HuffLabs Coin] Cheap cards"
++	if( sd->vend_currency != 0 ){
++		char title[MESSAGE_SIZE];
++		std::shared_ptr<item_data> cur = item_db.find( sd->vend_currency );
++		safesnprintf( title, sizeof( title ), "[%s] %s", cur != nullptr ? cur->ename.c_str() : "?", message );
++		vending_openvending(*sd, title, data, len/8, nullptr);
++		return;
++	}
++
+ 	vending_openvending(*sd, message, data, len/8, nullptr);
+ }
+ 
+@@ -19771,6 +19783,18 @@
+ 		clif_skill_fail( sd, NC_MAGICDECOY );
+ 	}
+ }
++/// HuffLabs: vending currency choice, shown in the item-pick window (ZC_MAKINGARROW_LIST).
++void clif_vending_currency_list( map_session_data& sd, t_itemid zeny_item, t_itemid currency_item ){
++	PACKET_ZC_MAKINGARROW_LIST* p = reinterpret_cast<PACKET_ZC_MAKINGARROW_LIST*>( packet_buffer );
++
++	p->packetType = HEADER_ZC_MAKINGARROW_LIST;
++	p->packetLength = sizeof( *p );
++	p->items[0].itemId = client_nameid( zeny_item );
++	p->items[1].itemId = client_nameid( currency_item );
++	p->packetLength += static_cast<decltype(p->packetLength)>( 2 * sizeof( p->items[0] ) );
++	clif_send( p, p->packetLength, &sd, SELF );
++}
++
+ /*==========================================
+  * Guillotine Cross Poisons List
+  *------------------------------------------*/
+diff -ruN a/src/map/clif.hpp b/src/map/clif.hpp
+--- a/src/map/clif.hpp	2026-11-12 20:47:41.078797270 -0800
++++ b/src/map/clif.hpp	2026-11-12 20:47:41.079509347 -0800
+@@ -1334,6 +1334,7 @@
+ void clif_millenniumshield( const block_list& bl, int16 shields );
+ 
+ void clif_magicdecoy_list( map_session_data& sd, uint16 skill_lv, int16 x, int16 y );
++void clif_vending_currency_list( map_session_data& sd, t_itemid zeny_item, t_itemid currency_item ); // HuffLabs
+ 
+ void clif_poison_list( map_session_data& sd, uint16 skill_lv );
+ 
+diff -ruN a/src/map/pc.hpp b/src/map/pc.hpp
+--- a/src/map/pc.hpp	2026-11-12 20:47:41.066596796 -0800
++++ b/src/map/pc.hpp	2026-11-12 20:47:41.067292843 -0800
+@@ -738,6 +738,7 @@
+ 	int32 vender_id;
+ 	int32 vend_num;
+ 	uint16 vend_skill_lv;
++	t_itemid vend_currency; // HuffLabs: 0 = zeny, else the item this shop takes
+ 	char message[MESSAGE_SIZE];
+ 	struct s_vending vending[MAX_VENDING];
+ 
+diff -ruN a/src/map/skills/merchant/skill_vending.cpp b/src/map/skills/merchant/skill_vending.cpp
+--- a/src/map/skills/merchant/skill_vending.cpp	2026-11-12 20:47:41.072431285 -0800
++++ b/src/map/skills/merchant/skill_vending.cpp	2026-11-12 20:47:41.073088491 -0800
+@@ -5,6 +5,7 @@
+ 
+ #include "map/intif.hpp"
+ #include "map/pc.hpp"
++#include "map/vending.hpp"
+ 
+ SkillVending::SkillVending() : SkillImpl(MC_VENDING) {
+ }
+@@ -15,8 +16,15 @@
+ 		// Prevent vending of GMs with unnecessary Level to trade/drop. [Skotlex]
+ 		if (!pc_can_give_items(sd))
+ 			clif_skill_fail(*sd, MC_VENDING);
++		else if (vending_currency_enabled()) {
++			// HuffLabs: pick Zeny or the currency item first; the shop opens after the pick
++			sd->vend_currency = 0;
++			sd->vend_skill_lv = skill_lv;
++			vending_currency_menu(*sd, skill_lv);
++		}
+ 		else {
+ 			int32 i = 0;
++			sd->vend_currency = 0;
+ 			sd->state.prevend = 1;
+ 			sd->state.workinprogress = WIP_DISABLE_ALL;
+ 			sd->vend_skill_lv = skill_lv;
+diff -ruN a/src/map/vending.cpp b/src/map/vending.cpp
+--- a/src/map/vending.cpp	2026-11-12 20:47:41.085281081 -0800
++++ b/src/map/vending.cpp	2026-11-12 20:47:41.085994210 -0800
+@@ -18,6 +18,7 @@
+ #include "buyingstore.hpp" // struct s_autotrade_entry, struct s_autotrader
+ #include "chrif.hpp"
+ #include "clif.hpp"
++#include "intif.hpp" // HuffLabs: intif_storage_save
+ #include "itemdb.hpp"
+ #include "log.hpp"
+ #include "npc.hpp"
+@@ -94,6 +95,13 @@
+ 
+ 	sd->vended_id = vsd->vender_id;  // register vending uid
+ 
++	// HuffLabs: say which currency this shop takes (the client always shows "z")
++	if( vsd->vend_currency != 0 ){
++		std::shared_ptr<item_data> cur = item_db.find( vsd->vend_currency );
++		std::string note = "This shop sells for " + ( cur != nullptr ? cur->ename : std::string( "items" ) ) + ": every price is in that item, not zeny.";
++		clif_messagecolor( sd, color_table[COLOR_CYAN], note.c_str(), false, SELF );
++	}
++
+ 	clif_vendinglist( *sd, *vsd );
+ }
+ 
+@@ -112,6 +120,104 @@
+ }
+ 
+ /**
++ * HuffLabs vending currency (idea from Lilith/Easycore's Extended Vending, rewritten).
++ */
++bool vending_currency_enabled(){
++	return battle_config.vending_currency_item > 0 && battle_config.vending_zeny_item > 0
++		&& item_db.exists( battle_config.vending_currency_item ) && item_db.exists( battle_config.vending_zeny_item );
++}
++
++/// Shows the currency choice (Zeny or the currency item) in the item-pick window.
++void vending_currency_menu( map_session_data& sd, uint16 skill_lv ){
++	clif_vending_currency_list( sd, battle_config.vending_zeny_item, battle_config.vending_currency_item );
++	sd.menuskill_id = MC_VENDING;
++	sd.menuskill_val = skill_lv;
++}
++
++/// The player picked a currency: set up the shop and open the vending window.
++void vending_currency_select( map_session_data& sd, t_itemid nameid ){
++	if( nameid == static_cast<t_itemid>( battle_config.vending_currency_item ) )
++		sd.vend_currency = nameid;
++	else if( nameid == static_cast<t_itemid>( battle_config.vending_zeny_item ) )
++		sd.vend_currency = 0;
++	else{
++		clif_skill_fail( sd, MC_VENDING );
++		return;
++	}
++
++	if( !pc_can_give_items( &sd ) || sd.state.vending || sd.state.buyingstore || sd.state.trading ){
++		sd.vend_currency = 0;
++		clif_skill_fail( sd, MC_VENDING );
++		return;
++	}
++
++	int32 i = 0;
++	sd.state.prevend = 1;
++	sd.state.workinprogress = WIP_DISABLE_ALL;
++	ARR_FIND( 0, MAX_CART, i, sd.cart.u.items_cart[i].nameid && sd.cart.u.items_cart[i].id == 0 );
++	if( i < MAX_CART ){
++		// Save the cart before opening the vending UI
++		sd.state.pending_vending_ui = true;
++		intif_storage_save( &sd, &sd.cart );
++	}else{
++		sd.state.pending_vending_ui = false;
++		clif_openvendingreq( sd, 2 + sd.vend_skill_lv );
++	}
++}
++
++/// Moves <price> of the shop's currency item from buyer to vendor. Everything is checked
++/// before anything moves; bound and equipped items never count as payment.
++static bool vending_pay_with_item( map_session_data& sd, map_session_data& vsd, int32 price ){
++	t_itemid cur = vsd.vend_currency;
++	std::shared_ptr<item_data> id = item_db.find( cur );
++
++	if( id == nullptr || price < 0 )
++		return false;
++	if( price == 0 )
++		return true;
++
++	int32 have = 0;
++	for( int32 i = 0; i < MAX_INVENTORY; i++ ){
++		const item& it = sd.inventory.u.items_inventory[i];
++		if( it.nameid == cur && it.bound == BOUND_NONE && it.equip == 0 )
++			have += it.amount;
++	}
++
++	std::string msg;
++	if( have < price )
++		msg = "You don't have enough " + id->ename + " (need " + std::to_string( price ) + ", have " + std::to_string( have ) + ").";
++	else{
++		char chk = pc_checkadditem( &vsd, cur, price );
++		if( chk == CHKADDITEM_OVERAMOUNT || ( chk == CHKADDITEM_NEW && pc_inventoryblank( &vsd ) == 0 )
++			|| vsd.weight + static_cast<int64>( id->weight ) * price > vsd.max_weight )
++			msg = "The seller can't carry that much " + id->ename + ".";
++	}
++	if( !msg.empty() ){
++		clif_messagecolor( &sd, color_table[COLOR_RED], msg.c_str(), false, SELF );
++		return false;
++	}
++
++	item pay = {};
++	pay.nameid = cur;
++	pay.identify = 1;
++	if( pc_additem( &vsd, &pay, price, LOG_TYPE_VENDING ) != ADDITEM_SUCCESS ){
++		clif_messagecolor( &sd, color_table[COLOR_RED], ( "The seller can't carry that much " + id->ename + "." ).c_str(), false, SELF );
++		return false;
++	}
++
++	int32 left = price;
++	for( int32 i = 0; i < MAX_INVENTORY && left > 0; i++ ){
++		const item& it = sd.inventory.u.items_inventory[i];
++		if( it.nameid != cur || it.bound != BOUND_NONE || it.equip != 0 )
++			continue;
++		int32 take = std::min<int32>( it.amount, left );
++		pc_delitem( &sd, i, take, 0, 0, LOG_TYPE_VENDING );
++		left -= take;
++	}
++	return true;
++}
++
++/**
+  * Purchase item(s) from a shop
+  * @param sd : buyer player session
+  * @param aid : account id of vender
+@@ -171,11 +277,16 @@
+ 			vend_list[i] = j;
+ 
+ 		z += ((double)vsd->vending[j].value * (double)amount);
+-		if( z > (double)sd->status.zeny || z < 0. || z > (double)MAX_ZENY ) {
++		if( vsd->vend_currency != 0 ){ // HuffLabs: paid in items, checked in full before payment
++			if( z < 0. || z > (double)INT32_MAX ) {
++				clif_buyvending( *sd, idx, amount, PURCHASEMC_NO_ZENY );
++				return;
++			}
++		} else if( z > (double)sd->status.zeny || z < 0. || z > (double)MAX_ZENY ) {
+ 			clif_buyvending( *sd, idx, amount, PURCHASEMC_NO_ZENY ); // you don't have enough zeny
+ 			return;
+ 		}
+-		if( z + (double)vsd->status.zeny > (double)MAX_ZENY ) {
++		if( vsd->vend_currency == 0 && z + (double)vsd->status.zeny > (double)MAX_ZENY ) {
+ 			clif_buyvending( *sd, idx, vsd->vending[j].amount, PURCHASEMC_OUT_OF_STOCK ); // too much zeny = overflow
+ 			return;
+ 
+@@ -213,10 +324,15 @@
+ 		}
+ 	}
+ 
+-	pc_payzeny(sd, (int32)z, LOG_TYPE_VENDING, vsd->status.char_id);
+-	achievement_update_objective(sd, AG_SPEND_ZENY, 1, (int32)z);
+-	z = vending_calc_tax(sd, z);
+-	pc_getzeny(vsd, (int32)z, LOG_TYPE_VENDING, sd->status.char_id);
++	if( vsd->vend_currency != 0 ){
++		if( !vending_pay_with_item( *sd, *vsd, (int32)z ) )
++			return;
++	}else{
++		pc_payzeny(sd, (int32)z, LOG_TYPE_VENDING, vsd->status.char_id);
++		achievement_update_objective(sd, AG_SPEND_ZENY, 1, (int32)z);
++		z = vending_calc_tax(sd, z);
++		pc_getzeny(vsd, (int32)z, LOG_TYPE_VENDING, sd->status.char_id);
++	}
+ 
+ 	for( i = 0; i < count; i++ ) {
+ 		int16 amount = *(uint16*)(data + 4*i + 0);
+@@ -240,7 +356,8 @@
+ 		}
+ 
+ 		pc_cart_delitem(vsd, idx, amount, 0, LOG_TYPE_VENDING);
+-		z = vending_calc_tax(sd, z);
++		if( vsd->vend_currency == 0 ) // HuffLabs: no tax on item payments
++			z = vending_calc_tax(sd, z);
+ 		clif_vendingreport( *vsd, idx, amount, sd->status.char_id, (int32)z );
+ 
+ 		//print buyer's name
+@@ -393,9 +510,9 @@
+ 	
+ 	Sql_EscapeString( mmysql_handle, message_sql, sd.message );
+ 
+-	if( Sql_Query( mmysql_handle, "INSERT INTO `%s`(`id`, `account_id`, `char_id`, `sex`, `map`, `x`, `y`, `title`, `autotrade`, `body_direction`, `head_direction`, `sit`) "
+-		"VALUES( %d, %d, %d, '%c', '%s', %d, %d, '%s', %d, '%d', '%d', '%d' );",
+-		vendings_table, sd.vender_id, sd.status.account_id, sd.status.char_id, sd.status.sex == SEX_FEMALE ? 'F' : 'M', map_getmapdata(sd.m)->name, sd.x, sd.y, message_sql, sd.state.autotrade, at ? at->dir : sd.ud.dir, at ? at->head_dir : sd.head_dir, at ? at->sit : pc_issit(&sd) ) != SQL_SUCCESS ) {
++	if( Sql_Query( mmysql_handle, "INSERT INTO `%s`(`id`, `account_id`, `char_id`, `sex`, `map`, `x`, `y`, `title`, `autotrade`, `body_direction`, `head_direction`, `sit`, `hlro_currency`) "
++		"VALUES( %d, %d, %d, '%c', '%s', %d, %d, '%s', %d, '%d', '%d', '%d', %u );",
++		vendings_table, sd.vender_id, sd.status.account_id, sd.status.char_id, sd.status.sex == SEX_FEMALE ? 'F' : 'M', map_getmapdata(sd.m)->name, sd.x, sd.y, message_sql, sd.state.autotrade, at ? at->dir : sd.ud.dir, at ? at->head_dir : sd.head_dir, at ? at->sit : pc_issit(&sd), sd.vend_currency ) != SQL_SUCCESS ) {
+ 		Sql_ShowDebug(mmysql_handle);
+ 	}
+ 
+@@ -551,6 +668,7 @@
+ 		}
+ 
+ 		sd.state.prevend = 1; // Set him into a hacked prevend state
++		sd.vend_currency = at->currency; // HuffLabs
+ 		sd.state.autotrade = 1;
+ 
+ 		// Make sure abort all NPCs
+@@ -596,7 +714,7 @@
+ {
+ 	if (battle_config.feature_autotrade) {
+ 		if (Sql_Query(mmysql_handle,
+-			"SELECT `id`, `account_id`, `char_id`, `sex`, `title`, `body_direction`, `head_direction`, `sit` "
++			"SELECT `id`, `account_id`, `char_id`, `sex`, `title`, `body_direction`, `head_direction`, `sit`, `hlro_currency` "
+ 			"FROM `%s` "
+ 			"WHERE `autotrade` = 1 AND (SELECT COUNT(`vending_id`) FROM `%s` WHERE `vending_id` = `id`) > 0 "
+ 			"ORDER BY `id`;",
+@@ -626,6 +744,7 @@
+ 				Sql_GetData(mmysql_handle, 5, &data, nullptr); at->dir = atoi(data);
+ 				Sql_GetData(mmysql_handle, 6, &data, nullptr); at->head_dir = atoi(data);
+ 				Sql_GetData(mmysql_handle, 7, &data, nullptr); at->sit = atoi(data);
++				Sql_GetData(mmysql_handle, 8, &data, nullptr); at->currency = strtoul(data, nullptr, 10); // HuffLabs
+ 				at->count = 0;
+ 
+ 				if (battle_config.feature_autotrade_direction >= 0)
+diff -ruN a/src/map/vending.hpp b/src/map/vending.hpp
+--- a/src/map/vending.hpp	2026-11-12 20:47:41.082214492 -0800
++++ b/src/map/vending.hpp	2026-11-12 20:47:41.082913986 -0800
+@@ -24,6 +24,11 @@
+ void do_init_vending_autotrade( void );
+  
+ void vending_reopen( map_session_data& sd );
++
++// HuffLabs vending currency
++bool vending_currency_enabled();
++void vending_currency_menu( map_session_data& sd, uint16 skill_lv );
++void vending_currency_select( map_session_data& sd, t_itemid nameid );
+ void vending_closevending(map_session_data* sd);
+ int8 vending_openvending( map_session_data& sd, const char* message, const uint8* data, int32 count, struct s_autotrader *at );
+ void vending_vendinglistreq(map_session_data* sd, int32 id);

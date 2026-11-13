@@ -972,3 +972,9 @@ Body:
     BaseExp: 1312978
     JobExp: 919084
     MvpExp: 40656488
+
+# Random option drops (content/world-round2) live in their own file.
+Footer:
+  Imports:
+  - Path: db/import/mob_db_randopt.yml
+  - Path: db/import/mob_db_porings.yml
