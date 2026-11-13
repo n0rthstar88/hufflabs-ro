@@ -2,7 +2,7 @@
 """Builds headgears.tsv from Mihael's custom item pack: every headgear with male + female
 sprites and an icon becomes a stat-less costume with our own item and look ids.
 usage: make-headgears.py <custom-downloads dir> > headgears.tsv
-(needs mihael_x/ and extra_x/ unpacked there; extra_x holds the Valentine Ring, Flames and Light Star Aura recolours)"""
+(needs mihael_x/ and extra_x/ unpacked there; extra_x holds the Valentine Ring and Flames recolours)"""
 import os, re, sys
 dl = sys.argv[1]
 src = f"{dl}/mihael_x/Pack Custom Itens Mihael"
@@ -34,9 +34,8 @@ for l in open(f"{src}/item_db2 (OLD).txt", encoding="latin-1").read().replace("\
     iid += 1
     view += 1
 
-# Recolour packs: Valentine Ring (10), Flames (19) and Light Star Aura (9, by Kinx, shared with his OK), worn as lower headgear
-for pack, icondir in (("Valentine_Ring", f"texture/\u00c0\u00af\u00c0\u00fa\u00c0\u00ce\u00c5\u00cd\u00c6\u00e4\u00c0\u00cc\u00bd\u00ba/item"), ("flame_custom", "item"),
-                      ("Light_Star_Aura", f"texture/\u00c0\u00af\u00c0\u00fa\u00c0\u00ce\u00c5\u00cd\u00c6\u00e4\u00c0\u00cc\u00bd\u00ba/item")):
+# Recolour packs: Valentine Ring (10) and Flames (19), worn as lower headgear
+for pack, icondir in (("Valentine_Ring", f"texture/\u00c0\u00af\u00c0\u00fa\u00c0\u00ce\u00c5\u00cd\u00c6\u00e4\u00c0\u00cc\u00bd\u00ba/item"), ("flame_custom", "item")):
     root = f"{dl}/extra_x/{pack}"
     m = {x[len(M) + 1:-4].lower() for x in os.listdir(f"{root}/sprite/{ACC}/{M}") if x.lower().endswith(".spr")}
     w = {x[len(W) + 1:-4].lower() for x in os.listdir(f"{root}/sprite/{ACC}/{W}") if x.lower().endswith(".spr")}

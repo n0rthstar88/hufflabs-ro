@@ -58,7 +58,7 @@ of the server's machine, an invite code, and nothing else.
 | `tailscale/policy-snippet.hujson` | The policy grant that limits friends to the game server. |
 | `content/coin-shop/` | HuffLabs Coin: a coin that drops from monsters (more from bosses) and two Prontera merchants that sell costumes and gear for it. Server scripts, item entries, the client item descriptions and a deploy script. |
 | `content/leveling/` | Leveling: each character picks normal or 15x XP at first login, max level 500/250 for final classes, stats up to 1,000 and tougher bosses, plus an `@menu` command menu (with a HUD button) and healers in every town. A small rAthena source patch, generated XP and stat tables, and the client patch profile. See its README. |
-| `content/world-round1/` … `world-round5/` | World content from free rathena.org community releases: town NPCs, coin vending, random option drops, seasonal Prontera, Poring Family monsters, 354 costume headgears and dyes, missing item art. Builders and deploy scripts only; the downloads (art and the authors' scripts) stay out of the repo. Each folder's README credits the authors. |
+| `content/world-round1/` … `world-round5/` | World content from free rathena.org community releases: town NPCs, coin vending, random option drops, seasonal Prontera, Poring Family monsters, 345 costume headgears and dyes, missing item art. Builders and deploy scripts only; the downloads (art and the authors' scripts) stay out of the repo. Each folder's README credits the authors. |
 
 ## Running your own
 

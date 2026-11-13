@@ -4,9 +4,13 @@ Each version is tagged and has a [release](https://github.com/n0rthstar88/huffla
 with built tools. Every version passes the [tests](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml)
 on fresh Linux and Windows machines first.
 
+## v1.3.1
+
+- Costume list trimmed to the 345 headgears that are free to share publicly.
+
 ## v1.3.0
 
-**A bigger world: community NPCs, coin vending, seasons, 354 costumes.**
+**A bigger world: community NPCs, coin vending, seasons, 345 costumes.**
 
 Five content rounds built from free rathena.org community releases, adapted and fixed for
 HuffLabs RO. Each `content/world-round*/` folder has a README, a deploy script and the
@@ -23,7 +27,7 @@ authors' scripts) are not in this repository.
   drops on 792 monsters.
 - **Round 3:** Prontera follows the real season (`season.sh`, run daily by a timer), 25
   Poring Family monsters roam the fields and 10 townsfolk use new NPC looks.
-- **Round 4:** 354 stat-less costume headgears at three Costume Tailors in Alberta, and
+- **Round 4:** 345 stat-less costume headgears at three Costume Tailors in Alberta, and
   553 clothes / 251 hair dyes.
 - **Round 5:** a fill-only installer for missing item art, HD damage numbers and two new
   cart looks.

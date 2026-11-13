@@ -9,8 +9,7 @@ data.grf or already loose), so these packs add missing art (sprites/icons for of
 that kRO never shipped art for) and can never overwrite official or HuffLabs files. The
 exceptions are the REPLACE list below, chosen on purpose.
 Skipped on purpose: 4th.grf (identical to our 2025 client), skating.grf (replaces an official
-outfit), palette packs (content/world-round4 ships its own dyes; Light Star Aura is there too, as
-costumes), newcart.gpf (old GPF 0x102 format), sky motorcycle (needs a mount
+outfit), palette packs (content/world-round4 ships its own dyes), newcart.gpf (old GPF 0x102 format), sky motorcycle (needs a mount
 system our client doesn't have), Domovoi/Wootan custom card art.
 """
 import pathlib

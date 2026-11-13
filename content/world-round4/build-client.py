@@ -32,11 +32,10 @@ if "hlro_dyes.grf" not in ini:
     (CLIENT / "DATA.INI").write_text("\r\n".join(lines) + "\r\n", encoding="latin-1")
 print("dyes: hlro_dyes.grf + DATA.INI")
 
-# 2. headgears (Mihael's pack + the Valentine Ring, Flames and Light Star Aura recolours)
+# 2. headgears (Mihael's pack + the Valentine Ring and Flames recolours)
 SRC = {"mihael": (DL / "mihael_x" / "Pack Custom Itens Mihael", "item", "item"),
        "Valentine_Ring": (DL / "extra_x" / "Valentine_Ring", f"texture/{UI}/item", f"texture/{UI}/collection"),
-       "flame_custom": (DL / "extra_x" / "flame_custom", "item", "collection"),
-       "Light_Star_Aura": (DL / "extra_x" / "Light_Star_Aura", f"texture/{UI}/item", f"texture/{UI}/collection")}
+       "flame_custom": (DL / "extra_x" / "flame_custom", "item", "collection")}
 rows = [l.split("\t") for l in (HERE / "headgears.tsv").read_text().splitlines() if l and not l.startswith("#")]
 listing = {}
 def find(folder, fname):
