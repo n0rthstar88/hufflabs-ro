@@ -113,3 +113,34 @@ Body:
     Script: |
       bonus bAgi,4;
       bonus bFlee,10;
+  - Id: 2600100
+    AegisName: C_HLRO_Saiyan_Aura
+    Name: Costume Super Saiyan Aura
+    Type: Armor
+    Weight: 0
+    Locations:
+      Costume_Head_Low: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    View: 2935
+  - Id: 2600200
+    AegisName: HLRO_Vending_Zeny
+    Name: Zeny
+    Type: Etc
+    Weight: 0
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoTradeRoom: true
+      NoSell: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+
+# Costume headgears (content/world-round4) live in their own file.
+Footer:
+  Imports:
+  - Path: db/import/item_db_headgears.yml

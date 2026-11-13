@@ -1,0 +1,62 @@
+//===== HuffLabs RO =========================================
+//= Townsfolk with the 100 NPCs pack looks (content/world-round3, built by build-server.py)
+//==========================================================
+prontera,169,199,4	script	Chef Marco#hlrofolk0	19215,{
+	mes "[Chef Marco]";
+	mes "The fountain water makes the best soup. Don't tell the guards.";
+	close;
+}
+
+prontera,140,175,6	script	Student Lia#hlrofolk1	19269,{
+	mes "[Student Lia]";
+	mes "I'm studying for the Sage exam in Juno. The Build Manager there scares me.";
+	close;
+}
+
+alberta,175,135,4	script	Captain Brine#hlrofolk2	19260,{
+	mes "[Captain Brine]";
+	mes "The Mini Endless Tower? I climbed it once. Twenty-five floors of regret.";
+	close;
+}
+
+amatsu,209,94,4	script	Wandering Samurai#hlrofolk3	19276,{
+	mes "[Wandering Samurai]";
+	mes "The Item Mall up north sells everything. Even honor, I'm told.";
+	close;
+}
+
+payon,177,238,4	script	Old Hunter#hlrofolk4	19282,{
+	mes "[Old Hunter]";
+	mes "Hunting quests pay in coins now. Back in my day it was apples.";
+	close;
+}
+
+geffen,109,70,4	script	Apprentice Mage#hlrofolk5	19265,{
+	mes "[Apprentice Mage]";
+	mes "The Enchanter never breaks gear. My last teacher did. Often.";
+	close;
+}
+
+morocc,150,101,4	script	Desert Dancer#hlrofolk6	19220,{
+	mes "[Desert Dancer]";
+	mes "Try the Dress Room nearby. Everyone looks better as another class.";
+	close;
+}
+
+izlude,138,147,4	script	Little Knight#hlrofolk7	19249,{
+	mes "[Little Knight]";
+	mes "Hit the punching bags south of here. They shout your damage!";
+	close;
+}
+
+aldebaran,132,135,4	script	Clockwork Priest#hlrofolk8	19245,{
+	mes "[Clockwork Priest]";
+	mes "The Enchant Master takes coins for costume enchants. Ten each.";
+	close;
+}
+
+yuno,150,60,4	script	Lecturer Vane#hlrofolk9	19273,{
+	mes "[Lecturer Vane]";
+	mes "Save your stat builds with @bm. Your skills stay safe.";
+	close;
+}

@@ -23,9 +23,10 @@ OnMenu:
 		mes "[Command Menu]";
 		mes "Every command you can use on HuffLabs RO.";
 		mes "Type ^0000FF@menu^000000 anytime to open this again.";
-		switch (select("Server commands (@)", "Client commands (/)", "Close")) {
+		switch (select("Server commands (@)", "Client commands (/)", "Town services (NPCs)", "Close")) {
 		case 1: callsub S_Server; break;
 		case 2: callsub S_Client; break;
+		case 3: callsub S_Services; break;
 		default: close;
 		}
 	}
@@ -36,7 +37,8 @@ S_Server:
 		mes "[Server Commands]";
 		mes "Type these in the chat box. Pick one to learn more or use it.";
 		switch (select("@go - jump to a town", "@warp - jump to any map", "@pace - check your XP pace",
-			"@resurrect - revive with a Token", "@changedress - take off an outfit", "Back")) {
+			"@resurrect - revive with a Token", "@changedress - take off an outfit",
+			"@bm - saved stat builds", "@myquest - hunting quest progress", "@woetime - War of Emperium times", "Back")) {
 		case 1:
 			clear;
 			mes "[@go]";
@@ -114,10 +116,76 @@ S_Server:
 			close2;
 			atcommand "@changedress";
 			end;
+		case 6:
+			clear;
+			mes "[@bm]";
+			mes "Opens the Build Manager: save up to 3 stat builds";
+			mes "and switch between them. Switching resets your stats";
+			mes "and puts the saved ones back. Skills are not touched.";
+			mes "Also ^0000FF@buildmanager^000000. The NPC stands in Juno.";
+			if (select("Use it now", "Back") == 2) break;
+			close2;
+			atcommand "@bm";
+			end;
+		case 7:
+			clear;
+			mes "[@myquest]";
+			mes "Shows your Hunting Quest progress in the chat box.";
+			mes "Take quests from the Hunting Quest NPC in Payon.";
+			if (select("Use it now", "Back") == 2) break;
+			close2;
+			atcommand "@myquest";
+			end;
+		case 8:
+			clear;
+			mes "[@woetime]";
+			mes "Shows when War of Emperium runs.";
+			mes "During WoE, ^0000FF@woe^000000 takes you to an active castle.";
+			if (select("Use it now", "Back") == 2) break;
+			close2;
+			atcommand "@woetime";
+			end;
 		default:
 			clear;
 			return;
 		}
+	}
+
+S_Services:
+	// NPCs from content/world-round1; @go numbers as in OnInit's .towns$ list.
+	setarray .@svc$,
+		"Stylist (251 hair, 553 clothes colours)", "Prontera", "Adv. Stylist at 160, 182. Newer jobs and some hairstyles only get the standard colours.",
+		"WoE Information", "Prontera", "WOE Information at 144, 198. War of Emperium times and castle owners.",
+		"Dress Room (look like another class)", "Morroc", "Dress Room at 167, 95.",
+		"Enchanter (add stat orbs to gear)", "Geffen", "Enchanter at 124, 61.",
+		"Hunting Quest (kill quests for coins)", "Payon", "Hunting Quest at 165, 225.",
+		"Mini Endless Tower (daily 25 floors)", "Alberta", "Mini Endless Tower at 191, 145. Once a day; bring a party.",
+		"Punching Bags (test your damage)", "Izlude", "Five Punching Bags around 127, 128.",
+		"Costume Enchant", "Al De Baran", "Enchant Master at 142, 123. 10 coins per enchant.",
+		"Build Manager (saved stat builds)", "Juno", "Build Manager at 162, 56.",
+		"Item Mall (buy almost any item)", "Amatsu", "Mall Warper at 200, 246.",
+		"Costume Tailors (316 custom headgears)", "Alberta", "Three Tailors around 116, 59: upper, middle and lower. 200 coins each.";
+	setarray .@go, 0, 0, 1, 2, 3, 4, 5, 6, 9, 10, 4;
+	while (1) {
+		clear;
+		mes "[Town Services]";
+		mes "Where to find the special NPCs.";
+		mes "Type ^0000FF/where^000000 to see your own coordinates.";
+		.@menu$ = "";
+		for (.@i = 0; .@i < getarraysize(.@go); .@i++)
+			.@menu$ += .@svc$[.@i * 3] + " - " + .@svc$[.@i * 3 + 1] + ":";
+		.@pick = select(.@menu$ + "Back") - 1;
+		if (.@pick >= getarraysize(.@go)) {
+			clear;
+			return;
+		}
+		clear;
+		mes "[" + .@svc$[.@pick * 3] + "]";
+		mes "In ^0000FF" + .@svc$[.@pick * 3 + 1] + "^000000: " + .@svc$[.@pick * 3 + 2];
+		if (select("Take me to " + .@svc$[.@pick * 3 + 1], "Back") == 2) continue;
+		close2;
+		atcommand "@go " + .@go[.@pick];
+		end;
 	}
 
 S_Client:

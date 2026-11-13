@@ -1,0 +1,983 @@
+# HuffLabs RO (content/world-round3): Poring Family monsters. Built by build-server.py.
+# Loaded through the Footer of db/import/mob_db.yml (content/leveling).
+Header:
+  Type: MOB_DB
+  Version: 5
+
+Body:
+  - Id: 31000
+    AegisName: HLRO_AQUARING
+    Name: Aquaring
+    Level: 6
+    Hp: 180
+    BaseExp: 900
+    JobExp: 240
+    Attack: 48
+    Attack2: 60
+    Defense: 6
+    MagicDefense: 3
+    Str: 6
+    Agi: 6
+    Vit: 6
+    Int: 3
+    Dex: 11
+    Luk: 6
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31001
+    AegisName: HLRO_BLACKNEKORING
+    Name: Black Nekoring
+    Level: 14
+    Hp: 620
+    BaseExp: 2100
+    JobExp: 560
+    Attack: 112
+    Attack2: 140
+    Defense: 14
+    MagicDefense: 7
+    Str: 14
+    Agi: 14
+    Vit: 14
+    Int: 7
+    Dex: 19
+    Luk: 14
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Brute
+    Element: Dark
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31002
+    AegisName: HLRO_BLOODRING
+    Name: Bloodring
+    Level: 20
+    Hp: 1100
+    BaseExp: 3000
+    JobExp: 800
+    Attack: 160
+    Attack2: 200
+    Defense: 20
+    MagicDefense: 10
+    Str: 20
+    Agi: 20
+    Vit: 20
+    Int: 10
+    Dex: 25
+    Luk: 20
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demon
+    Element: Fire
+    ElementLevel: 2
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31003
+    AegisName: HLRO_BLUENEKORING
+    Name: Blue Nekoring
+    Level: 12
+    Hp: 520
+    BaseExp: 1800
+    JobExp: 480
+    Attack: 96
+    Attack2: 120
+    Defense: 12
+    MagicDefense: 6
+    Str: 12
+    Agi: 12
+    Vit: 12
+    Int: 6
+    Dex: 17
+    Luk: 12
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Brute
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31004
+    AegisName: HLRO_COWRING
+    Name: Cowring
+    Level: 9
+    Hp: 360
+    BaseExp: 1350
+    JobExp: 360
+    Attack: 72
+    Attack2: 90
+    Defense: 9
+    MagicDefense: 4
+    Str: 9
+    Agi: 9
+    Vit: 9
+    Int: 4
+    Dex: 14
+    Luk: 9
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Brute
+    Element: Earth
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31005
+    AegisName: HLRO_CREAMRING
+    Name: Creamring
+    Level: 4
+    Hp: 120
+    BaseExp: 600
+    JobExp: 160
+    Attack: 32
+    Attack2: 40
+    Defense: 4
+    MagicDefense: 2
+    Str: 4
+    Agi: 4
+    Vit: 4
+    Int: 2
+    Dex: 9
+    Luk: 4
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31006
+    AegisName: HLRO_DEMONRING
+    Name: Demonring
+    Level: 22
+    Hp: 1300
+    BaseExp: 3300
+    JobExp: 880
+    Attack: 176
+    Attack2: 220
+    Defense: 22
+    MagicDefense: 11
+    Str: 22
+    Agi: 22
+    Vit: 22
+    Int: 11
+    Dex: 27
+    Luk: 22
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demon
+    Element: Dark
+    ElementLevel: 2
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31007
+    AegisName: HLRO_GHOSTPORING
+    Name: Ghost Poring
+    Level: 18
+    Hp: 900
+    BaseExp: 2700
+    JobExp: 720
+    Attack: 144
+    Attack2: 180
+    Defense: 18
+    MagicDefense: 9
+    Str: 18
+    Agi: 18
+    Vit: 18
+    Int: 9
+    Dex: 23
+    Luk: 18
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Undead
+    Element: Ghost
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31008
+    AegisName: HLRO_GLOOMRING
+    Name: Gloomring
+    Level: 16
+    Hp: 780
+    BaseExp: 2400
+    JobExp: 640
+    Attack: 128
+    Attack2: 160
+    Defense: 16
+    MagicDefense: 8
+    Str: 16
+    Agi: 16
+    Vit: 16
+    Int: 8
+    Dex: 21
+    Luk: 16
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Dark
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31009
+    AegisName: HLRO_GREENAPPLEPORING
+    Name: Green Apple Poring
+    Level: 5
+    Hp: 150
+    BaseExp: 750
+    JobExp: 200
+    Attack: 40
+    Attack2: 50
+    Defense: 5
+    MagicDefense: 2
+    Str: 5
+    Agi: 5
+    Vit: 5
+    Int: 2
+    Dex: 10
+    Luk: 5
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Earth
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31010
+    AegisName: HLRO_GREENNEKORING
+    Name: Green Nekoring
+    Level: 12
+    Hp: 520
+    BaseExp: 1800
+    JobExp: 480
+    Attack: 96
+    Attack2: 120
+    Defense: 12
+    MagicDefense: 6
+    Str: 12
+    Agi: 12
+    Vit: 12
+    Int: 6
+    Dex: 17
+    Luk: 12
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Brute
+    Element: Wind
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31011
+    AegisName: HLRO_GREYNEKORING
+    Name: Grey Nekoring
+    Level: 13
+    Hp: 570
+    BaseExp: 1950
+    JobExp: 520
+    Attack: 104
+    Attack2: 130
+    Defense: 13
+    MagicDefense: 6
+    Str: 13
+    Agi: 13
+    Vit: 13
+    Int: 6
+    Dex: 18
+    Luk: 13
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Brute
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31012
+    AegisName: HLRO_HALLOWRING
+    Name: Hallowring
+    Level: 19
+    Hp: 1000
+    BaseExp: 2850
+    JobExp: 760
+    Attack: 152
+    Attack2: 190
+    Defense: 19
+    MagicDefense: 9
+    Str: 19
+    Agi: 19
+    Vit: 19
+    Int: 9
+    Dex: 24
+    Luk: 19
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Undead
+    Element: Undead
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31013
+    AegisName: HLRO_LOVEPORING
+    Name: Love Poring
+    Level: 7
+    Hp: 220
+    BaseExp: 1050
+    JobExp: 280
+    Attack: 56
+    Attack2: 70
+    Defense: 7
+    MagicDefense: 3
+    Str: 7
+    Agi: 7
+    Vit: 7
+    Int: 3
+    Dex: 12
+    Luk: 7
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Holy
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31014
+    AegisName: HLRO_NEKORING
+    Name: Nekoring
+    Level: 10
+    Hp: 420
+    BaseExp: 1500
+    JobExp: 400
+    Attack: 80
+    Attack2: 100
+    Defense: 10
+    MagicDefense: 5
+    Str: 10
+    Agi: 10
+    Vit: 10
+    Int: 5
+    Dex: 15
+    Luk: 10
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Brute
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31015
+    AegisName: HLRO_ORCPORING
+    Name: Orc Poring
+    Level: 15
+    Hp: 700
+    BaseExp: 2250
+    JobExp: 600
+    Attack: 120
+    Attack2: 150
+    Defense: 15
+    MagicDefense: 7
+    Str: 15
+    Agi: 15
+    Vit: 15
+    Int: 7
+    Dex: 20
+    Luk: 15
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Earth
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31016
+    AegisName: HLRO_PANDARING
+    Name: Pandaring
+    Level: 11
+    Hp: 470
+    BaseExp: 1650
+    JobExp: 440
+    Attack: 88
+    Attack2: 110
+    Defense: 11
+    MagicDefense: 5
+    Str: 11
+    Agi: 11
+    Vit: 11
+    Int: 5
+    Dex: 16
+    Luk: 11
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Brute
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31017
+    AegisName: HLRO_PINKNEKORING
+    Name: Pink Nekoring
+    Level: 12
+    Hp: 520
+    BaseExp: 1800
+    JobExp: 480
+    Attack: 96
+    Attack2: 120
+    Defense: 12
+    MagicDefense: 6
+    Str: 12
+    Agi: 12
+    Vit: 12
+    Int: 6
+    Dex: 17
+    Luk: 12
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Brute
+    Element: Fire
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31018
+    AegisName: HLRO_PORINGKING
+    Name: Poring King
+    Level: 45
+    Hp: 25000
+    BaseExp: 30000
+    JobExp: 10000
+    Attack: 360
+    Attack2: 450
+    Defense: 45
+    MagicDefense: 22
+    Str: 45
+    Agi: 45
+    Vit: 45
+    Int: 22
+    Dex: 50
+    Luk: 45
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Plant
+    Element: Water
+    ElementLevel: 3
+    WalkSpeed: 200
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 21
+    Class: Boss
+    Drops:
+      - Item: HuffLabs_Coin
+        Rate: 10000
+      - Item: Old_Blue_Box
+        Rate: 5000
+      - Item: Poring_Card
+        Rate: 500
+      - Item: Jellopy
+        Rate: 10000
+  - Id: 31019
+    AegisName: HLRO_PUMPKINRING
+    Name: Pumpkinring
+    Level: 17
+    Hp: 840
+    BaseExp: 2550
+    JobExp: 680
+    Attack: 136
+    Attack2: 170
+    Defense: 17
+    MagicDefense: 8
+    Str: 17
+    Agi: 17
+    Vit: 17
+    Int: 8
+    Dex: 22
+    Luk: 17
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Earth
+    ElementLevel: 2
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31020
+    AegisName: HLRO_PURPLENEKORING
+    Name: Purple Nekoring
+    Level: 13
+    Hp: 570
+    BaseExp: 1950
+    JobExp: 520
+    Attack: 104
+    Attack2: 130
+    Defense: 13
+    MagicDefense: 6
+    Str: 13
+    Agi: 13
+    Vit: 13
+    Int: 6
+    Dex: 18
+    Luk: 13
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Brute
+    Element: Poison
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31021
+    AegisName: HLRO_REDAPPLEPORING
+    Name: Red Apple Poring
+    Level: 5
+    Hp: 150
+    BaseExp: 750
+    JobExp: 200
+    Attack: 40
+    Attack2: 50
+    Defense: 5
+    MagicDefense: 2
+    Str: 5
+    Agi: 5
+    Vit: 5
+    Int: 2
+    Dex: 10
+    Luk: 5
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Fire
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31022
+    AegisName: HLRO_SPROURING
+    Name: Sprouring
+    Level: 3
+    Hp: 90
+    BaseExp: 450
+    JobExp: 120
+    Attack: 24
+    Attack2: 30
+    Defense: 3
+    MagicDefense: 1
+    Str: 3
+    Agi: 3
+    Vit: 3
+    Int: 1
+    Dex: 8
+    Luk: 3
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Plant
+    Element: Earth
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31023
+    AegisName: HLRO_WHISPERING
+    Name: Whispering
+    Level: 16
+    Hp: 760
+    BaseExp: 2400
+    JobExp: 640
+    Attack: 128
+    Attack2: 160
+    Defense: 16
+    MagicDefense: 8
+    Str: 16
+    Agi: 16
+    Vit: 16
+    Int: 8
+    Dex: 21
+    Luk: 16
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Undead
+    Element: Ghost
+    ElementLevel: 2
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200
+  - Id: 31024
+    AegisName: HLRO_WHITEPORING
+    Name: White Poring
+    Level: 8
+    Hp: 280
+    BaseExp: 1200
+    JobExp: 320
+    Attack: 64
+    Attack2: 80
+    Defense: 8
+    MagicDefense: 4
+    Str: 8
+    Agi: 8
+    Vit: 8
+    Int: 4
+    Dex: 13
+    Luk: 8
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Holy
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    ClientAttackMotion: 288
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: Jellopy
+        Rate: 5000
+      - Item: Sticky_Mucus
+        Rate: 1000
+      - Item: Apple
+        Rate: 1000
+      - Item: HuffLabs_Coin
+        Rate: 200

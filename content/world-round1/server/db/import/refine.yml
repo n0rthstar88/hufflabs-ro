@@ -1,0 +1,67 @@
+# HuffLabs RO import (content/world-round1): announce successful refines from +10
+# (official rAthena announces from +13). Only BroadcastSuccess is set; costs stay official.
+Header:
+  Type: REFINE_DB
+  Version: 2
+
+Body:
+  - Group: Armor
+    Levels:
+      - Level: 1
+        RefineLevels:
+          - Level: 10
+            BroadcastSuccess: true
+          - Level: 11
+            BroadcastSuccess: true
+          - Level: 12
+            BroadcastSuccess: true
+      - Level: 2
+        RefineLevels:
+          - Level: 10
+            BroadcastSuccess: true
+          - Level: 11
+            BroadcastSuccess: true
+          - Level: 12
+            BroadcastSuccess: true
+  - Group: Weapon
+    Levels:
+      - Level: 1
+        RefineLevels:
+          - Level: 10
+            BroadcastSuccess: true
+          - Level: 11
+            BroadcastSuccess: true
+          - Level: 12
+            BroadcastSuccess: true
+      - Level: 2
+        RefineLevels:
+          - Level: 10
+            BroadcastSuccess: true
+          - Level: 11
+            BroadcastSuccess: true
+          - Level: 12
+            BroadcastSuccess: true
+      - Level: 3
+        RefineLevels:
+          - Level: 10
+            BroadcastSuccess: true
+          - Level: 11
+            BroadcastSuccess: true
+          - Level: 12
+            BroadcastSuccess: true
+      - Level: 4
+        RefineLevels:
+          - Level: 10
+            BroadcastSuccess: true
+          - Level: 11
+            BroadcastSuccess: true
+          - Level: 12
+            BroadcastSuccess: true
+      - Level: 5
+        RefineLevels:
+          - Level: 10
+            BroadcastSuccess: true
+          - Level: 11
+            BroadcastSuccess: true
+          - Level: 12
+            BroadcastSuccess: true
