@@ -7,6 +7,7 @@
 | `server/battle_conf.txt` | Stat caps (1000), installed as a marked block in `conf/import/battle_conf.txt`. |
 | `server/db/import/*.yml` | Generated import tables (committed so the server can be rebuilt from the repo). |
 | `server/npc/*.txt` | NPC scripts installed in `npc/custom/hufflabs/`. |
+| Stock town NPCs | `deploy.sh` also turns on rAthena's healer in every town (nurse sprite `4_F_NURSE` instead of the stock Poring) and the stock Job Master (`npc/custom/jobmaster.txt`, moved to the middle of the Prontera fountain's south edge, 156,193). Both are small edits to stock rAthena files, so redo them (re-run `deploy.sh`) after an rAthena update. |
 | `deploy.sh` | Installs all of it in the game server container (`HLRO_CT`). `--build` rebuilds rAthena (about 30 min), `--restart` restarts login, char and map (refuses while anyone is online). Every overwritten file gets a `.bak-<time>` copy next to it. |
 
 Roll back: on the game server, `git -c safe.directory='*' apply -R` the patch, rebuild, and restore the `.bak-` copies of the touched files.

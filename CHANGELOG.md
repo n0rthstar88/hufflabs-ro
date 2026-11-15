@@ -4,6 +4,26 @@ Each version is tagged and has a [release](https://github.com/n0rthstar88/huffla
 with built tools. Every version passes the [tests](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml)
 on fresh Linux and Windows machines first.
 
+## v1.3.2
+
+**Fixes: WoE no longer runs on its own, NPC looks stand on the ground, a job changer at the fountain.**
+
+- **WoE schedule really off.** The stock War of Emperium schedulers were never unloaded:
+  `delnpc` lines in `conf/import/map_conf.txt` do nothing, because that file is read before
+  any NPC list exists, and `npc/scripts_guild.conf` lists `agit_controller.txt` with a
+  trailing space. WoE kept starting Tue/Thu 21:00 and Sat 16:00. The round-1 deploy script
+  now puts the `delnpc` lines in `npc/scripts_custom.conf` and removes the old ones.
+- **NPC looks fixed from every angle.** The round-3 NPC looks only had a correct
+  south-facing picture; the other seven directions used template offsets, so NPCs sank
+  into the floor or slid sideways when turned or seen from another camera angle.
+  `fix-npc-act.py` (run by `build-client.py`) gives every direction the good picture.
+- **Prontera Seasons ground fix.** `seasons-names.py` could map two floor textures onto the
+  same name and leave others missing (black ground in Prontera). It now decodes names by a
+  per-character vote and refuses collisions. `build-client.py` also keeps the client's
+  existing file-name case, so the update manifest never lists a file twice.
+- **Town NPCs.** The stock rAthena Job Master is on, front and centre at the Prontera
+  fountain (156,193), and the healers in every town use the nurse sprite instead of a Poring.
+
 ## v1.3.1
 
 **A bigger world: community NPCs, coin vending, seasons, 345 costumes.**

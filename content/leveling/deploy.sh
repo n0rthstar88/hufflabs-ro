@@ -45,6 +45,11 @@ if compgen -G 'server/npc/*.txt' >/dev/null; then
 fi
 # stock rAthena healer in every town (healer_extra.txt adds Lasagna and needs it loaded first)
 run "cd $RA; grep -qx 'npc: npc/custom/healer.txt' conf/import/map_conf.txt || sed -i '\\|^npc: npc/custom/hufflabs/healer_extra.txt|i npc: npc/custom/healer.txt' conf/import/map_conf.txt; grep -qx 'npc: npc/custom/healer.txt' conf/import/map_conf.txt || echo 'npc: npc/custom/healer.txt' >> conf/import/map_conf.txt"
+# healers look like a nurse (the stock file uses 909, a Poring that's easy to miss)
+run "cd $RA; grep -q 'duplicate(Healer).*[[:space:]]909' npc/custom/healer.txt && { cp -a npc/custom/healer.txt npc/custom/healer.txt.bak-$stamp; sed -i -E 's/(duplicate\\(Healer\\)\\t[^\\t]+\\t)909(\\t|\$)/\\14_F_NURSE\\2/' npc/custom/healer.txt; echo 'healer.txt: nurse sprite'; } || true"
+# stock rAthena Job Master, moved to the middle of the Prontera fountain's south edge
+run "cd $RA; grep -qP '^prontera,153,193,6\t' npc/custom/jobmaster.txt && { cp -a npc/custom/jobmaster.txt npc/custom/jobmaster.txt.bak-$stamp; sed -i 's/^prontera,153,193,6\t/prontera,156,193,4\t/' npc/custom/jobmaster.txt; echo 'jobmaster.txt: moved to 156,193'; } || true
+grep -qx 'npc: npc/custom/jobmaster.txt' conf/import/map_conf.txt || { cp -a conf/import/map_conf.txt conf/import/map_conf.txt.bak-$stamp; echo 'npc: npc/custom/jobmaster.txt' >> conf/import/map_conf.txt; }"
 
 # 4. battle config block (between the HuffLabs leveling markers, replaced each time)
 put /tmp/hlro-battle.txt server/battle_conf.txt

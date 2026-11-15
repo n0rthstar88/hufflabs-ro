@@ -15,7 +15,7 @@ adapted for HuffLabs RO. The downloads themselves stay in the quarantine folder
 | Sader's Enchantment 3.1 | Geffen 124,61 | Any gear (upstream sample only allowed novice items), never breaks gear (upstream 50%). |
 | Dress Room (Secret, MIT) | Morroc 167,95 | Unchanged. |
 | Item Mall | Warper in Amatsu 200,246 → `quiz_02` | Unchanged, everything for zeny (owner's choice). All 3,696 item ids exist in our item db. |
-| WoE controller (Euphy 1.9 + BeWan 1.4) | Prontera 144,198, `@woe`, `@woetime` | No schedule until a GM adds sessions in its menu; stock agit schedulers are `delnpc`'d. Castle reward: 10 HuffLabs Coins. |
+| WoE controller (Euphy 1.9 + BeWan 1.4) | Prontera 144,198, `@woe`, `@woetime` | No schedule until a GM adds sessions in its menu; stock agit schedulers are `delnpc`'d in `npc/scripts_custom.conf` (a `delnpc` in `conf/import/map_conf.txt` does nothing: that file is read before the NPC lists). Castle reward: 10 HuffLabs Coins. |
 | Mini Endless Tower (Sader1992) | Alberta 191,145 | 25 floors, once a day. Map `1@mtower` = copy of `1@tower` (server map cache import + client resnametable alias). Reward per clear: 20 coins + 10% of next base/job level. |
 | Hunting Quest 5.2 (Sader1992) | Payon 165,225, `@myquest` | Five tiers by level (1–500) with monsters that spawn at those levels. Points buy HuffLabs Coins, 10 points = 1 coin. |
 | Costume Enchant (Dimas_Shotta93) | Al De Baran 142,123 | 10 HuffLabs Coins per enchant (upstream: Silvervine Fruit, which nothing here sells). |
