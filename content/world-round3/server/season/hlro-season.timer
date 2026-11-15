@@ -1,0 +1,9 @@
+[Unit]
+Description=HuffLabs RO: check the Prontera season every hour
+
+[Timer]
+OnCalendar=*-*-* *:20:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

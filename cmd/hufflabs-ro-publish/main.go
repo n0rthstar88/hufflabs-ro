@@ -2,7 +2,11 @@
 // every launcher picks them up on its next start.
 //
 //	hufflabs-ro-publish keygen [--out FILE]
-//	hufflabs-ro-publish [--client DIR] [--repo DIR] [--key FILE] [--dry-run]
+//	hufflabs-ro-publish [--client DIR] [--repo DIR] [--key FILE] [--seasons DIR] [--dry-run]
+//
+// With --seasons (default $HLRO_SEASONS), the Prontera season files come from DIR/<season>/
+// and all four season manifests are signed; the server's own switch picks the live one
+// (see seasons.go).
 //
 // The server is reached with ssh $HLRO_PROXMOX "pct exec $HLRO_CT …"; the update
 // folder is $HLRO_UPDATE_DIR (default /srv/hufflabs-portal/update).
@@ -44,6 +48,7 @@ func main() {
 	keyFile := flag.String("key", defKey, "private signing key")
 	dry := flag.Bool("dry-run", false, "work out what would change, upload nothing")
 	list := flag.Bool("list", false, "print the files that would ship and exit")
+	seasons := flag.String("seasons", os.Getenv("HLRO_SEASONS"), "folder with spring/ summer/ fall/ winter/ Prontera season files; signs all four (empty: no seasons)")
 	flag.BoolVar(&forceKeyChange, "force-key-change", false, "replace a live manifest signed by a different key")
 	flag.Parse()
 
@@ -83,7 +88,8 @@ func main() {
 	if proxmox == "" || ct == "" {
 		fail(fmt.Errorf("set HLRO_PROXMOX (ssh target) and HLRO_CT (container id)"))
 	}
-	var r Remote = &scriptRemote{run: sshRun(proxmox, ct), dir: envOr("HLRO_UPDATE_DIR", "/srv/hufflabs-portal/update")}
+	sr := &scriptRemote{run: sshRun(proxmox, ct), dir: envOr("HLRO_UPDATE_DIR", "/srv/hufflabs-portal/update")}
+	var r Remote = sr
 	if *dry {
 		r = dryRemote{r}
 	}
@@ -92,6 +98,25 @@ func main() {
 	report := func(s string) { fmt.Println(s) }
 	if *dry {
 		report = func(s string) { fmt.Println("(dry run) " + s) }
+	}
+	if *seasons != "" {
+		sets, err := LoadSeasonSets(*seasons)
+		if err != nil {
+			fail(err)
+		}
+		var sremote SeasonRemote = sr
+		if *dry {
+			sremote = drySeasonRemote{sr}
+		}
+		if err := PublishSeasons(ctx, sremote, h, SeasonTrees(tree, sets), key, time.Now(), report); err != nil {
+			fail(err)
+		}
+		return
+	}
+	// a server that switches seasons serves seasons/<s>.json; a plain publish would leave
+	// those stale and the next switch would roll launchers back, so refuse
+	if s, err := sr.Season(ctx); err == nil && s != "" {
+		fail(fmt.Errorf("the server switches Prontera's season (live: %s): publish with --seasons or HLRO_SEASONS", s))
 	}
 	if err := Publish(ctx, r, h, tree, key, time.Now(), report); err != nil {
 		fail(err)
