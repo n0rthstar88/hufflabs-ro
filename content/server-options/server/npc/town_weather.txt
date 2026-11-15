@@ -1,0 +1,143 @@
+//===== HuffLabs RO ==========================================
+//= Seasonal town weather.
+//= Every town rolls its own weather and keeps it for 1.5-3 hours, weighted by the real
+//= season (winter Dec 21, spring Mar 20, summer Jun 21, fall Sep 22, like Prontera's look):
+//=   winter: clear 35, snow 45, fog 10, clouds 10
+//=   spring: clear 45, sakura 35, clouds 15, mist 5
+//=   summer: clear 65, clouds 20, mist 15
+//=   fall:   clear 40, leaves 45, fog 15
+//=   hot towns (desert/tropical) all year: clear 70, clouds 20, mist 10
+//= No rain: the 2025 client has no rain weather (EF_RAIN 161 draws nothing; 857/944 are spell effects).
+//= Lutie always snows and Niflheim is always foggy. Prontera gets fireworks on holiday
+//= evenings (Dec 24-25, Dec 31, Jan 1, Jul 4, 19:00-24:00).
+//= New weather shows at once; weather that ends makes players in that town reload the map
+//= (one short loading screen), because the client can't take a weather effect back.
+//= Needs the refreshweather script command (content/server-options/rathena-weather.patch).
+//=
+//= GM (level 99): @townweather            list every town's weather
+//=                @townweather <town> <clear|snow|fog|sakura|leaves|clouds|mist>
+//=                @townweather reroll     roll every town again now
+//============================================================
+-	script	HLRO_Weather	-1,{
+OnInit:
+	setarray .towns$, "prontera","izlude","geffen","payon","morocc","alberta","aldebaran","yuno",
+		"comodo","umbala","louyang","amatsu","gonryun","ayothaya","einbroch","lighthalzen","hugel",
+		"rachel","veins","moscovia","brasilis","dewata","malangdo","malaya","mora","lasagna","eclage",
+		"jawaii","xmas","niflheim";
+	setarray .hot$, "morocc","comodo","ayothaya","veins","brasilis","dewata","malaya","malangdo","jawaii";
+	// kinds: 0 clear, 1 snow, 2 fog, 3 sakura, 4 leaves, 5 clouds, 6 mist
+	setarray .names$, "clear","snow","fog","sakura","leaves","clouds","mist";
+	setarray .flags, 0, mf_snow, mf_fog, mf_sakura, mf_leaves, mf_clouds, mf_clouds2;
+	// weights per kind, in the order above
+	setarray .w_winter, 35, 45, 10,  0,  0, 10,  0;
+	setarray .w_spring, 45,  0,  0, 35,  0, 15,  5;
+	setarray .w_summer, 65,  0,  0,  0,  0, 20, 15;
+	setarray .w_fall,   40,  0, 15,  0, 45,  0,  0;
+	setarray .w_hot,    70,  0,  0,  0,  0, 20, 10;
+	.n = getarraysize(.towns$);
+	for (.@i = 0; .@i < .n; .@i++) {
+		.cur[.@i] = 0;
+		.until[.@i] = 0;
+	}
+	bindatcmd "townweather", strnpcinfo(3) + "::OnCommand", 99, 99;
+	donpcevent strnpcinfo(3) + "::OnTick";
+	end;
+
+OnMinute00:
+OnMinute30:
+OnTick:
+	.@now = gettimetick(2);
+	for (.@i = 0; .@i < .n; .@i++) {
+		if (.@now < .until[.@i])
+			continue;
+		.@was = .cur[.@i];
+		callsub S_Apply, .@i, callsub(S_Roll, .@i);
+		.until[.@i] = .@now + 60 * rand(90, 180);
+		if (.cur[.@i] != .@was)
+			.@log$ += " " + .towns$[.@i] + "=" + .names$[.cur[.@i]];
+	}
+	if (.@log$ != "")
+		debugmes "town weather:" + .@log$;
+	callsub S_Fireworks;
+	end;
+
+// returns a weather kind for town index getarg(0)
+S_Roll:
+	.@town$ = .towns$[getarg(0)];
+	if (.@town$ == "xmas") return 1;
+	if (.@town$ == "niflheim") return 2;
+	.@md = gettime(DT_MONTH) * 100 + gettime(DT_DAYOFMONTH);
+	if (inarray(.hot$, .@town$) >= 0) .@t$ = "hot";
+	else if (.@md >= 1221 || .@md < 320) .@t$ = "winter";
+	else if (.@md < 621) .@t$ = "spring";
+	else if (.@md < 922) .@t$ = "summer";
+	else .@t$ = "fall";
+	if (.@t$ == "hot") copyarray .@w[0], .w_hot[0], 7;
+	else if (.@t$ == "winter") copyarray .@w[0], .w_winter[0], 7;
+	else if (.@t$ == "spring") copyarray .@w[0], .w_spring[0], 7;
+	else if (.@t$ == "summer") copyarray .@w[0], .w_summer[0], 7;
+	else copyarray .@w[0], .w_fall[0], 7;
+	.@sum = 0;
+	for (.@k = 0; .@k < 7; .@k++) .@sum += .@w[.@k];
+	.@r = rand(.@sum);
+	for (.@k = 0; .@k < 7; .@k++) {
+		if (.@r < .@w[.@k]) return .@k;
+		.@r -= .@w[.@k];
+	}
+	return 0;
+
+// S_Apply <town index>, <kind>
+S_Apply:
+	.@i = getarg(0); .@kind = getarg(1);
+	.@town$ = .towns$[.@i];
+	.@old = .cur[.@i];
+	if (.@old == .@kind)
+		return;
+	for (.@k = 1; .@k <= 6; .@k++)
+		removemapflag .@town$, .flags[.@k];
+	if (.flags[.@kind])
+		setmapflag .@town$, .flags[.@kind];
+	.cur[.@i] = .@kind;
+	if (.@old) {
+		// the old effect has to go: reload the map for everyone there
+		refreshweather .@town$, 1;
+	} else {
+		refreshweather .@town$;
+	}
+	return;
+
+// holiday evenings: a fireworks burst over Prontera every half hour
+S_Fireworks:
+	.@md = gettime(DT_MONTH) * 100 + gettime(DT_DAYOFMONTH);
+	if (!(.@md == 1224 || .@md == 1225 || .@md == 1231 || .@md == 101 || .@md == 704) || gettime(DT_HOUR) < 19)
+		return;
+	setmapflag "prontera", mf_fireworks;
+	refreshweather "prontera";
+	removemapflag "prontera", mf_fireworks; // a one-off burst; later arrivals see the town's weather only
+	return;
+
+OnCommand:
+	if (.@atcmd_numparameters == 0) {
+		.@s$ = "";
+		for (.@i = 0; .@i < .n; .@i++)
+			.@s$ += .towns$[.@i] + ": " + .names$[.cur[.@i]] + ((.@i < .n - 1) ? ", " : "");
+		dispbottom .@s$;
+		end;
+	}
+	if (.@atcmd_parameters$[0] == "reroll") {
+		for (.@i = 0; .@i < .n; .@i++) .until[.@i] = 0;
+		donpcevent strnpcinfo(3) + "::OnTick";
+		dispbottom "Town weather rolled again.";
+		end;
+	}
+	.@i = inarray(.towns$, .@atcmd_parameters$[0]);
+	.@kind = inarray(.names$, .@atcmd_parameters$[1]);
+	if (.@i < 0 || .@kind < 0) {
+		dispbottom "Usage: @townweather [reroll | <town> <clear|snow|fog|sakura|leaves|clouds|mist>]";
+		end;
+	}
+	callsub S_Apply, .@i, .@kind;
+	.until[.@i] = gettimetick(2) + 60 * 120;
+	dispbottom .towns$[.@i] + " is now " + .names$[.@kind] + " for 2 hours.";
+	end;
+}

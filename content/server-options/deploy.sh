@@ -33,12 +33,13 @@ rm -f /tmp/hlro-opts.txt; chown rathena:rathena \$f; echo 'battle_conf: options 
 run "set -e; cd $RA; f=conf/import/groups.yml; cp -a \$f \$f.bak-$stamp
 python3 - <<'PY'
 p='conf/import/groups.yml'; s=open(p).read()
-for c in ('autoloot','alootid'):
+s=s.replace('      alootid: true\n','')  # an alias, not a command name: groups need autolootitem
+for c in ('autoloot','autolootitem'):
     if '      %s: true\n' % c not in s:
         s=s.replace('      go: true\n','      go: true\n      %s: true\n' % c,1)
 open(p,'w').write(s)
 PY
-grep -q '      alootid: true' \$f && echo 'groups.yml: @autoloot/@alootid for players'"
+grep -q '      autolootitem: true' \$f && echo 'groups.yml: @autoloot/@alootid for players'"
 
 # 3. daily attendance rewards (20-day cycle)
 run "cd $RA; cp -a db/import/attendance.yml db/import/attendance.yml.bak-$stamp"
@@ -78,6 +79,24 @@ done
 # which would strip the room's battleground flag), so it goes in npc/scripts_custom.conf, read last
 run "cd $RA; grep -qx 'npc: npc/custom/battleground/bg_pvp.txt' conf/import/map_conf.txt && { cp -a conf/import/map_conf.txt conf/import/map_conf.txt.bak-$stamp; sed -i '\\|^npc: npc/custom/battleground/bg_pvp.txt\$|d' conf/import/map_conf.txt; } || true"
 addline npc/scripts_custom.conf "npc: npc/custom/battleground/bg_pvp.txt"
+
+# 5b. seasonal town weather: the refreshweather script command (source patch, applied once; the map
+#     server is rebuilt when the patch goes in) and the weather script
+put /tmp/hlro-weather.patch rathena-weather.patch
+run "set -e; cd $RA; G='git -c safe.directory=*'
+if \$G apply --reverse --check /tmp/hlro-weather.patch 2>/dev/null; then echo 'weather patch: already applied'
+else \$G apply /tmp/hlro-weather.patch; echo 'weather patch: applied, rebuilding the map server'
+  su rathena -s /bin/bash -c 'make map -j2 >/tmp/hlro-weather-build.log 2>&1' || { tail -20 /tmp/hlro-weather-build.log; exit 1; }
+fi; rm -f /tmp/hlro-weather.patch"
+put "$RA/npc/custom/hufflabs/town_weather.txt" server/npc/town_weather.txt
+run "chown rathena:rathena $RA/npc/custom/hufflabs/town_weather.txt"
+addline conf/import/map_conf.txt "npc: npc/custom/hufflabs/town_weather.txt"
+
+# 5c. GM panel (@gm, and "GM panel" in @menu for GMs; the @menu script lives in content/leveling)
+put "$RA/npc/custom/hufflabs/gm_panel.txt" server/npc/gm_panel.txt
+put "$RA/npc/custom/hufflabs/menu.txt" ../leveling/server/npc/menu.txt
+run "chown rathena:rathena $RA/npc/custom/hufflabs/gm_panel.txt $RA/npc/custom/hufflabs/menu.txt"
+addline conf/import/map_conf.txt "npc: npc/custom/hufflabs/gm_panel.txt"
 
 # 6. seasonal events by date: calendar + hourly timer; the list is imported by npc/scripts_custom.conf
 put /usr/local/sbin/hlro-events.sh server/events/hlro-events.sh

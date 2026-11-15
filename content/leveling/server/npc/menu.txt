@@ -4,6 +4,7 @@
 //=   (@go asks for the town, @warp asks for the map name).
 //= Client commands (/): explained only; a script can't type them for the player.
 //= Keep the @ list in step with group 0 in conf/import/groups.yml and any bindatcmd.
+//= GMs (level 99) also get "GM panel" (content/server-options/server/npc/gm_panel.txt).
 //==========================================================
 
 -	script	HuffLabsMenu	-1,{
@@ -23,10 +24,12 @@ OnMenu:
 		mes "[Command Menu]";
 		mes "Every command you can use on HuffLabs RO.";
 		mes "Type ^0000FF@menu^000000 anytime to open this again.";
-		switch (select("Server commands (@)", "Client commands (/)", "Town services (NPCs)", "Close")) {
-		case 1: callsub S_Server; break;
-		case 2: callsub S_Client; break;
-		case 3: callsub S_Services; break;
+		// "GM panel" only shows for GMs (an empty entry is hidden by select)
+		switch (select(((getgmlevel() >= 99) ? "GM panel" : ""), "Server commands (@)", "Client commands (/)", "Town services (NPCs)", "Close")) {
+		case 1: close2; doevent "HLRO_GMPanel::OnPanel"; end;
+		case 2: callsub S_Server; break;
+		case 3: callsub S_Client; break;
+		case 4: callsub S_Services; break;
 		default: close;
 		}
 	}
@@ -38,7 +41,8 @@ S_Server:
 		mes "Type these in the chat box. Pick one to learn more or use it.";
 		switch (select("@go - jump to a town", "@warp - jump to any map", "@pace - check your XP pace",
 			"@resurrect - revive with a Token", "@changedress - take off an outfit",
-			"@bm - saved stat builds", "@myquest - hunting quest progress", "@woetime - War of Emperium times", "Back")) {
+			"@bm - saved stat builds", "@myquest - hunting quest progress", "@woetime - War of Emperium times",
+			"@autoloot - pick up drops automatically", "@alootid - autoloot only some items", "@streak - your login streak", "Back")) {
 		case 1:
 			clear;
 			mes "[@go]";
@@ -144,6 +148,36 @@ S_Server:
 			if (select("Use it now", "Back") == 2) break;
 			close2;
 			atcommand "@woetime";
+			end;
+		case 9:
+			clear;
+			mes "[@autoloot]";
+			mes "Drops from monsters you kill go straight into your bag.";
+			mes "^0000FF@autoloot^000000 turns it on or off; ^0000FF@autoloot 50^000000 only picks up";
+			mes "items with a drop chance of 50% or less.";
+			if (select("Use it now", "Back") == 2) break;
+			close2;
+			atcommand "@autoloot";
+			end;
+		case 10:
+			clear;
+			mes "[@alootid]";
+			mes "Autoloot only the items you list.";
+			mes "^0000FF@alootid +<item>^000000 adds one, ^0000FF@alootid -<item>^000000 removes it,";
+			mes "^0000FF@alootid reset^000000 clears the list.";
+			if (select("Show my list", "Back") == 2) break;
+			close2;
+			atcommand "@alootid";
+			end;
+		case 11:
+			clear;
+			mes "[@streak]";
+			mes "Log in every day in a row for growing roulette points,";
+			mes "and 10 / 30 / 60 / 1000 gold at 30 / 90 / 180 / 365 days.";
+			mes "Missing a day starts the streak again.";
+			if (select("Use it now", "Back") == 2) break;
+			close2;
+			atcommand "@streak";
 			end;
 		default:
 			clear;
