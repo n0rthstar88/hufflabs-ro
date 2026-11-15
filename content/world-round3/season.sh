@@ -1,39 +1,59 @@
 #!/usr/bin/env bash
-# Switches Prontera to another season everywhere: client files (the owner's client folder), the
-# server's map cache (map server restart), then publishes the client update to friends.
-#   ./season.sh <spring|summer|fall|winter>
-#   ./season.sh auto      the season for today's date (spring Mar 20, summer Jun 21, fall Sep 22,
-#                         winter Dec 21); does nothing if the server already has it
-# Exits 75 (try again later) without changing anything while the game runs on this PC or
-# anyone is online.
+# Prontera's season is switched by the server itself (server/season/hlro-season-switch.sh on an
+# hourly timer, from the four season manifests every publish signs), so friends get it even
+# when this PC is off. This script only keeps the publisher's own client folder in step.
+#   ./season.sh auto        make this PC's client match the server's live season
+#   ./season.sh <season>    switch the server now (waits for an empty server), then this PC
+#   ./season.sh status      show the server's live season and today's season
+# <season>: spring | summer | fall | winter. Exits 75 (try again later) while the game runs here.
 set -euo pipefail
 cd "$(dirname "$0")"
 source ../../scripts/settings.sh
 need HLRO_PROXMOX HLRO_CT
-SEASON=${1:?season or auto}
-if [ "$SEASON" = auto ]; then
-  md=$(date +%m%d)
-  if   [ "$md" -ge 1221 ] || [ "$md" -lt 0320 ]; then SEASON=winter
-  elif [ "$md" -lt 0621 ]; then SEASON=spring
-  elif [ "$md" -lt 0922 ]; then SEASON=summer
-  else SEASON=fall; fi
-fi
-case $SEASON in spring|summer|fall|winter) ;; *) echo "unknown season $SEASON" >&2; exit 2 ;; esac
+ARG=${1:?auto, status or a season}
 run() { ssh -o BatchMode=yes "$HLRO_PROXMOX" "pct exec $HLRO_CT -- bash -c $(printf '%q' "$1")"; }
-
-current=$(run "cat /home/rathena/rathena/db/import/hlro_season.txt 2>/dev/null || true")
-if [ "$current" = "$SEASON" ] && [ "${1}" = auto ]; then echo "already $SEASON"; exit 0; fi
-if pgrep -f 'HuffLabsRO\.exe' >/dev/null; then echo "the game is running here; try later" >&2; exit 75; fi
-online=$(run "mariadb -N ragnarok -e 'SELECT COUNT(*) FROM \`char\` WHERE online=1'")
-if [ "$online" != 0 ]; then echo "$online player(s) online; try later" >&2; exit 75; fi
-
-echo "switching Prontera: ${current:-?} -> $SEASON"
 CLIENT=${HLRO_CLIENT:-$HOME/Games/Ragnarok/Client}
-PICKS=${HLRO_PICKS:-$HOME/Games/Ragnarok/custom-downloads/picks}
-work=$(mktemp -d); trap 'rm -rf "$work"' EXIT
-go build -C ../.. -o "$work/grftool" ./cmd/grftool
-"$work/grftool" list "$CLIENT/data.grf" > "$work/grf.txt"
-python3 -I build-client.py "$PICKS" "$CLIENT" "$work/grf.txt" "$SEASON"
-./deploy.sh "$SEASON" --restart
-(cd "$CLIENT" && hufflabs-ro-publish | grep -v hashed)
-echo "Prontera is now $SEASON"
+SETS=${HLRO_SEASONS:-$HOME/Games/Ragnarok/season-sets}
+
+case $ARG in
+  status) run "/usr/local/sbin/hlro-season-switch.sh --status"; exit 0 ;;
+  spring|summer|fall|winter) run "/usr/local/sbin/hlro-season-switch.sh $ARG" ;;
+  auto) ;;
+  *) echo "unknown argument $ARG" >&2; exit 2 ;;
+esac
+SEASON=$(run "cat /srv/hufflabs-portal/update/seasons/current")
+
+# which season does this PC's client hold? (the set whose files all match)
+have=$(python3 -I - "$CLIENT" "$SETS" <<'PY'
+import filecmp, pathlib, sys
+client, sets = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
+for s in ("spring", "summer", "fall", "winter"):
+    files = [f for f in (sets / s).rglob("*") if f.is_file()]
+    if files and all((client / f.relative_to(sets / s)).is_file() and
+                     filecmp.cmp(f, client / f.relative_to(sets / s), shallow=False) for f in files):
+        print(s); break
+else:
+    print("unknown")
+PY
+)
+if [ "$have" = "$SEASON" ]; then echo "this PC already has $SEASON"; exit 0; fi
+if pgrep -f 'HuffLabsRO\.exe' >/dev/null; then echo "the game is running here; try later" >&2; exit 75; fi
+
+echo "this PC's client: $have -> $SEASON"
+# remove the other seasons' files, then copy this season's (same names the publisher uses)
+python3 -I - "$CLIENT" "$SETS" "$SEASON" <<'PY'
+import pathlib, shutil, sys
+client, sets, want = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2]), sys.argv[3]
+mine = {f.relative_to(sets / want).as_posix().lower() for f in (sets / want).rglob("*") if f.is_file()}
+for s in ("spring", "summer", "fall", "winter"):
+    for f in (sets / s).rglob("*"):
+        rel = f.relative_to(sets / s)
+        if f.is_file() and rel.as_posix().lower() not in mine and (client / rel).is_file():
+            (client / rel).unlink()
+for f in (sets / want).rglob("*"):
+    if f.is_file():
+        dst = client / f.relative_to(sets / want)
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(f, dst)
+PY
+echo "this PC's client is now $SEASON"

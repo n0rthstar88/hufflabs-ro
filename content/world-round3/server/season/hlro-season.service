@@ -1,0 +1,9 @@
+[Unit]
+Description=HuffLabs RO: switch Prontera to the real season (client update + map cache)
+After=mariadb.service rathena-map.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/hlro-season-switch.sh
+# 75 = someone is online; the timer tries again next hour
+SuccessExitStatus=75

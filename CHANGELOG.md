@@ -4,6 +4,21 @@ Each version is tagged and has a [release](https://github.com/n0rthstar88/huffla
 with built tools. Every version passes the [tests](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml)
 on fresh Linux and Windows machines first.
 
+## v1.4.1
+
+**Prontera's season switches on the server; the publisher's PC can be off.**
+
+- `hufflabs-ro-publish --seasons <dir>` (or `HLRO_SEASONS`) signs one client manifest per
+  season with the same serial and uploads them to `update/seasons/`. The live manifest is
+  always a copy of the server's current season, made under a lock shared with the switch.
+- New `content/world-round3/server/season/` + `install-season-switch.sh`: an hourly timer
+  on the game server switches the client manifest and Prontera's map cache on the season's
+  date, once nobody is online. The signing key stays on the publisher's PC.
+- `build-season-sets.py` builds the four season file sets; `season.sh` now only keeps the
+  publisher's own client in step (`auto`), forces a switch (`<season>`) or shows `status`.
+- A plain publish is refused once the server switches seasons, so stale season manifests
+  can't roll launchers back.
+
 ## v1.4.0
 
 **Server options: everything stock rAthena leaves off, switched on.**

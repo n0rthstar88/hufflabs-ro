@@ -1,10 +1,16 @@
 # World round 3: seasons, the Poring Family and new NPC looks
 
-- **Prontera follows the real season.** `season.sh <spring|summer|fall|winter|auto>` swaps in that
-  season's Prontera map and models from Olrox's Prontera Seasons, on the client (then publish an update)
-  and in the server map cache (`server/mapcache-gat.py`). `auto` picks the season from today's date and
-  exits 75 (try again later) while the game runs locally or anyone is online, so a daily systemd timer
-  can call it early in the morning. `seasons-names.py` recovers the zip's mangled Korean file names.
+- **Prontera follows the real season, switched by the server.** The publisher's PC doesn't need to
+  be on. `build-season-sets.py` builds the four Prontera file sets from Olrox's Prontera Seasons
+  (`seasons-names.py` recovers the zip's mangled Korean file names), and `hufflabs-ro-publish --seasons
+  <dir>` (or `HLRO_SEASONS`) signs one client manifest per season, all with the same serial, into
+  `update/seasons/` on the server. `install-season-switch.sh` installs `server/season/`: an hourly timer
+  that, on the season's date (winter Dec 21, spring Mar 20, summer Jun 21, fall Sep 22) and once nobody
+  is online, points the live manifest at that season, updates Prontera in the server map cache
+  (`server/mapcache-gat.py`) and restarts the map server. The signing key never leaves the publisher's
+  PC. Once the server switches seasons, a publish without the season sets is refused (it would leave
+  stale season manifests that roll launchers back). `season.sh auto` keeps the publisher's own client
+  folder on the server's season; `season.sh <season>` forces a switch; `season.sh status` shows it.
 - **Poring Family:** 25 roaming monsters (`porings.tsv`, ids 31000–31024), with field spawns and a boss.
   `build-server.py` writes their mob db (loaded through content/leveling's `db/import/mob_db.yml` Footer)
   and spawns.
