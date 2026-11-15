@@ -1,0 +1,3 @@
+zeny_from_mobs: yes
+day_duration: 7200000
+night_duration: 1800000
