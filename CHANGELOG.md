@@ -4,6 +4,27 @@ Each version is tagged and has a [release](https://github.com/n0rthstar88/huffla
 with built tools. Every version passes the [tests](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml)
 on fresh Linux and Windows machines first.
 
+## v1.5.0
+
+**Seasonal town weather and an in-game GM panel.**
+
+- **Town weather:** 30 towns each roll their own weather for 1.5-3 hours, weighted by the
+  real season: snow in winter, sakura petals in spring, falling leaves in fall, plus fog,
+  clouds and mist. Desert and tropical towns stay warm, Lutie always snows, Niflheim is always
+  foggy, and Prontera gets fireworks on holiday evenings. GMs use `@townweather`. There is no
+  rain: the 2025 client has no rain weather (the old rain effect draws nothing).
+- **`refreshweather` script command** (`content/server-options/rathena-weather.patch`): new
+  weather shows to players already in town; when weather ends, players in that town reload
+  the map, because the client can't remove a weather effect. The deploy applies the patch once
+  and rebuilds the map server.
+- **GM panel:** `@gm`, or "GM panel" at the top of `@menu` for GMs. One window for players
+  (go to, bring, heal, revive, give items / coins / zeny, info with login streak, mute, jail,
+  kick), broadcasts, world (weather, day/night, WoE), monsters and items, your own character,
+  server tools and a GM command list. Everything runs through the normal @ / # commands.
+- **`@menu`** lists `@autoloot`, `@alootid` and `@streak` for players.
+- **Fix:** players' `@alootid` permission is `autolootitem` in `groups.yml` (`alootid` is only
+  an alias, so the v1.4.0 entry did nothing).
+
 ## v1.4.1
 
 **Prontera's season switches on the server; the publisher's PC can be off.**

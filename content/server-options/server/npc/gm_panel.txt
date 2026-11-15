@@ -1,0 +1,285 @@
+//===== HuffLabs RO ==========================================
+//= GM panel: one window for the GM tools and commands.
+//= Open it with @gm, or "GM panel" at the top of @menu (GM level 99 only).
+//= Sections: players (go to, bring, heal, revive, give items/coins/zeny, info, mute, jail,
+//= kick), broadcasts, world (town weather, day/night, WoE, seasonal events), monsters and
+//= items, your own character, the server, and a list of every GM command.
+//= Everything runs through the normal @ / # commands, so the server's own GM checks and
+//= logs apply.
+//============================================================
+-	script	HLRO_GMPanel	-1,{
+OnInit:
+	bindatcmd "gm", strnpcinfo(3) + "::OnPanel", 99, 99;
+	setarray .weather$, "clear", "snow", "fog", "sakura", "leaves", "clouds", "mist";
+	end;
+
+OnPanel:
+	if (getgmlevel() < 99)
+		end;
+	while (1) {
+		clear;
+		mes "[GM Panel]";
+		mes "Online: ^0000FF" + getusers(1) + "^000000 player(s). You are on ^0000FF" + strcharinfo(3) + "^000000.";
+		switch (select("Players", "Broadcast a message", "World - weather, day/night, WoE, events",
+			"Monsters and items", "My character", "Server", "List of GM commands", "Close")) {
+		case 1: callsub S_Players; break;
+		case 2: callsub S_Broadcast; break;
+		case 3: callsub S_World; break;
+		case 4: callsub S_Mobs; break;
+		case 5: callsub S_Self; break;
+		case 6: callsub S_Server; break;
+		case 7: callsub S_Help; break;
+		default: close;
+		}
+	}
+
+// ---------------------------------------------------------------- players
+S_Players:
+	while (1) {
+		clear;
+		.@n = query_sql("SELECT `name` FROM `char` WHERE `online` = 1 ORDER BY `name`", .@names$);
+		mes "[GM Panel: Players]";
+		mes .@n + " online. Pick one:";
+		.@menu$ = "";
+		for (.@i = 0; .@i < .@n; .@i++)
+			.@menu$ += .@names$[.@i] + ":";
+		.@pick = select(.@menu$ + "Back") - 1;
+		if (.@pick >= .@n)
+			return;
+		callsub S_Player, .@names$[.@pick];
+	}
+
+S_Player:
+	.@who$ = getarg(0);
+	.@q$ = "\"" + .@who$ + "\"";
+	while (1) {
+		clear;
+		mes "[GM Panel: " + .@who$ + "]";
+		if (query_sql("SELECT `class`, `base_level`, `job_level`, `zeny`, `last_map`, `account_id`, `online` FROM `char` WHERE `name` = '" + escape_sql(.@who$) + "'",
+			.@class, .@blv, .@jlv, .@zeny, .@map$, .@aid, .@on) < 1) {
+			mes "That character no longer exists.";
+			select("Back");
+			return;
+		}
+		query_sql("SELECT COALESCE(MAX(`value`), 0) FROM `acc_reg_num` WHERE `account_id` = " + .@aid + " AND `key` = '#HLRO_STREAK'", .@streak);
+		mes jobname(.@class) + ", level " + .@blv + "/" + .@jlv + ((.@on) ? ", online" : ", offline");
+		mes "Map: " + .@map$ + ". Zeny: " + callfunc("F_InsertComma", .@zeny) + ". Login streak: " + .@streak + " day(s).";
+		switch (select("Go to them", "Bring them here", "Heal fully", "Revive",
+			"Give an item", "Give HuffLabs Coins", "Give zeny",
+			"Mute for 10 minutes", "Unmute", "Jail", "Release from jail", "Kick from the server", "Back")) {
+		case 1: close2; atcommand "@jumpto " + .@who$; end;
+		case 2: atcommand "@recall " + .@who$; break;
+		case 3: charcommand "#heal " + .@q$; break;
+		case 4: charcommand "#alive " + .@q$; break;
+		case 5:
+			mes "Item ID or name (no spaces)?";
+			input .@item$;
+			mes "How many?";
+			input .@amt, 1, 30000;
+			charcommand "#item " + .@q$ + " " + .@item$ + " " + .@amt;
+			break;
+		case 6:
+			mes "How many HuffLabs Coins?";
+			input .@amt, 1, 30000;
+			charcommand "#item " + .@q$ + " 2600000 " + .@amt;
+			break;
+		case 7:
+			mes "How much zeny? (negative takes it away)";
+			input .@amt, -1000000000, 1000000000;
+			charcommand "#zeny " + .@q$ + " " + .@amt;
+			break;
+		case 8: atcommand "@mute 10 " + .@who$; break;
+		case 9: atcommand "@unmute " + .@who$; break;
+		case 10:
+			if (select("Jail " + .@who$, "Cancel") == 1) atcommand "@jail " + .@who$;
+			break;
+		case 11: atcommand "@unjail " + .@who$; break;
+		case 12:
+			if (select("Kick " + .@who$, "Cancel") == 1) atcommand "@kick " + .@who$;
+			break;
+		default: return;
+		}
+	}
+
+// ---------------------------------------------------------------- broadcast
+S_Broadcast:
+	clear;
+	mes "[GM Panel: Broadcast]";
+	mes "Type the message:";
+	input .@msg$;
+	if (.@msg$ == "")
+		return;
+	switch (select("To everyone (yellow)", "To everyone (blue)", "To this map only", "Cancel")) {
+	case 1: announce "[GM] " + .@msg$, bc_all; break;
+	case 2: announce "[GM] " + .@msg$, bc_all | bc_blue; break;
+	case 3: announce "[GM] " + .@msg$, bc_map; break;
+	}
+	return;
+
+// ---------------------------------------------------------------- world
+S_World:
+	while (1) {
+		clear;
+		mes "[GM Panel: World]";
+		switch (select("Town weather - show all (in chat)", "Town weather - set a town", "Town weather - roll every town again",
+			"Clear the weather on this map", "Make it day", "Make it night",
+			"War of Emperium - start now", "War of Emperium - end now", "War of Emperium - controller menu",
+			"Seasonal events and seasons - how they work", "Back")) {
+		case 1: atcommand "@townweather"; break;
+		case 2:
+			mes "Town map name (e.g. prontera, payon, xmas):";
+			input .@town$;
+			.@k = select(implode(.weather$, ":")) - 1;
+			atcommand "@townweather " + .@town$ + " " + .weather$[.@k];
+			break;
+		case 3: atcommand "@townweather reroll"; break;
+		case 4: atcommand "@clearweather"; break;
+		case 5: atcommand "@day"; break;
+		case 6: atcommand "@night"; break;
+		case 7:
+			if (select("Start WoE for everyone", "Cancel") == 1) atcommand "@agitstart";
+			break;
+		case 8:
+			if (select("End WoE", "Cancel") == 1) atcommand "@agitend";
+			break;
+		case 9: close2; doevent "WOE_CONTROL::OnMenu"; end;
+		case 10:
+			clear;
+			mes "[Automatic on the server]";
+			mes "^0000FFSeasonal events^000000 load by date (Halloween, Christmas, Valentine's and 7 more). An hourly server timer switches them when nobody is online.";
+			mes "^0000FFProntera's season^000000 switches on Dec 21, Mar 20, Jun 21 and Sep 22, also by a server timer.";
+			mes "^0000FFTown weather^000000 rolls every 1.5-3 h per town.";
+			mes "Change dates or force a switch on the server itself (see the HuffLabs RO notes).";
+			select("Back");
+			break;
+		default: return;
+		}
+	}
+
+// ---------------------------------------------------------------- monsters and items
+S_Mobs:
+	while (1) {
+		clear;
+		mes "[GM Panel: Monsters and items]";
+		switch (select("Spawn monsters here", "Kill every monster on this map", "Find a monster on this map",
+			"Monster info", "Who drops an item?", "Item info", "Get an item",
+			"Clean up items on the floor here", "Revive everyone on this map", "Back")) {
+		case 1:
+			mes "Monster ID or name (no spaces):";
+			input .@m$;
+			mes "How many?";
+			input .@amt, 1, 100;
+			atcommand "@monster " + .@m$ + " " + .@amt;
+			break;
+		case 2:
+			if (select("Kill them all", "Cancel") == 1) atcommand "@killmonster";
+			break;
+		case 3:
+			mes "Monster ID or name:";
+			input .@m$;
+			atcommand "@mobsearch " + .@m$;
+			break;
+		case 4:
+			mes "Monster ID or name:";
+			input .@m$;
+			atcommand "@mobinfo " + .@m$;
+			break;
+		case 5:
+			mes "Item ID or name:";
+			input .@m$;
+			atcommand "@whodrops " + .@m$;
+			break;
+		case 6:
+			mes "Item ID or name:";
+			input .@m$;
+			atcommand "@iteminfo " + .@m$;
+			break;
+		case 7:
+			mes "Item ID or name (no spaces)?";
+			input .@m$;
+			mes "How many?";
+			input .@amt, 1, 30000;
+			atcommand "@item " + .@m$ + " " + .@amt;
+			break;
+		case 8: atcommand "@cleanmap"; break;
+		case 9: atcommand "@raisemap"; break;
+		default: return;
+		}
+	}
+
+// ---------------------------------------------------------------- my character
+S_Self:
+	while (1) {
+		clear;
+		mes "[GM Panel: My character]";
+		switch (select("Heal fully", "Hide / unhide", "Walk fast", "Walk normally", "Open storage",
+			"Go to a town", "Warp to a map", "Base level up", "Job level up",
+			"Autoloot on/off", "Refresh the screen", "Back")) {
+		case 1: atcommand "@heal"; break;
+		case 2: atcommand "@hide"; break;
+		case 3: atcommand "@speed 50"; break;
+		case 4: atcommand "@speed 150"; break;
+		case 5: close2; atcommand "@storage"; end;
+		case 6:
+			mes "Town name (e.g. prontera, geffen, lutie):";
+			input .@m$;
+			close2; atcommand "@go " + .@m$; end;
+		case 7:
+			mes "Map name, optionally with x y (e.g. prt_fild08 170 375):";
+			input .@m$;
+			close2; atcommand "@warp " + .@m$; end;
+		case 8:
+			mes "How many base levels?";
+			input .@amt, 1, 500;
+			atcommand "@baselevelup " + .@amt;
+			break;
+		case 9:
+			mes "How many job levels?";
+			input .@amt, 1, 250;
+			atcommand "@joblevelup " + .@amt;
+			break;
+		case 10: atcommand "@autoloot"; break;
+		case 11: close2; atcommand "@refresh"; end;
+		default: return;
+		}
+	}
+
+// ---------------------------------------------------------------- server
+S_Server:
+	while (1) {
+		clear;
+		mes "[GM Panel: Server]";
+		switch (select("Who is online (in chat)", "Players per map (in chat)", "This map's info (in chat)",
+			"Reload all NPC scripts", "Kick everyone", "Back")) {
+		case 1: atcommand "@who"; break;
+		case 2: atcommand "@users"; break;
+		case 3: atcommand "@mapinfo"; break;
+		case 4:
+			mes "Reloads every NPC script (a few seconds of lag; town weather rolls again).";
+			if (select("Reload now", "Cancel") == 1) { close2; atcommand "@reloadscript"; end; }
+			break;
+		case 5:
+			mes "Disconnects every player except you.";
+			if (select("Kick everyone", "Cancel") == 1) atcommand "@kickall";
+			break;
+		default: return;
+		}
+	}
+
+// ---------------------------------------------------------------- help
+S_Help:
+	clear;
+	mes "[GM commands]";
+	mes "^0000FF@gm^000000 this panel. ^0000FF@menu^000000 the player menu.";
+	mes "^0000FF@townweather^000000 [reroll | <town> <kind>] town weather.";
+	mes "^0000FF@woe^000000 / ^0000FF@woetime^000000 WoE warps and schedule; ^0000FF@agitstart^000000 / ^0000FF@agitend^000000.";
+	mes "^0000FF@pace^000000 XP pace, ^0000FF@streak^000000 login streak, ^0000FF@bm^000000 Build Manager.";
+	mes "Players: ^0000FF@jumpto @recall @kick @jail @unjail @mute @unmute^000000 <name>.";
+	mes "Same as another player: ^0000FF#heal #alive #item #zeny^000000 \"<name>\" ...";
+	mes "Monsters/items: ^0000FF@monster @killmonster @mobinfo @whodrops @iteminfo @item^000000.";
+	mes "Self: ^0000FF@heal @hide @speed @storage @go @warp @baselevelup @joblevelup^000000.";
+	mes "World: ^0000FF@day @night @clearweather @snow @fog @sakura @leaves^000000.";
+	mes "Server: ^0000FF@who @users @mapinfo @reloadscript @kickall @commands^000000.";
+	select("Back");
+	return;
+}
