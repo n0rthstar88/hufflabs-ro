@@ -32,6 +32,11 @@ with tempfile.TemporaryDirectory() as tmp:
         if f.is_file():
             dst = CLIENT / "data" / f.relative_to(pathlib.Path(tmp, "data"))
             dst.parent.mkdir(parents=True, exist_ok=True)
+            # Windows names are case-insensitive: reuse the spelling already in the client, or the
+            # update manifest gets the same file twice (ssoseji.bmp vs SSOSEJI.bmp) and publish fails
+            same = [p for p in dst.parent.iterdir() if p.name.lower() == dst.name.lower()]
+            if same:
+                dst = same[0]
             shutil.copyfile(f, dst)
             n += 1
     print(f"Prontera Seasons ({SEASON}): {n} files")
@@ -56,6 +61,9 @@ for nid, name in looks:
         if len(found) != 1:
             raise SystemExit(f"missing sprite {name}.{ext}")
         shutil.copyfile(found[0], d_npc / f"hlro_{name}.{ext}")
+# the pack's directions 1-7 are a mis-offset template: make them all use the south-facing picture
+subprocess.run([sys.executable, "-I", str(HERE / "fix-npc-act.py")]
+               + [str(d_npc / f"hlro_{name}.act") for _, name in looks], check=True, stdout=subprocess.DEVNULL)
 print(f"sprites: {len(mobs)} Porings, {len(looks)} NPC looks")
 
 ident = (DATAINFO / "npcidentity.lub").read_text(encoding="latin-1")

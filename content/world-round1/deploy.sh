@@ -40,9 +40,13 @@ run "set -e; cd $RA; cp -a db/import/map_cache.dat db/import/map_cache.dat.bak-$
 addline db/import/map_index.txt "1@mtower"
 addline conf/import/map_conf.txt "map: 1@mtower"
 
-# 4. stock WoE schedulers off; the WoE controller script runs WoE instead
-for f in npc/guild/agit_controller.txt npc/guild2/agit_start_se.txt npc/re/guild3/agit_start_te.txt; do
-  addline conf/import/map_conf.txt "delnpc: $f"
+# 4. stock WoE schedulers off; the WoE controller script runs WoE instead.
+#    delnpc only works in an NPC list read after the stock ones (npc/scripts_custom.conf):
+#    conf/import/map_conf.txt is read before any NPC list exists, so delnpc there does nothing.
+#    npc/scripts_guild.conf lists agit_controller.txt with a trailing space, hence the second line.
+run "cd $RA; grep -q '^delnpc:' conf/import/map_conf.txt && { cp -a conf/import/map_conf.txt conf/import/map_conf.txt.bak-$stamp; sed -i '/^delnpc:/d' conf/import/map_conf.txt; echo 'map_conf.txt: removed old delnpc lines'; } || true"
+for f in npc/guild/agit_controller.txt "npc/guild/agit_controller.txt " npc/guild2/agit_start_se.txt npc/re/guild3/agit_start_te.txt; do
+  addline npc/scripts_custom.conf "delnpc: $f"
 done
 
 # 5. Build Manager table

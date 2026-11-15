@@ -5,7 +5,7 @@
 //= At start-up the spot is checked and a warning is logged if it isn't walkable.
 //==========================================================
 
-lasagna,196,182,4	duplicate(Healer)	Healer#las	909
+lasagna,196,182,4	duplicate(Healer)	Healer#las	4_F_NURSE
 
 -	script	HuffLabsHealerCheck	-1,{
 OnInit:

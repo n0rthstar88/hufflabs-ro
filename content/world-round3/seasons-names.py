@@ -46,7 +46,34 @@ def chunks(b):
     return re.findall(rb"[\x80-\xff]{2}", b)
 
 
-table = {}
+def candidates(top, sub):
+    c = [refs[k] for k in refs if skel(k) == skel(sub)]
+    if len(c) != 1:  # not referenced by the pack: an official file it replaces?
+        c = [official[k].split(b"/", 1)[1] for k in official if k.startswith(top.lower() + b"/") and skel(k.split(b"/", 1)[1]) == skel(sub)]
+    return c
+
+
+# A shape match alone is unreliable: 도시01 and 초원01 have the same shape (tom_????01.bmp), and
+# trusting it once renamed four city floor tiles onto grass tiles (black Prontera ground). So the
+# shape matches only vote for a per-character table; the majority wins, each Korean character
+# comes from one mangled pair, and every name is then translated through the table.
+votes = {}
+for name in files:
+    if re.search(rb"[\x80-\xff]", name):
+        top, sub = name.split(b"/", 1)
+        cands = candidates(top, sub)
+        if len(cands) == 1 and len(chunks(sub)) == len(chunks(cands[0])):
+            for a, b in zip(chunks(sub), chunks(cands[0])):
+                votes.setdefault(a, {}).setdefault(b, 0)
+                votes[a][b] += 1
+table, taken = {}, set()
+for a, bs in sorted(votes.items(), key=lambda kv: -max(kv[1].values())):
+    for b, _ in sorted(bs.items(), key=lambda kv: -kv[1]):
+        if b not in taken:
+            table[a] = b
+            taken.add(b)
+            break
+
 resolved = {}
 skipped = []
 for name in files:
@@ -54,22 +81,17 @@ for name in files:
         resolved[name] = name
         continue
     top, sub = name.split(b"/", 1)
-    cands = [refs[k] for k in refs if skel(k) == skel(sub)]
-    if len(cands) != 1:  # not referenced by the pack: an official file it replaces?
-        cands = [official[k].split(b"/", 1)[1] for k in official if k.startswith(top.lower() + b"/") and skel(k.split(b"/", 1)[1]) == skel(sub)]
-    if len(cands) == 1:
-        resolved[name] = top + b"/" + cands[0]
-        for a, b in zip(chunks(sub), chunks(cands[0])):
-            table[a] = b
-for name in files:
-    if name in resolved:
-        continue
-    top, sub = name.split(b"/", 1)
     parts = re.split(rb"([\x80-\xff]{2})", sub)
-    if all(len(p) != 2 or p in table or not re.match(rb"[\x80-\xff]", p) for p in parts):
+    if all(p in table or not re.fullmatch(rb"[\x80-\xff]{2}", p) for p in parts):
         resolved[name] = top + b"/" + b"".join(table.get(p, p) for p in parts)
     else:
         skipped.append(name)
+
+seen = {}
+for name, good in resolved.items():
+    if good.lower() in seen:
+        raise SystemExit(f"two files map to {good.decode('cp949', 'replace')}: {seen[good.lower()]!r} and {name!r}")
+    seen[good.lower()] = name
 
 for name, good in resolved.items():
     good.decode("cp949")  # must be valid Korean
