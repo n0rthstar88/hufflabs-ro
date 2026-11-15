@@ -1,0 +1,9 @@
+[Unit]
+Description=HuffLabs RO: load the seasonal events for today's date
+After=mariadb.service rathena-map.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/hlro-events.sh
+# 75 = someone is online; the timer tries again next hour
+SuccessExitStatus=75

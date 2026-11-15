@@ -1,0 +1,58 @@
+//===== HuffLabs RO ==========================================
+//= Daily login streak (per account).
+//= - The first login of each real day continues the streak if the account also logged in
+//=   yesterday; a missed day starts it again at 1.
+//= - Every streak day gives roulette points that grow with the streak:
+//=   Bronze = streak day (capped at 10), plus 5 Silver on every 7th day.
+//= - Perfect-attendance milestones (repeat every year of an unbroken streak):
+//=   30 days: 10, 90 days: 30, 180 days: 60, 365 days: 1000
+//=   of each: Gold Coins (item 671), HuffLabs Coins (item 2600000) and roulette Gold points.
+//= - @streak shows the current streak.
+//============================================================
+-	script	HLRO_DailyStreak	-1,{
+OnInit:
+	bindatcmd "streak", strnpcinfo(3) + "::OnStatus", 0, 99;
+	end;
+
+OnStatus:
+	dispbottom "Login streak: " + #HLRO_STREAK + " day(s) in a row. Next milestone: " + callsub(S_Next, #HLRO_STREAK) + ".";
+	end;
+
+OnPCLoginEvent:
+	.@today = gettime(DT_YYYYMMDD);
+	if (#HLRO_STREAK_LAST == .@today)
+		end;
+	.@yesterday = atoi(gettimestr("%Y%m%d", 9, gettimetick(2) - 86400));
+	if (#HLRO_STREAK_LAST == .@yesterday)
+		#HLRO_STREAK += 1;
+	else
+		#HLRO_STREAK = 1;
+	#HLRO_STREAK_LAST = .@today;
+
+	.@bronze = (#HLRO_STREAK < 10) ? #HLRO_STREAK : 10;
+	.@silver = (#HLRO_STREAK % 7 == 0) ? 5 : 0;
+	RouletteBronze += .@bronze;
+	RouletteSilver += .@silver;
+	dispbottom "Login streak day " + #HLRO_STREAK + ": +" + .@bronze + " roulette Bronze" + ((.@silver) ? " and +" + .@silver + " Silver" : "") + ". (@streak for details)";
+
+	.@d = #HLRO_STREAK % 365;
+	.@gold = 0;
+	if (.@d == 30) .@gold = 10;
+	else if (.@d == 90) .@gold = 30;
+	else if (.@d == 180) .@gold = 60;
+	else if (.@d == 0) .@gold = 1000;
+	if (.@gold) {
+		getitem 671, .@gold;       // Gold Coin
+		getitem 2600000, .@gold;   // HuffLabs Coin
+		RouletteGold += .@gold;
+		announce strcharinfo(0) + " reached " + #HLRO_STREAK + " days of perfect attendance and earned " + .@gold + " Gold Coins, " + .@gold + " HuffLabs Coins and " + .@gold + " roulette Gold!", bc_all, 0xFFD700;
+	}
+	end;
+
+S_Next:
+	.@d = getarg(0) % 365;
+	if (.@d < 30) return (30 - .@d) + " more day(s) for 10 gold";
+	if (.@d < 90) return (90 - .@d) + " more day(s) for 30 gold";
+	if (.@d < 180) return (180 - .@d) + " more day(s) for 60 gold";
+	return (365 - .@d) + " more day(s) for 1000 gold";
+}

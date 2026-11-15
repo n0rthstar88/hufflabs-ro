@@ -1,0 +1,13 @@
+# Seasonal events: file (under npc/events/)	first day MMDD	last day MMDD (a range may wrap past New Year)
+# Newest official version of each holiday only: the older years clash with these.
+# Skipped: idul_fitri (moving lunar date), RWC_*, bossnia, twintowers, event_skill_reset, nguild/* (one-off or GM events), xmas.txt (older Christmas, clashes with 2013).
+lunar_2008.txt	0120	0220
+valentinesday_2012.txt	0201	0228
+whiteday.txt	0301	0320
+StPatrick_2008.txt	0310	0324
+easter_2010.txt	0320	0425
+children_week.txt	0501	0515
+MemorialDay_2008.txt	0520	0605
+dumplingfestival.txt	0601	0630
+halloween_2013.txt	1015	1115
+christmas_2013.txt	1201	0106

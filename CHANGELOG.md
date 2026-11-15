@@ -4,6 +4,31 @@ Each version is tagged and has a [release](https://github.com/n0rthstar88/huffla
 with built tools. Every version passes the [tests](https://github.com/n0rthstar88/hufflabs-ro/actions/workflows/ci.yml)
 on fresh Linux and Windows machines first.
 
+## v1.4.0
+
+**Server options: everything stock rAthena leaves off, switched on.**
+
+New `content/server-options/` folder with a deploy script and README:
+
+- **Players get `@autoloot` and `@alootid`.** Monsters drop zeny, and there is a day/night
+  cycle (2 h day, 30 min night).
+- **Attendance that grows.** The client's attendance calendar gives one more HuffLabs Coin for
+  every check-in in a month (day 1 = 1 coin ... day 20 = 20 coins); `gen-attendance.py` writes
+  the monthly periods.
+- **Login streaks.** Logging in on consecutive days builds a per-account streak (`@streak`):
+  roulette Bronze that grows each day, Silver every 7th day, and perfect-attendance rewards at
+  30 / 90 / 180 / 365 days (10 / 30 / 60 / 1000 each of Gold Coins, HuffLabs Coins and roulette
+  Gold). A missed day starts it again.
+- **Roulette** gets rAthena's official prize table.
+- **Stock extras:** Private MVP Room, MVP Arena, Monster Arena (moved off the crowded fountain),
+  Morroc Raceway, Reset Girl, Kafra bank, lottery, blackjack, rock-paper-scissors, marriage and
+  the Card Seller, whose SQL item tables the deploy builds with rAthena's `yaml2sql`.
+- **Opt-in PvP:** a Red vs Blue team arena next to the stock PvP rooms. It loads from
+  `npc/scripts_custom.conf` so the stock map flags can't override it.
+- **Seasonal events by date:** the newest official version of ten holidays (Lunar New Year to
+  Christmas) loads automatically on its dates; an hourly timer restarts the map server when the
+  list changes and nobody is online.
+
 ## v1.3.2
 
 **Fixes: WoE no longer runs on its own, NPC looks stand on the ground, a job changer at the fountain.**
